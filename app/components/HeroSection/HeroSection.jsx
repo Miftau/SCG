@@ -23,7 +23,6 @@ const HeroSection = ({
         whileInView={{
           opacity: 1,
           y: 0,
-          scale: 1.25,
           transition: { duration: 0.4, ease: "easeOut" },
         }}
         className="relative z-10 text-center text-white pt-16 px-4 max-w-3xl mx-auto"

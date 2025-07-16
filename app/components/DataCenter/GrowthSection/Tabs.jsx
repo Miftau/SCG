@@ -49,7 +49,6 @@ const Tabs = () => {
         whileInView={{
           opacity: 1,
           y: 0,
-          scale: 1.25,
           transition: { duration: 0.4, ease: "easeOut" },
         }}
         className="w-full max-w-3xl mx-auto mb-6"
