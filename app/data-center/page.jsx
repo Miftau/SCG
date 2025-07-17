@@ -8,11 +8,11 @@ import Asks from "../components/DataCenter/Asks/Asks";
 
 const DataCenter = () => {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <HeroSection
         title="مراكز البيانات"
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
-        primaryButtonText="تنشاء حساب"
+        primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
         imageSrc="/images/Group1.png"
         imageAlt="Hero Background"

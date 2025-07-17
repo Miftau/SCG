@@ -1,7 +1,10 @@
-
-
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Plus } from "lucide-react" 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Plus } from "lucide-react";
 
 const AccordionDemo = () => {
   return (
@@ -14,7 +17,9 @@ const AccordionDemo = () => {
     >
       <AccordionItem value="item-1">
         <AccordionTrigger className="group flex flex-row justify-between items-center text-right [&>svg:last-child]:hidden">
-          <span className="flex-grow text-right">ما هو الخادم الافتراضي المخصص (VPS)؟</span>
+          <span className="flex-grow text-right">
+            ما هو الخادم الافتراضي المخصص (VPS)؟
+          </span>
           <Plus className="h-4 w-4 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-90" />
         </AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-right">
@@ -25,9 +30,12 @@ const AccordionDemo = () => {
           </p>
         </AccordionContent>
       </AccordionItem>
+
       <AccordionItem value="item-2">
         <AccordionTrigger className="group flex flex-row justify-between items-center text-right [&>svg:last-child]:hidden">
-          <span className="flex-grow text-right">متى يجب علي استخدام استضافة VPS بدلاً من الاستضافة المشتركة؟</span>
+          <span className="flex-grow text-right">
+            متى يجب علي استخدام استضافة VPS بدلاً من الاستضافة المشتركة؟
+          </span>
           <Plus className="h-4 w-4 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-90" />
         </AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-right">
@@ -41,9 +49,12 @@ const AccordionDemo = () => {
           </p>
         </AccordionContent>
       </AccordionItem>
+
       <AccordionItem value="item-3">
         <AccordionTrigger className="group flex flex-row justify-between items-center text-right [&>svg:last-child]:hidden">
-          <span className="flex-grow text-right">ما الفرق بين الخادم الافتراضي والخادم المخصص؟</span>
+          <span className="flex-grow text-right">
+            ما الفرق بين الخادم الافتراضي والخادم المخصص؟
+          </span>
           <Plus className="h-4 w-4 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-90" />
         </AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-right">
@@ -57,9 +68,12 @@ const AccordionDemo = () => {
           </p>
         </AccordionContent>
       </AccordionItem>
+
       <AccordionItem value="item-4">
         <AccordionTrigger className="group flex flex-row justify-between items-center text-right [&>svg:last-child]:hidden">
-          <span className="flex-grow text-right">ماهي المواقع المتاحة لاستضافة VPS؟</span>
+          <span className="flex-grow text-right">
+            ماهي المواقع المتاحة لاستضافة VPS؟
+          </span>
           <Plus className="h-4 w-4 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-90" />
         </AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-right">
@@ -74,7 +88,7 @@ const AccordionDemo = () => {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-  )
-}
+  );
+};
 
-export default AccordionDemo
+export default AccordionDemo;

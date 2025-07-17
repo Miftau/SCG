@@ -87,8 +87,8 @@ const Services = () => {
                     <Image
                       src={location.skylineSrc}
                       alt={location.skylineAlt}
-                      width={100}
-                      height={100}
+                      width={50}
+                      height={50}
                       className=" object-cover"
                     />
                     <p className="font-bold text-lg">{location.title}</p>
