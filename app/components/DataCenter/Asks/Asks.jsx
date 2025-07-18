@@ -4,8 +4,8 @@ import AccordionDemo from "./AccordionDemo";
 
 const Asks = () => {
   return (
-    <div className="p-6">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+    <div className="p-0 md:p-8 frlex flex-col justify-center items-center">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 justify-items-center md:justify-items-stretch">
         {/* القسم الأيسر - الكروت */}
         <div className="col-span-12 md:col-span-4">
           <div className="flex flex-col justify-center items-center md:items-start gap-y-8">
@@ -36,7 +36,7 @@ const Asks = () => {
 
         {/* القسم الأيمن - Accordion */}
         <div className="col-span-12 md:col-span-8">
-          <div className="h-full">
+          <div className="h-full w-full max-w-2xl">
             <AccordionDemo />
           </div>
         </div>
