@@ -128,11 +128,12 @@ const PartnersSection = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {/* Top 3 main partners */}
-        {partners.slice(0, 3).map((partner) => {
+        {partners.slice(0, 3).map((partner, index) => {
           const IconComponent = partner.icon;
           return (
             <motion.div
               className=""
+              key={index}
               initial={{ opacity: 0, y: 100 }}
               whileInView={{
                 opacity: 1,
@@ -167,10 +168,11 @@ const PartnersSection = () => {
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
         {/* Remaining partners in smaller cards */}
-        {partners.slice(3).map((partner) => {
+        {partners.slice(3).map((partner, index) => {
           const IconComponent = partner.icon;
           return (
             <motion.div
+              key={index}
               initial={{ opacity: 0, y: 100 }}
               whileInView={{
                 opacity: 1,
