@@ -46,7 +46,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white border-b border-gray-200 h-16 z-50 relative" dir="ltr">
+    <nav className="bg-white border-b border-gray-200 h-16 z-50 relative" >
       <div className="max-w-7xl mx-auto">
         {/* Desktop Navbar */}
         <div className="flex justify-between items-center px-5 py-4">
