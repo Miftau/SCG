@@ -8,7 +8,7 @@ import ServicesSection from "./components/Home/ServicesSection";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <HeroSectionHome />
       <ServicesSection />
       <ServerLocation />
