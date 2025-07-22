@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const HeroSectionHome = () => {
@@ -10,9 +11,10 @@ const HeroSectionHome = () => {
           style={{ backgroundImage: "url('/images/Maskgroup.png')" }}
         ></div>
       </div>
+
       {/* Content over background */}
-      <div className="relative z-10 text-white flex flex-col items-start justify-center pr-4 sm:pr-8 md:pr-12  h-screen">
-        <div className="w-full max-w-4xl  flex flex-col items-start justify-center">
+      <div className="relative z-10 text-white flex flex-col items-center justify-center h-screen">
+        <div className="w-full max-w-4xl flex flex-col items-center justify-center px-4 text-center">
           <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#3684FF]">
             حلول
           </p>
@@ -22,7 +24,7 @@ const HeroSectionHome = () => {
 
           {/* Search box */}
           <div className="w-full mt-8 sm:mt-12">
-            <div className="relative flex items-center bg-white rounded-full overflow-hidden w-full max-w-[600px]">
+            <div className="relative flex items-center bg-white rounded-full overflow-hidden w-full max-w-[600px] mx-auto">
               <input
                 type="text"
                 placeholder="بحث عن نطاق جديد"
@@ -32,6 +34,48 @@ const HeroSectionHome = () => {
                 ابحث
               </button>
             </div>
+          </div>
+          <div className="flex gap-4 mt-8">
+            <Image
+              src="/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
+              alt="Center Illustration"
+              width={70}
+              height={70}
+              quality={100}
+              className="object-contain"
+            />
+            <Image
+              src="/images/e91e873ab3ce43c99bdd0e4cf6350a0e88455e40.png"
+              alt="Center Illustration"
+              width={70}
+              height={70}
+              quality={100}
+              className="object-contain"
+            />
+            <Image
+              src="/images/c476df0ad4e70158a7a67a17ec68c57702098968.png"
+              alt="Center Illustration"
+              width={70}
+              height={70}
+              quality={100}
+              className="object-contain"
+            />
+            <Image
+              src="/images/6081d7c898df845d9b7b48ca230ea32c13208f7c.png"
+              alt="Center Illustration"
+              width={70}
+              height={70}
+              quality={100}
+              className="object-contain"
+            />
+            <Image
+              src="/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
+              alt="Center Illustration"
+              width={70}
+              height={70}
+              quality={100}
+              className="object-contain"
+            />
           </div>
         </div>
       </div>

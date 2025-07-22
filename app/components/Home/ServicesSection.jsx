@@ -67,36 +67,43 @@ const ServicesSection = () => {
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-12 text-right">
             اكتشف الخدمات المقدمة لك
           </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center text-center w-full">
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="relative flex flex-col items-center p-6 text-center bg-white rounded-lg shadow-lg overflow-hidden"
+                className="relative flex flex-col items-center p-6 text-center bg-white rounded-lg shadow-lg overflow-hidden w-full max-w-sm mx-auto"
               >
                 {/* Subtle gradient at top of card */}
-                <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-blue-50 to-transparent" />
+                <div className="absolute inset-x-0 top-0 h-28 bg-[#2B1F51] rounded-b-[100%]" />
+
+                {/* Image */}
                 <div className="relative z-10 mb-4">
                   <Image
                     src={service.imageSrc || "/placeholder.svg"}
                     alt={service.title}
                     width={100}
                     height={100}
-                    className="object-contain"
+                    className="object-contain mx-auto"
                   />
                 </div>
-                <CardHeader className="p-0 mb-2">
-                  <CardTitle className="text-xl font-bold text-gray-800 text-right">
+
+                {/* Title */}
+                <CardHeader className="p-0 mb-2 items-center">
+                  <CardTitle className="text-xl font-bold text-gray-800">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="flex-grow p-0 mb-4">
-                  <CardDescription className="text-sm text-gray-600 text-right">
+
+                {/* Description */}
+                <CardContent className="flex-grow p-0 mb-4 items-center">
+                  <CardDescription className="text-sm text-gray-600">
                     {service.description}
                   </CardDescription>
                 </CardContent>
-                <CardFooter className="p-0 w-full">
-                  <Button className="w-full bg-[#4A3B8F] hover:bg-[#3A2B7F] text-white font-bold py-2 px-4 rounded-full text-lg">
+
+                {/* Button */}
+                <CardFooter className="p-0 w-full flex justify-center">
+                  <Button className="bg-[#4A3B8F] hover:bg-[#3A2B7F] text-white font-bold py-2 px-6 rounded-full text-lg">
                     {service.price}
                   </Button>
                 </CardFooter>
@@ -106,9 +113,9 @@ const ServicesSection = () => {
         </div>
       </section>
 
-<div className="">
-  <p className="text-center font-bold text-4xl pb-6 ">طرق الدفع</p>
-</div>
+      <div className="">
+        <p className="text-center font-bold text-4xl pb-6 ">طرق الدفع</p>
+      </div>
       {/* Payment Methods Card */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}

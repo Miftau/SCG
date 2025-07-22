@@ -27,7 +27,7 @@ const CustomerOpinions = () => {
           >
             <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-blue-600" />
+                <Shield className="w-8 h-8 text-black" />
               </div>
               <h3
                 className="text-lg font-semibold text-gray-800 mb-2"
@@ -39,7 +39,7 @@ const CustomerOpinions = () => {
 
             <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Eye className="w-8 h-8 text-blue-600" />
+                <Eye className="w-8 h-8 text-black" />
               </div>
               <h3
                 className="text-lg font-semibold text-gray-800 mb-2"
@@ -51,7 +51,7 @@ const CustomerOpinions = () => {
 
             <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-blue-600" />
+                <Users className="w-8 h-8 text-black" />
               </div>
               <h3
                 className="text-lg font-semibold text-gray-800 mb-2"
@@ -63,7 +63,7 @@ const CustomerOpinions = () => {
 
             <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Headphones className="w-8 h-8 text-blue-600" />
+                <Headphones className="w-8 h-8 text-black" />
               </div>
               <h3
                 className="text-lg font-semibold text-gray-800 mb-2"
@@ -84,13 +84,13 @@ const CustomerOpinions = () => {
             }}
             className="bg-white p-8 rounded-xl shadow-lg relative"
           >
-            <div className="absolute top-6 right-6 text-6xl text-blue-200">
+            <div className="absolute top-6 right-6 text-6xl text-black">
               "
             </div>
             <div className="pt-8">
               <p
                 className="text-gray-700 text-lg leading-relaxed mb-8"
-                dir="rtl"
+              
               >
                 تجربتي مع شركم وشعتها الفنين ، حيث وصلني مسئول الشراء عملية
                 التوريد توضيح كل ما هو جديد مع المتابعة المستمرة الاستضافه
@@ -103,7 +103,7 @@ const CustomerOpinions = () => {
                   <h4 className="text-xl font-bold text-gray-800">أحمد شوقي</h4>
                   <p className="text-gray-500">نائب مدير شعبة</p>
                 </div>
-                <div className="mr-auto text-4xl text-blue-200">"</div>
+                <div className="mr-auto text-4xl text-black">"</div>
               </div>
             </div>
           </motion.div>
