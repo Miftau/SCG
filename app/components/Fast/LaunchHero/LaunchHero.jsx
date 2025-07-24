@@ -116,7 +116,7 @@ const LaunchHero = () => {
             />
           </motion.div>
         </div>
-        <div className="w-full py-12 md:py-20 bg-white" dir="rtl">
+        <div className="w-full py-12 md:py-20 bg-white" >
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
               {featuresData.map((column) => (

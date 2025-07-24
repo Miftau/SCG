@@ -91,7 +91,7 @@ const WhyUsSection = () => {
         ))}
       </div>
 
-      <div className="w-full py-12 md:py-20 bg-white" dir="rtl">
+      <div className="w-full py-12 md:py-20 bg-white" >
         <p className="text-center text-xl font-medium pb-16 text-[#2B1F51]">مهتمّ لتعرف كيف يمكننا مساعدة عملك في تحقيق النجاح؟ تواصل معنا.</p>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16">

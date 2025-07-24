@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CloudAdoptionSupport = () => {
   return (
-    <section className="w-full py-12 md:py-20 lg:py-24 bg-white" dir="rtl">
+    <section className="w-full py-12 md:py-20 lg:py-24 bg-white" >
       <div className="container px-4 md:px-6 max-w-4xl mx-auto text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 leading-tight">
           لست واثقا من أين ستبدأ؟ لا تقلق، سنقوم بمساعدتك

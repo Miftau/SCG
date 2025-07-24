@@ -73,13 +73,12 @@ const Services = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
               {locations.map((location, index) => (
                 <motion.div
-                 initial={{ opacity: 0, y: 100 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: { duration: 0.4, ease: "easeOut" },
-                  
-                }}
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 0.4, ease: "easeOut" },
+                  }}
                   key={index}
                   className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-4 "
                 >
@@ -104,13 +103,69 @@ const Services = () => {
             </div>
           )}
           {selected === "نطاقات" && (
-            <div className="text-gray-700 text-center text-lg font-medium">
-              محتوى النطاقات
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
+              {locations.map((location, index) => (
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 0.4, ease: "easeOut" },
+                  }}
+                  key={index}
+                  className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-4 "
+                >
+                  <div className="">
+                    <Image
+                      src={location.skylineSrc}
+                      alt={location.skylineAlt}
+                      width={50}
+                      height={50}
+                      className=" object-cover"
+                    />
+                    <p className="font-bold text-lg">{location.title}</p>
+                    <p className="font-normal text-sm text-gray-600 pt-4">
+                      {location.descrption}
+                    </p>
+                    <p className="font-extrabold text-xl pt-4">
+                      {location.button}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           )}
           {selected === "التصميم والتطوير" && (
-            <div className="text-gray-700 text-center text-lg font-medium">
-              محتوى التصميم والتطوير
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
+              {locations.map((location, index) => (
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 0.4, ease: "easeOut" },
+                  }}
+                  key={index}
+                  className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-4 "
+                >
+                  <div className="">
+                    <Image
+                      src={location.skylineSrc}
+                      alt={location.skylineAlt}
+                      width={50}
+                      height={50}
+                      className=" object-cover"
+                    />
+                    <p className="font-bold text-lg">{location.title}</p>
+                    <p className="font-normal text-sm text-gray-600 pt-4">
+                      {location.descrption}
+                    </p>
+                    <p className="font-extrabold text-xl pt-4">
+                      {location.button}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           )}
         </div>

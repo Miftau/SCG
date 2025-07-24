@@ -2,7 +2,7 @@ import { MailCheck , AlertTriangle, Lock, ShieldCheck } from "lucide-react";
 
 const OverviewSection = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white" dir="rtl">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-heading">

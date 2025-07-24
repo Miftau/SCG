@@ -27,11 +27,10 @@ const JoinSection = () => {
           <div className="flex flex-col items-end  max-w-2xl z-10 md:mr-auto text-center md:text-right md:items-end">
             <h2
               className="text-white text-3xl md:text-4xl font-bold mb-4"
-              dir="rtl"
             >
               انضم إلى قائمة موزعينا المعتمدين
             </h2>
-            <p className="text-white text-lg md:text-xl mb-8" dir="rtl">
+            <p className="text-white text-lg md:text-xl mb-8">
               إذا كنت مهتمًا بأن تصبح موزعًا معتمدًا لشركة العنكبوت الليبي
               لتنمية أعمالنا معًا. يرجى ملء النموذج التالي وإرساله وسنتصل بك في
               أقرب وقت ممكن.

@@ -5,7 +5,7 @@ import React from "react";
 const StrongSecurity = () => {
   return (
     
-    <section className="relative py-12 md:py-24 lg:py-32 overflow-hidden bg-white" dir="rtl">
+    <section className="relative py-12 md:py-24 lg:py-32 overflow-hidden bg-white" >
       {/* Background illustrations - positioned absolutely */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Shield */}

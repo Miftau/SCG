@@ -43,7 +43,7 @@ const PricingSection = () => {
     },
   ];
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50" dir="rtl">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50" >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -59,10 +59,10 @@ const PricingSection = () => {
                 y: 0,
                 transition: { duration: 0.4, ease: "easeOut" },
               }}
+              key={index}
               className=""
             >
               <Card
-                key={index}
                 className={`w-full max-w-sm rounded-lg shadow-md ${plan.borderColorClass}`}
               >
                 <CardHeader className="flex flex-col items-center gap-2 py-6">
@@ -85,7 +85,7 @@ const PricingSection = () => {
                       <li
                         key={featureIndex}
                         className="flex items-center gap-3"
-                        dir="rtl"
+                     
                       >
                         <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
                         <span
