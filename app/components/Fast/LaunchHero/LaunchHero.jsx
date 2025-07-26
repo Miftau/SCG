@@ -56,7 +56,7 @@ const LaunchHero = () => {
             className="bg-white h-32 p-0 flex items-center justify-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
             <img
-              src="/images/programer/recat.png"
+              src="/scg/images/programer/recat.png"
               width={50}
               height={50}
               alt="Fast Launch"
@@ -74,7 +74,7 @@ const LaunchHero = () => {
             className="bg-white h-32 p-0 flex items-center justify-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
             <img
-              src="/images/programer/docker.png"
+              src="/scg/images/programer/docker.png"
               width={50}
               height={50}
               alt="Fast Launch"
@@ -91,7 +91,7 @@ const LaunchHero = () => {
             className=" bg-white h-32 p-0 flex items-center justify-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
             <img
-              src="/images/programer/java.png"
+              src="/scg/images/programer/java.png"
               width={50}
               height={50}
               alt="Fast Launch"
@@ -108,7 +108,7 @@ const LaunchHero = () => {
             className="bg-white h-32 p-0 flex items-center justify-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
             <img
-              src="/images/programer/python.png"
+              src="/scg/images/programer/python.png"
               width={50}
               height={50}
               alt="Fast Launch"

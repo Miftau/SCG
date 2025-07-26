@@ -24,7 +24,7 @@ const OnlinePayment = () => {
       >
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
           <img
-            src="/images/express.png"
+            src="/scg/images/express.png"
             alt="Online Payment"
             width={150}
             height={150}
@@ -33,7 +33,7 @@ const OnlinePayment = () => {
         </div>
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
           <img
-            src="/images/visa.png"
+            src="/scg/images/visa.png"
             alt="Online Payment"
             width={150}
             height={150}
@@ -42,7 +42,7 @@ const OnlinePayment = () => {
         </div>
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
           <img
-            src="/images/mastercard.png"
+            src="/scg/images/mastercard.png"
             alt="Online Payment"
             height={150}
             width={150}

@@ -5,27 +5,27 @@ import { motion } from "framer-motion";
 const platforms = [
   {
     name: "مركز المعلومات والتوثيق",
-    image: "/images/a876ccb0b019f9fc5dc76046c3efb52ea3870823.jpg",
+    image: "/scg/images/a876ccb0b019f9fc5dc76046c3efb52ea3870823.jpg",
   },
   {
     name: "لجنة الإفراجات المالية",
-    image: "/images/Group (10).png",
+    image: "/scg/images/Group (10).png",
   },
   {
     name: "صندوق الضمان الاجتماعي",
-    image: "/images/Social-Security-Fund 1.png",
+    image: "/scg/images/Social-Security-Fund 1.png",
   },
   {
     name: "صندوق الضمان الاجتماعي",
-    image: "/images/Social-Security-Fund 1.png",
+    image: "/scg/images/Social-Security-Fund 1.png",
   },
   {
     name: "مصلحة السجل التجاري",
-    image: "/images/Group (10).png",
+    image: "/scg/images/Group (10).png",
   },
   {
     name: "صيدلية ذات الصواري",
-    image: "/images/35ed025d3689ce6be5e970a1d2d80e19579cb130.png",
+    image: "/scg/images/35ed025d3689ce6be5e970a1d2d80e19579cb130.png",
   },
 ];
 

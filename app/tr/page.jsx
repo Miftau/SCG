@@ -12,7 +12,7 @@ const TR = () => {
   const topDomain = {
     name: ".TR",
     price: "20 دولار فقط",
-    flag: "/images/flag/turkey.png",
+    flag: "/scg/images/flag/turkey.png",
   };
 
   const domains = [
@@ -57,7 +57,7 @@ const TR = () => {
         title="الاستضافات"
         description="من افضل واسرع واسهل الاستضافات"
         primaryButtonText="سجل الان"
-        imageSrc="/images/Group4027.png"
+        imagesrc="/scg/images/Group4027.png"
         imageAlt="Hero Background"
       />
       <DomainSection

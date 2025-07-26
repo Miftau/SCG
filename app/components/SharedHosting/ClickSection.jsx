@@ -54,7 +54,7 @@ const ClickSection = () => {
               
             }}  className="flex justify-center lg:justify-start">
             <img
-              src="/images/download7.png"
+              src="/scg/images/download7.png"
               width={600}
               height={400}
               alt="Isometric illustration of a platform with a mouse cursor and yellow sparks, representing quick actions."

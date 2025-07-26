@@ -6,21 +6,21 @@ import { motion } from "framer-motion";
 const BeastSection = () => {
   const Beast = [
     {
-      skylineSrc: "/images/gear-icon.png",
+      skylineSrc: "/scg/images/gear-icon.png",
       skylineAlt: "Cloud Services Skyline",
       title: "تحسين أداء الموقع عبر CDN",
       descrption:
         "تعمل شبكة توصيل المحتوى (CDN) الخاصة بنا على تحسين سرعة تحميل الصفحة وتقليل أحمال الخادم بنسبة 80٪ في المتوسط ​​لتحسين أداء موقعك",
     },
     {
-      skylineSrc: "/images/Clippath2.png",
+      skylineSrc: "/scg/images/Clippath2.png",
       skylineAlt: "Cloud Services Skyline",
       title: "التخفيف من هجمات DDoS",
       descrption:
         "يمكن أن تتسبب هجمات حجب الخدمة الموزعة (DDoS) في التوقف التام لعملك. نحن نحظر هجمات DDoS للطبقات 3 و 4 و 7 ومع تأمين معدل نقل البيانات bandwidth أثناء الهجمات.",
     },
     {
-      skylineSrc: "/images/Group3773.png",
+      skylineSrc: "/scg/images/Group3773.png",
       skylineAlt: "Cloud Services Skyline",
       title: "الاستضافة السحابية المشتركة",
       descrption:
@@ -28,14 +28,14 @@ const BeastSection = () => {
     },
 
     {
-      skylineSrc: "/images/Group(1).png",
+      skylineSrc: "/scg/images/Group(1).png",
       skylineAlt: "Cloud Services Skyline",
       title: "الحماية من عمليّات الاختراق والبرامج الخبيثة",
       descrption:
         "قم بحماية موقعك من البرامج الضارة ومنع محاولات الاختراق وهجمات استغلال الثغرات Zero-Day وهجمات تخمين كلمة المرور Brute Force.",
     },
     {
-      skylineSrc: "/images/Clippath.png",
+      skylineSrc: "/scg/images/Clippath.png",
       skylineAlt: "Cloud Services Skyline",
       title: "التخفيف من هجمات DDoS",
       descrption:
@@ -43,7 +43,7 @@ const BeastSection = () => {
     },
 
     {
-      skylineSrc: "/images/visitors-icon1.png",
+      skylineSrc: "/scg/images/visitors-icon1.png",
       skylineAlt: "Cloud Services Skyline",
       title: "تحسين أداء الموقع عبر CDN",
       descrption:

@@ -15,7 +15,7 @@ const PaymentMethods = () => {
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imageSrc="/images/Group1.png"
+        imagesrc="/scg/images/Group1.png"
         imageAlt="Hero Background"
       />
       <BankTransfer />

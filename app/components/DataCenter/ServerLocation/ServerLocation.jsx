@@ -64,17 +64,17 @@ const AnimatedCircle = ({ circle, index }) => {
 
 const ServerLocation = () => {
   const locations = [
-    { name: "أمريكا", flag: "/images/flag/Amreci.png", response: "20ms", color: "#46CC3F" },
-    { name: "المانيا", flag: "/images/flag/Germen.png", response: "35ms", color: "#46CC3F" },
-    { name: "تركيا", flag: "/images/flag/turkey.png", response: "50ms", color: "#46CC3F" },
-    { name: "ايطاليا", flag: "/images/flag/Italy.png", response: "70ms", color: "#46CC3F" },
-    { name: "كوريا", flag: "/images/flag/Kore.png", response: "70ms", color: "#46CC3F" },
-    { name: "الامارات", flag: "/images/flag/Dubai.png", response: "70ms", color: "#46CC3F" },
-    { name: "بيرطانيا", flag: "/images/flag/England.png", response: "70ms", color: "#46CC3F" },
-    { name: "السعودية", flag: "/images/flag/Sud.png", response: "70ms", color: "#46CC3F" },
-    { name: "السعودية", flag: "/images/flag/Sud.png", response: "70ms", color: "#46CC3F" },
-    { name: "فنلند", flag: "/images/flag/Finland.png", response: "70ms", color: "#46CC3F" },
-    { name: "السودان", flag: "/images/flag/Suda.png", response: "70ms", color: "#46CC3F" },
+    { name: "أمريكا", flag: "/scg/images/flag/Amreci.png", response: "20ms", color: "#46CC3F" },
+    { name: "المانيا", flag: "/scg/images/flag/Germen.png", response: "35ms", color: "#46CC3F" },
+    { name: "تركيا", flag: "/scg/images/flag/turkey.png", response: "50ms", color: "#46CC3F" },
+    { name: "ايطاليا", flag: "/scg/images/flag/Italy.png", response: "70ms", color: "#46CC3F" },
+    { name: "كوريا", flag: "/scg/images/flag/Kore.png", response: "70ms", color: "#46CC3F" },
+    { name: "الامارات", flag: "/scg/images/flag/Dubai.png", response: "70ms", color: "#46CC3F" },
+    { name: "بيرطانيا", flag: "/scg/images/flag/England.png", response: "70ms", color: "#46CC3F" },
+    { name: "السعودية", flag: "/scg/images/flag/Sud.png", response: "70ms", color: "#46CC3F" },
+    { name: "السعودية", flag: "/scg/images/flag/Sud.png", response: "70ms", color: "#46CC3F" },
+    { name: "فنلند", flag: "/scg/images/flag/Finland.png", response: "70ms", color: "#46CC3F" },
+    { name: "السودان", flag: "/scg/images/flag/Suda.png", response: "70ms", color: "#46CC3F" },
   ]
 
   // Data for the animated circles on the map
@@ -101,7 +101,7 @@ const ServerLocation = () => {
         className="mt-12 flex justify-center items-center mx-auto relative"
       >
         <img
-          src="/images/Group4.png"
+          src="/scg/images/Group4.png"
           alt="World map showing server locations"
           width={1000}
           height={1000}

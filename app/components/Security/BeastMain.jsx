@@ -6,34 +6,34 @@ import { motion } from "framer-motion";
 const BeastMain = () => {
   const Beast = [
     {
-      skylineSrc: "/images/gear-icon.png",
+      skylineSrc: "/scg/images/gear-icon.png",
       skylineAlt: "Cloud Services Skyline",
       title: "بريد إلكتروني مخصَّص وآمن للأعمال",
     },
     {
-      skylineSrc: "/images/Clippath2.png",
+      skylineSrc: "/scg/images/Clippath2.png",
       skylineAlt: "Cloud Services Skyline",
       title: "بريد إلكتروني موثوق مع ضمان وقت إتاحية 99.9٪.",
     },
     {
-      skylineSrc: "/images/Group3773.png",
+      skylineSrc: "/scg/images/Group3773.png",
       skylineAlt: "Cloud Services Skyline",
       title: "سعة تخزين البريد",
     },
 
     {
-      skylineSrc: "/images/Group(1).png",
+      skylineSrc: "/scg/images/Group(1).png",
       skylineAlt: "Cloud Services Skyline",
       title: "تصفية البريد العشوائي والحماية من الفيروسات",
     },
     {
-      skylineSrc: "/images/Clippath.png",
+      skylineSrc: "/scg/images/Clippath.png",
       skylineAlt: "Cloud Services Skyline",
       title: "مشاركة التقويم والاتصالات والمهام",
     },
 
     {
-      skylineSrc: "/images/visitors-icon1.png",
+      skylineSrc: "/scg/images/visitors-icon1.png",
       skylineAlt: "Cloud Services Skyline",
       title: "مشاركة التقويم والاتصالات والمهام",
     },

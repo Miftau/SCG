@@ -9,7 +9,7 @@ const FeaturesSection = () => {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <img
-            src="/images/secure-shield 1.png"
+            src="/scg/images/secure-shield 1.png"
             width={100}
             height={100}
             alt="Shield Icon representing protection"

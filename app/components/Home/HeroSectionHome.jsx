@@ -14,7 +14,7 @@ const HeroSectionHome = () => {
             transition: { duration: 0.5, ease: "easeOut" },
           }}
           className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/groupHero-Bt0B6L23.svg')" }}
+          style={{ backgroundImage: "url('/scg/images/groupHero-Bt0B6L23.svg')" }}
         ></motion.div>
       </div>
       {/* Content over background */}
@@ -50,7 +50,7 @@ const HeroSectionHome = () => {
           </div>
           <div className="flex gap-4 mt-8">
             <img
-              src="/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
+              src="/scg/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
               alt="Center Illustration"
               width={50}
               height={50}
@@ -58,28 +58,28 @@ const HeroSectionHome = () => {
               className="object-contain"
             />
             <img
-              src="/images/e91e873ab3ce43c99bdd0e4cf6350a0e88455e40.png"
+              src="/scg/images/e91e873ab3ce43c99bdd0e4cf6350a0e88455e40.png"
               alt="Center Illustration"
               width={50}
               height={50}
               className="object-contain"
             />
             <img
-              src="/images/c476df0ad4e70158a7a67a17ec68c57702098968.png"
+              src="/scg/images/c476df0ad4e70158a7a67a17ec68c57702098968.png"
               alt="Center Illustration"
               width={50}
               height={50}
               className="object-contain"
             />
             <img
-              src="/images/6081d7c898df845d9b7b48ca230ea32c13208f7c.png"
+              src="/scg/images/6081d7c898df845d9b7b48ca230ea32c13208f7c.png"
               alt="Center Illustration"
               width={50}
               height={50}
               className="object-contain"
             />
             <img
-              src="/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
+              src="/scg/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
               alt="Center Illustration"
               width={50}
               height={50}

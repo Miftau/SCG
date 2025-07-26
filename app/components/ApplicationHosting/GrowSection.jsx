@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 const GrowSection = () => {
   const locations = [
     {
-      skylineSrc: "/images/Group 3275.png",
+      skylineSrc: "/scg/images/Group 3275.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:
         "قم بتكوين المجموعات الخاصة بك وإدارتها ونشرها بسرعة في خطوات بسيطة وبدون وقت يُذكر..",
     },
     {
-      skylineSrc: "/images/Group 3274.png",
+      skylineSrc: "/scg/images/Group 3274.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:
         "قم بتكوين المجموعات الخاصة بك وإدارتها ونشرها بسرعة في خطوات بسيطة وبدون وقت يُذكر.",
     },
     {
-      skylineSrc: "/images/Group3277.png",
+      skylineSrc: "/scg/images/Group3277.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:

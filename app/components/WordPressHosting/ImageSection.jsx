@@ -7,7 +7,7 @@ const ImageSection = () => {
       <div className="container relative z-10 flex flex-col items-center justify-center text-center px-4 md:px-6">
         <div className="relative bg-[#2A3252] rounded-lg p-8 md:p-12 lg:p-16 max-w-7xlxl mx-auto shadow-lg">
           <img
-            src="/images/Clip path group (3).png"
+            src="/scg/images/Clip path group (3).png"
             alt="3D blue open box"
             width={100}
             height={100}
@@ -15,7 +15,7 @@ const ImageSection = () => {
           />
 
           <img
-            src="/images/blocks-icon 1.png"
+            src="/scg/images/blocks-icon 1.png"
             alt="3D blue cube"
             width={200}
             height={200}

@@ -17,7 +17,7 @@ const WordpressFeatures = () => {
             className="flex justify-center lg:justify-start"
           >
             <img
-              src="/images/download7.png"
+              src="/scg/images/download7.png"
               width={400}
               height={300}
               alt="WordPress Platform"

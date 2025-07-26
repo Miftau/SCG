@@ -7,21 +7,21 @@ const AllNeedSection = () => {
 
     const Beast = [
     {
-      skylineSrc: "/images/gear-icon.png",
+      skylineSrc: "/scg/images/gear-icon.png",
       skylineAlt: "Cloud Services Skyline",
       title: "سهولة الوصول والعمل المشترك",
       descrption:
         "قم بالوصول إلى بريدك الإلكتروني، التقويم، جهات الاتصال، والملفات من أي مكان وعلى أي جهاز، وتعاون مع فريقك في نفس الوقت، بينما يتم حفظ كل تغييرات العمل تلقائيًا"
     },
     {
-      skylineSrc: "/images/Clippath2.png",
+      skylineSrc: "/scg/images/Clippath2.png",
       skylineAlt: "Cloud Services Skyline",
       title: "الأمن",
       descrption:
         "باستخدام الذكاء الاصطناعي وبرامج الدفاع عن البريد الإلكتروني الذكية، تكافح LS Suite للحفاظ على بريدك الوارد آمنًا من الرسائل غير المرغوب فيها والفيروسات والبرامج الضارة، إضافةً إلى برامج الفدية، وهجمات التصيد الاحتيالي.",
     },
     {
-      skylineSrc: "/images/Group3773.png",
+      skylineSrc: "/scg/images/Group3773.png",
       skylineAlt: "Cloud Services Skyline",
       title: "زيادة الوعي بالعلامة التجارية",
       descrption:

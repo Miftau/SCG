@@ -18,7 +18,7 @@ const WordPressHosting = () => {
         description="انتقل بموقعك الالكتروني إلى مستوى أعلى من السرعة والأداء بسرعة تتجاوز الــ 5 أضعاف. بحلول مصممة خصيصاً لمضاعفة السرعة وتقديم أفضل سرعة أداء لموقعك"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imageSrc="/images/Group4027.png"
+        imagesrc="/scg/images/Group4027.png"
         imageAlt="Hero Background"
       />
       <FreeToolsSection />

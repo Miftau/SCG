@@ -14,42 +14,42 @@ import {
 const ServicesSection = () => {
   const services = [
     {
-      imageSrc: "/images/kaas-card1.png",
+      imageSrc: "/scg/images/kaas-card1.png",
       imageAlt: "Cloud Server Icon",
       title: "الخوادم المخصصة",
       description: "استضف موقعك بسهولة و اريحية وبتكاليف",
       price: "يبدأ من 45 ر.س / شهريا",
     },
     {
-      imageSrc: "/images/shared-hosting-card 1.png",
+      imageSrc: "/scg/images/shared-hosting-card 1.png",
       imageAlt: "Shared Hosting Icon",
       title: "الاستضافة السحابية المشتركة",
       description: "استضف موقعك بسهولة و اريحية وبتكاليف",
       price: "يبدأ من 45 ر.س / شهريا",
     },
     {
-      imageSrc: "/images/ls-cloud-card 1.svg",
+      imageSrc: "/scg/images/ls-cloud-card 1.svg",
       imageAlt: "Website Hosting Icon",
       title: "استضافة المواقع",
       description: "استضف موقعك بسهولة و اريحية وبتكاليف",
       price: "يبدأ من 45 ر.س / شهريا",
     },
     {
-      imageSrc: "/images/shared-hosting-card 1.png",
+      imageSrc: "/scg/images/shared-hosting-card 1.png",
       imageAlt: "Control Panel Icon",
       title: "رخصة لوحة التحكم",
       description: "استضف موقعك بسهولة و اريحية وبتكاليف",
       price: "يبدأ من 45 ر.س / شهريا",
     },
     {
-      imageSrc: "/images/shared-hosting-card 1.png",
+      imageSrc: "/scg/images/shared-hosting-card 1.png",
       imageAlt: "Domains Icon",
       title: "النطاقات",
       description: "استضف موقعك بسهولة و اريحية وبتكاليف",
       price: "يبدأ من 45 ر.س / شهريا",
     },
     {
-      imageSrc: "/images/shared-hosting-card 1.png",
+      imageSrc: "/scg/images/shared-hosting-card 1.png",
       imageAlt: "VPS Server Icon",
       title: "VPS",
       description: "استضف موقعك بسهولة و اريحية وبتكاليف",
@@ -127,7 +127,7 @@ const ServicesSection = () => {
         className="relative bg-gradient-to-br from-white to-gray-50 hover:from-gray-300 transition duration-300 ease-in-out rounded-xl p-8 md:p-12 shadow-lg flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 overflow-hidden mb-16"
       >
         <img
-          src="/images/right-blocks.png"
+          src="/scg/images/right-blocks.png"
           alt="Abstract background pattern"
           width={200}
           height={200}
@@ -139,7 +139,7 @@ const ServicesSection = () => {
         </p>
         <div className="">
           <img
-            src="/images/payment.png"
+            src="/scg/images/payment.png"
             alt="PayPal payment logo"
             width={300}
             height={300}

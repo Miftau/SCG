@@ -12,7 +12,7 @@ const SA = () => {
   const topDomain = {
     name: ".Sa",
     price: "20 دولار فقط",
-    flag: "/images/flag/saudi.png",
+    flag: "/scg/images/flag/saudi.png",
   };
 
   const domains = [
@@ -58,7 +58,7 @@ const SA = () => {
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imageSrc="/images/Group4027.png"
+        imagesrc="/scg/images/Group4027.png"
         imageAlt="Hero Background"
       />
       <DomainSection

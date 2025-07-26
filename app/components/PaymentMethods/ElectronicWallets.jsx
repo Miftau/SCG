@@ -8,7 +8,7 @@ const ElectronicWallets = () => {
     {
       id: 1,
       name: " زين كاش",
-      image: "/images/bnak7.png",
+      image: "/scg/images/bnak7.png",
       description:
         "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
       moreInfo: "المزيد",
@@ -16,7 +16,7 @@ const ElectronicWallets = () => {
     {
       id: 2,
       name: "فودافون",
-      image: "/images/bank6.png",
+      image: "/scg/images/bank6.png",
       description:
         "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
       moreInfo: "المزيد",
@@ -24,7 +24,7 @@ const ElectronicWallets = () => {
     {
       id: 3,
       name: "بايبال",
-      image: "/images/paypal.png",
+      image: "/scg/images/paypal.png",
       description:
         "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
       moreInfo: "المزيد",
@@ -32,7 +32,7 @@ const ElectronicWallets = () => {
     {
       id: 4,
       name: "سداد",
-      image: "/images/bank5.png",
+      image: "/scg/images/bank5.png",
       description:
         "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
       moreInfo: "المزيد",

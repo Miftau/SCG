@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 const KubernetesHostingIntro = () => {
   const locations = [
     {
-      skylineSrc: "/images/Group 3275.png",
+      skylineSrc: "/scg/images/Group 3275.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:
         "قم بتكوين المجموعات الخاصة بك وإدارتها ونشرها بسرعة في خطوات بسيطة وبدون وقت يُذكر..",
     },
     {
-      skylineSrc: "/images/Group 3274.png",
+      skylineSrc: "/scg/images/Group 3274.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:
         "قم بتكوين المجموعات الخاصة بك وإدارتها ونشرها بسرعة في خطوات بسيطة وبدون وقت يُذكر.",
     },
     {
-      skylineSrc: "/images/Group3277.png",
+      skylineSrc: "/scg/images/Group3277.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:
@@ -92,7 +92,7 @@ const KubernetesHostingIntro = () => {
 
       <div className="w-full h-full  mt-20 px-8 md:px-16 lg:px-24">
         <img
-          src="/images/download24.png"
+          src="/scg/images/download24.png"
           alt="Cloud Services Skyline"
           width={1000}
           height={1000}

@@ -69,7 +69,7 @@ const DashboardFeatures = () => {
           transition: { duration: 0.4, ease: "easeOut" },
         }} className="flex justify-center lg:justify-start">
             <img
-              src="/images/dashboard-image.png"
+              src="/scg/images/dashboard-image.png"
               width={800}
               height={600}
               alt="Dashboard screenshot showing a comprehensive control panel"

@@ -11,7 +11,7 @@ const Services = () => {
   ];
   const locations = [
     {
-      skylineSrc: "/images/Path.png",
+      skylineSrc: "/scg/images/Path.png",
       skylineAlt: "Cloud Services Skyline",
       title: "JPaaS المنصة كخدمة",
       descrption:
@@ -19,7 +19,7 @@ const Services = () => {
       button: "اعرف المزيد",
     },
     {
-      skylineSrc: "/images/download.png",
+      skylineSrc: "/scg/images/download.png",
       skylineAlt: "Cloud Services Skyline",
       title: "LS Suite",
       descrption:
@@ -27,7 +27,7 @@ const Services = () => {
       button: "اعرف المزيد",
     },
     {
-      skylineSrc: "/images/Group1682.png",
+      skylineSrc: "/scg/images/Group1682.png",
       skylineAlt: "Cloud Services Skyline",
       title: "الاستضافة السحابية المشتركة",
       descrption:

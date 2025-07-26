@@ -12,7 +12,7 @@ const Fast = () => {
         title="السرعة"
         description="السرعة السرعة السرعة السرعة السرعة السرعة السرعة"
         primaryButtonText="ابدا الان!"
-        imageSrc="/images/Group19.png"
+        imagesrc="/scg/images/Group19.png"
         imageAlt="Hero Background"
       />
       <LaunchHero />

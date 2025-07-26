@@ -7,14 +7,14 @@ const TraditionalMethods = () => {
     
 
     {
-      skylineSrc: "/images/Group(1).png",
+      skylineSrc: "/scg/images/Group(1).png",
       skylineAlt: "Cloud Services Skyline",
       title: "الحماية من عمليّات الاختراق والبرامج الخبيثة",
       descrption:
         "قم بحماية موقعك من البرامج الضارة ومنع محاولات الاختراق وهجمات استغلال الثغرات Zero-Day وهجمات تخمين كلمة المرور Brute Force.",
     },
     {
-      skylineSrc: "/images/Clippath.png",
+      skylineSrc: "/scg/images/Clippath.png",
       skylineAlt: "Cloud Services Skyline",
       title: "التخفيف من هجمات DDoS",
       descrption:
@@ -22,7 +22,7 @@ const TraditionalMethods = () => {
     },
 
     {
-      skylineSrc: "/images/visitors-icon1.png",
+      skylineSrc: "/scg/images/visitors-icon1.png",
       skylineAlt: "Cloud Services Skyline",
       title: "تحسين أداء الموقع عبر CDN",
       descrption:

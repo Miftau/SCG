@@ -31,7 +31,7 @@ const EasyTransitionSection = () => {
         {/* Left side: Illustration */}
         <div className="flex justify-center md:justify-start">
           <img
-            src="/images/ls-suite-cta 1.png"
+            src="/scg/images/ls-suite-cta 1.png"
             width={600}
             height={400}
             alt="Isometric illustration of a blue folder with 'Suite' text and papers flying out"

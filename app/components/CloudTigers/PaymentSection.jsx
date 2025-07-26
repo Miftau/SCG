@@ -20,7 +20,7 @@ const PaymentSection = () => {
           className="relative bg-gradient-to-br from-white to-gray-50 hover:from-gray-300 transition duration-300 ease-in-out rounded-xl p-8 md:p-12 shadow-lg flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 overflow-hidden mb-16"
         >
           <img
-            src="/images/right-blocks.png"
+            src="/scg/images/right-blocks.png"
             alt="Abstract background pattern"
             width={200}
             height={200}
@@ -32,7 +32,7 @@ const PaymentSection = () => {
           </p>
           <div className="">
             <img
-              src="/images/payment.png"
+              src="/scg/images/payment.png"
               alt="PayPal payment logo"
               width={300}
               height={300}
