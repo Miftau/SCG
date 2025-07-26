@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 
 const platforms = [
@@ -57,7 +57,7 @@ const PlatformSupport = () => {
                 {platform.name}
               </p>
               <div className="w-[100px] h-[100px] relative">
-                <Image
+                <img
                   src={platform.image}
                   alt={platform.name}
                   fill

@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import {
   Accordion,
   AccordionContent,
@@ -68,7 +68,7 @@ const DashboardFeatures = () => {
           x: 0,
           transition: { duration: 0.4, ease: "easeOut" },
         }} className="flex justify-center lg:justify-start">
-            <Image
+            <img
               src="/images/dashboard-image.png"
               width={800}
               height={600}

@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import Image from "next/image";
+
 import React from "react";
 
 const StrongSecurity = () => {
@@ -9,7 +9,7 @@ const StrongSecurity = () => {
       {/* Background illustrations - positioned absolutely */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Shield */}
-        <Image
+        <img
           src="/images/Group 3094.png"
           alt="Security Shield"
           width={800}

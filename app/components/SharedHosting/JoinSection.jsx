@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 const JoinSection = () => {
@@ -51,7 +51,7 @@ const JoinSection = () => {
 
           {/* Illustration - Hidden on mobile */}
           <div className="hidden md:block absolute bottom-0 right-0 w-[300px] h-[250px] md:w-[400px] md:h-[300px] lg:w-[500px] lg:h-[350px] translate-x-1/4 md:translate-x-1/5 lg:translate-x-1/4 z-0">
-            <Image
+            <img
               src="/images/Group3417.png"
               alt="Illustration of a browser window with gears and an awning"
               layout="fill"

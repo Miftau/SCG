@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
 
 import { motion } from "framer-motion";
@@ -61,7 +61,7 @@ const ElectronicWallets = () => {
             className="bg-white p-4 rounded-lg shadow-md flex flex-col hover:shadow-xl transition-shadow duration-300 "
           >
             <div className="w-[150px] h-[150px] relative">
-              <Image
+              <img
                 src={item.image}
                 alt={item.name}
                 fill

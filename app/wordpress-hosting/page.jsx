@@ -26,7 +26,7 @@ const WordPressHosting = () => {
       <PricingCard />
       <WordpressFeatures />
       <ArabicSection />
-      <ImageSection />
+      <imgSection />
       <FeatureSection />
       <BeastSection />
       <Asks />

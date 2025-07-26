@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import React from "react";
 import AccordionDemo from "./AccordionDemo";
 
@@ -11,7 +11,7 @@ const Asks = () => {
           <div className="flex flex-col justify-center items-center md:items-start gap-y-8">
             {/* الكارت الأول */}
             <div className="bg-white flex flex-col justify-center items-center md:items-start gap-y-4 p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
-              <Image
+              <img
                 src="/images/Group228.png"
                 alt="Asks Icon"
                 width={50}
@@ -22,7 +22,7 @@ const Asks = () => {
             </div>
             {/* الكارت الثاني */}
             <div className="bg-white flex flex-col justify-center items-center md:items-start gap-y-4 p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
-              <Image
+              <img
                 src="/images/download 1.png"
                 alt="Asks Icon"
                 width={50}

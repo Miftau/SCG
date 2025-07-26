@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import {motion} from "framer-motion"
 const WhoisTool = () => {
   const tools = [
@@ -47,7 +47,7 @@ const WhoisTool = () => {
 
           {/* Image */}
           <div className="md:w-1/2">
-            <Image
+            <img
               src={tool.image}
               alt={tool.title}
               width={500}

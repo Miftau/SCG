@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 const MainFeature = () => {
   return (
@@ -25,7 +25,7 @@ const MainFeature = () => {
       >
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
-            <Image
+            <img
               src="/images/Layer3.png"
               alt="Cloud Servers"
               fill
@@ -35,7 +35,7 @@ const MainFeature = () => {
         </div>
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
-            <Image
+            <img
               src="/images/9d73dec4c85f02c04b8b670a9a50329be6156ae1.png"
               alt="Cloud Servers"
               fill
@@ -45,7 +45,7 @@ const MainFeature = () => {
         </div>
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-24 h-24 relative">
-            <Image
+            <img
               src="/images/linux-feat1.png"
               alt="Cloud Servers"
               fill
@@ -55,7 +55,7 @@ const MainFeature = () => {
         </div>
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
-            <Image
+            <img
               src="/images/cpanel.png"
               alt="Cloud Servers"
               fill
@@ -65,7 +65,7 @@ const MainFeature = () => {
         </div>
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
-            <Image
+            <img
               src="/images/Group 2368.png"
               alt="Cloud Servers"
               fill
@@ -75,7 +75,7 @@ const MainFeature = () => {
         </div>
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
-            <Image
+            <img
               src="/images/Group 2653.png"
               alt="Cloud Servers"
               fill
@@ -86,7 +86,7 @@ const MainFeature = () => {
 
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
-            <Image
+            <img
               src="/images/cpanel.png"
               alt="Cloud Servers"
               fill
@@ -96,7 +96,7 @@ const MainFeature = () => {
         </div>
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
-            <Image
+            <img
               src="/images/Group 2368.png"
               alt="Cloud Servers"
               fill
@@ -106,7 +106,7 @@ const MainFeature = () => {
         </div>
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
-            <Image
+            <img
               src="/images/Group 2653.png"
               alt="Cloud Servers"
               fill

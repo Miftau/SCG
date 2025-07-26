@@ -1,7 +1,6 @@
 "use client"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
-import Image from "next/image"
 
 // Placeholder image URLs - replace with your actual image paths
 const IMAGE_BASE_URL = "/placeholder.svg"
@@ -133,7 +132,7 @@ const PartnersSection = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6 flex justify-center">
                     <div className="w-28 h-28 rounded-lg bg-gray-50 flex items-center justify-center group-hover:bg-gray-100 transition-colors overflow-hidden">
-                      <Image
+                      <img
                         width={70}
                         height={70}
                         src={partner.imageUrl || "/placeholder.svg"}

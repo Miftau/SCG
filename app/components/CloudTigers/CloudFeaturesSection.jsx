@@ -1,9 +1,9 @@
-import Image from "next/image";
+
 const CloudFeaturesSection = () => {
   return (
     <section className="relative py-16 md:py-24 lg:py-32 bg-white overflow-hidden">
       {/* Top background element */}
-      <Image
+      <img
         src="/images/Group 3946.png"
         alt="Top background wave"
         width={1920}
@@ -11,7 +11,7 @@ const CloudFeaturesSection = () => {
         className="absolute top-0 left-0 w-full h-[150px] object-cover object-top -z-10"
       />
       {/* Left cloud background element */}
-      <Image
+      <img
         src="/images/Group 3946.png"
         alt="Cloud background"
         width={300}
@@ -20,7 +20,7 @@ const CloudFeaturesSection = () => {
         style={{ transform: "translateY(-50%)" }}
       />
       {/* Right cloud background element */}
-      <Image
+      <img
         src="/images/Group 3946.png"
         alt="Cloud background"
         width={300}
@@ -47,7 +47,7 @@ const CloudFeaturesSection = () => {
           {/* Item 1: Virtual Services */}
           <div className="flex flex-col items-center text-center">
             <div className="w-24 h-24 flex items-center justify-center mb-4">
-              <Image
+              <img
                 src="/images/Group 3978.png"
                 alt="Virtual Services Icon"
                 width={50}
@@ -60,7 +60,7 @@ const CloudFeaturesSection = () => {
           {/* Item 2: Storage Volumes */}
           <div className="flex flex-col items-center text-center">
             <div className="w-24 h-24 flex items-center justify-center mb-4">
-              <Image
+              <img
                 src="/images/Group 3984.png"
                 alt="Storage Volumes Icon"
                 width={50}
@@ -74,7 +74,7 @@ const CloudFeaturesSection = () => {
           {/* Item 3: Networks */}
           <div className="flex flex-col items-center text-center">
             <div className="w-24 h-24 flex items-center justify-center mb-4">
-              <Image
+              <img
                 src="/images/Group 3978.png"
                 alt="Networks Icon"
                 width={50}
@@ -87,7 +87,7 @@ const CloudFeaturesSection = () => {
           {/* Item 4: Load Balancers */}
           <div className="flex flex-col items-center text-center">
             <div className="w-24 h-24 flex items-center justify-center mb-4">
-              <Image
+              <img
                 src="/images/Group 1709.png"
                 alt="Load Balancers Icon"
                 width={50}

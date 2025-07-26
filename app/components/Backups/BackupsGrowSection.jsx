@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 const BackupsGrowSection = () => {
   const locations = [
     {
@@ -45,7 +45,7 @@ const BackupsGrowSection = () => {
             className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-4 "
           >
             <div className="">
-              <Image
+              <img
                 src={location.skylineSrc}
                 alt={location.skylineAlt}
                 width={50}

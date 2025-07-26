@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
@@ -104,7 +104,7 @@ const LicenseSection = () => {
               >
                 <CardContent className="flex flex-col items-center justify-center p-0 w-full">
                   <div className="flex items-center justify-center h-24 w-full">
-                    <Image
+                    <img
                       src={item.logo || "/placeholder.svg"}
                       alt={`${item.name} logo`}
                       width={150}

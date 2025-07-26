@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 
 const SecuritySection = () => {
@@ -16,7 +16,7 @@ const SecuritySection = () => {
           }}
           className="flex justify-center md:justify-center"
         >
-          <Image
+          <img
             src="/images/ssl-panel 1.svg" // Reference to the embedded image file [^1]
             alt="Website security illustration with HTTPS protocol and a shield icon" // Descriptive alt text for accessibility [^2]
             width={400} // Intrinsic width for aspect ratio calculation [^2]

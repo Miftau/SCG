@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
-import Image from "next/image";
+
 
 const CloudAdoptionSupport = () => {
   return (
@@ -62,7 +62,7 @@ const CloudAdoptionSupport = () => {
       </div>
 
       <div className="w-full h-full  mt-20 px-8 md:px-16 lg:px-24">
-        <Image
+        <img
           src="/images/ls-start-graphic 1.svg"
           alt="Cloud Services Skyline"
           width={1000}

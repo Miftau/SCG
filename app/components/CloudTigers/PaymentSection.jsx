@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 const PaymentSection = () => {
   return (
@@ -19,7 +19,7 @@ const PaymentSection = () => {
           }}
           className="relative bg-gradient-to-br from-white to-gray-50 hover:from-gray-300 transition duration-300 ease-in-out rounded-xl p-8 md:p-12 shadow-lg flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 overflow-hidden mb-16"
         >
-          <Image
+          <img
             src="/images/right-blocks.png"
             alt="Abstract background pattern"
             width={200}
@@ -31,7 +31,7 @@ const PaymentSection = () => {
             ادفع باستخدام فوري أو أكثر من 20 طريقة دفع أخرى
           </p>
           <div className="">
-            <Image
+            <img
               src="/images/payment.png"
               alt="PayPal payment logo"
               width={300}

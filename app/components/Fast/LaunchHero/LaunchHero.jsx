@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import { CheckCircle2 } from "lucide-react";
 const LaunchHero = () => {
   const featuresData = [
@@ -55,7 +55,7 @@ const LaunchHero = () => {
             }}
             className="bg-white h-32 p-0 flex items-center justify-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
-            <Image
+            <img
               src="/images/programer/recat.png"
               width={50}
               height={50}
@@ -73,7 +73,7 @@ const LaunchHero = () => {
             }}
             className="bg-white h-32 p-0 flex items-center justify-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
-            <Image
+            <img
               src="/images/programer/docker.png"
               width={50}
               height={50}
@@ -90,7 +90,7 @@ const LaunchHero = () => {
             }}
             className=" bg-white h-32 p-0 flex items-center justify-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
-            <Image
+            <img
               src="/images/programer/java.png"
               width={50}
               height={50}
@@ -107,7 +107,7 @@ const LaunchHero = () => {
             }}
             className="bg-white h-32 p-0 flex items-center justify-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
-            <Image
+            <img
               src="/images/programer/python.png"
               width={50}
               height={50}

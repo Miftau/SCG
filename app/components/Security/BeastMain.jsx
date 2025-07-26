@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -62,7 +62,7 @@ const BeastMain = () => {
               key={index}
               className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-8 flex flex-col items-center justify-center text-center"
             >
-              <Image
+              <img
                 src={item.skylineSrc}
                 alt={item.skylineAlt}
                 width={50}

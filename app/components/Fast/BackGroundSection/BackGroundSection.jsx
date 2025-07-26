@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 const BackGroundSection = () => {
   return (
@@ -17,12 +17,10 @@ const BackGroundSection = () => {
 
       {/* الصورة في النص */}
       <div className="relative z-10 w-[90%] max-w-[900px] aspect-[900/907]">
-        <Image
+        <img
           src="/images/Group19550.svg"
           alt="Center Illustration"
           fill
-          priority
-          quality={100}
           className="object-contain"
         />
       </div>

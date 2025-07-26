@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -53,7 +53,7 @@ const ClickSection = () => {
               transition: { duration: 0.4, ease: "easeOut" },
               
             }}  className="flex justify-center lg:justify-start">
-            <Image
+            <img
               src="/images/download7.png"
               width={600}
               height={400}

@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
@@ -83,7 +83,7 @@ const ECommercePlatforms = () => {
             >
               <div className="flex flex-col items-center p-6 pt-8">
                 <div className="relative w-24 h-24 mb-4">
-                  <Image
+                  <img
                     src={platform.imageSrc}
                     alt={platform.title}
                     width={96}

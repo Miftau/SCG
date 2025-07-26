@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const HeroSectionHome = () => {
@@ -21,11 +20,16 @@ const HeroSectionHome = () => {
       {/* Content over background */}
       <div className="relative z-10 text-white flex flex-col items-center justify-center h-screen">
         <div className="w-full max-w-4xl flex flex-col items-center justify-center px-4 text-center">
-          <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#3684FF]">
+          <p className="text-3xl sm:text-4xl md:text-7xl font-extrabold text-[#3684FF]">
             حلول
           </p>
-          <p className="text-lg sm:text-xl md:text-2xl font-bold pt-4 sm:pt-6 md:pt-8">
+          <p className="text-lg sm:text-xl md:text-4xl font-bold pt-4 sm:pt-6 md:pt-8">
             استضفات الويب المثالية
+          </p>
+          <p className="text-lg sm:text-xs md:text-sm  pt-2 sm:pt-4 ">
+            شركة العنكبوت الليبي هي الشركة الرائدة في تقديم حلول التكنولوجيا
+            <br />
+            والخدمات السحابية في ليبيا.
           </p>
           {/* Search box */}
           <div className="w-full mt-8 sm:mt-12">
@@ -45,44 +49,40 @@ const HeroSectionHome = () => {
             </div>
           </div>
           <div className="flex gap-4 mt-8">
-            <Image
+            <img
               src="/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
               alt="Center Illustration"
-              width={70}
-              height={70}
+              width={50}
+              height={50}
               quality={100}
               className="object-contain"
             />
-            <Image
+            <img
               src="/images/e91e873ab3ce43c99bdd0e4cf6350a0e88455e40.png"
               alt="Center Illustration"
-              width={70}
-              height={70}
-              quality={100}
+              width={50}
+              height={50}
               className="object-contain"
             />
-            <Image
+            <img
               src="/images/c476df0ad4e70158a7a67a17ec68c57702098968.png"
               alt="Center Illustration"
-              width={70}
-              height={70}
-              quality={100}
+              width={50}
+              height={50}
               className="object-contain"
             />
-            <Image
+            <img
               src="/images/6081d7c898df845d9b7b48ca230ea32c13208f7c.png"
               alt="Center Illustration"
-              width={70}
-              height={70}
-              quality={100}
+              width={50}
+              height={50}
               className="object-contain"
             />
-            <Image
+            <img
               src="/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
               alt="Center Illustration"
-              width={70}
-              height={70}
-              quality={100}
+              width={50}
+              height={50}
               className="object-contain"
             />
           </div>

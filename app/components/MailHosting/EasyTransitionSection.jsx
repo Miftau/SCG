@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -30,7 +30,7 @@ const EasyTransitionSection = () => {
         </div>
         {/* Left side: Illustration */}
         <div className="flex justify-center md:justify-start">
-          <Image
+          <img
             src="/images/ls-suite-cta 1.png"
             width={600}
             height={400}

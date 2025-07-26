@@ -1,7 +1,6 @@
 "use client";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
 
 const SSLCertificates = () => {
   const sslCertificates = [
@@ -83,7 +82,7 @@ const SSLCertificates = () => {
     <section className="relative w-full min-h-screen bg-white overflow-hidden py-12 md:py-20 lg:py-24">
       {/* Background pattern */}
       <div className="absolute inset-0 z-0">
-        <Image
+        <img
           src="/background-pattern.png"
           alt="Abstract background pattern"
           layout="fill"

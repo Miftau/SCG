@@ -1,6 +1,6 @@
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
+
 import { MonitorCheck, TrendingUp, Users } from "lucide-react";
 import { motion } from "framer-motion";
 const FeaturesSection = () => {
@@ -8,7 +8,7 @@ const FeaturesSection = () => {
     <section className="w-full py-12 lg:py-24 ">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <Image
+          <img
             src="/images/secure-shield 1.png"
             width={100}
             height={100}

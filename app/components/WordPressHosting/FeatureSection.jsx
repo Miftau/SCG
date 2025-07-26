@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 const FeatureSection = () => {
   return (
@@ -32,7 +32,7 @@ const FeatureSection = () => {
           </div>
           {/* Image on the right (col-start-3) */}
           <div className="flex flex-col items-center text-center space-y-4 md:col-start-3 md:text-right md:items-end md:space-y-2">
-            <Image
+            <img
               src="/images/62650397534c1c63594e7f4bea2d787439a6c3b8.png"
               width={300}
               height={200}
@@ -44,7 +44,7 @@ const FeatureSection = () => {
           {/* Step 2 */}
           {/* Image on the left (col-start-1) */}
           <div className="flex flex-col items-center text-center space-y-4 md:col-start-1 md:text-right md:items-end md:space-y-2">
-            <Image
+            <img
               src="/images/a498d98ec34bddba1fe5fd41b0632e80e47f3be4.png"
               width={300}
               height={200}

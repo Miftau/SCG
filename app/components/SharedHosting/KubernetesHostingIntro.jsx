@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 const KubernetesHostingIntro = () => {
   const locations = [
     {
@@ -73,7 +73,7 @@ const KubernetesHostingIntro = () => {
             className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-4 "
           >
             <div className="">
-              <Image
+              <img
                 src={location.skylineSrc}
                 alt={location.skylineAlt}
                 width={50}
@@ -91,7 +91,7 @@ const KubernetesHostingIntro = () => {
       </div>
 
       <div className="w-full h-full  mt-20 px-8 md:px-16 lg:px-24">
-        <Image
+        <img
           src="/images/download24.png"
           alt="Cloud Services Skyline"
           width={1000}

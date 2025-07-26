@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 const WordpressFeatures = () => {
@@ -16,7 +16,7 @@ const WordpressFeatures = () => {
             }}
             className="flex justify-center lg:justify-start"
           >
-            <Image
+            <img
               src="/images/download7.png"
               width={400}
               height={300}

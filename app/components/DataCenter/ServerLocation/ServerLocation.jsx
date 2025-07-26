@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { useEffect } from "react"
 import { motion, useAnimation } from "framer-motion"
 
@@ -101,12 +100,11 @@ const ServerLocation = () => {
         }}
         className="mt-12 flex justify-center items-center mx-auto relative"
       >
-        <Image
+        <img
           src="/images/Group4.png"
           alt="World map showing server locations"
           width={1000}
           height={1000}
-          priority // Mark as priority for better LCP performance [^2]
         />
         {/* Render animated circles based on circleData */}
         {circleData.map((circle, index) => (
@@ -126,8 +124,8 @@ const ServerLocation = () => {
             className="flex flex-col items-center sm:flex-row sm:justify-around bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow text-center sm:text-start"
           >
             <div className="mb-2 sm:mb-0">
-              <Image
-                src={location.flag || "/placeholder.svg"}
+              <img
+                src={location.flag }
                 alt={`${location.name} Flag`} // Descriptive alt text [^1]
                 width={50}
                 height={50}

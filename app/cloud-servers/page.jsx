@@ -23,7 +23,7 @@ const CloudServers = () => {
       <FeaturesSection />
       <NISTFrameworkSection />
       <MainFeature/>
-      <ImageSection />
+      <imgSection />
       <BeastSection />
       <Asks />
     </div>

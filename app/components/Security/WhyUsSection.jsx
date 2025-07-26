@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 const WhyUsSection = () => {
@@ -74,7 +74,7 @@ const WhyUsSection = () => {
             className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-4 "
           >
             <div className="">
-              <Image
+              <img
                 src={location.skylineSrc}
                 alt={location.skylineAlt}
                 width={50}

@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 
 const DigitalCurrencies = () => {
@@ -23,7 +23,7 @@ const DigitalCurrencies = () => {
         className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center"
       >
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
-          <Image
+          <img
             src="/images/digitalcurrencies.png"
             alt="Online Payment"
             width={150}
@@ -32,7 +32,7 @@ const DigitalCurrencies = () => {
           />
         </div>
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
-          <Image
+          <img
             src="/images/digitalcurrencies1.png"
             alt="Online Payment"
             width={150}
@@ -41,7 +41,7 @@ const DigitalCurrencies = () => {
           />
         </div>
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
-          <Image
+          <img
             src="/images/digitalcurrencies2.png"
             alt="Online Payment"
             height={150}
@@ -50,7 +50,7 @@ const DigitalCurrencies = () => {
           />
         </div>
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
-          <Image
+          <img
             src="/images/digitalcurrencies3.png"
             alt="Online Payment"
             height={150}

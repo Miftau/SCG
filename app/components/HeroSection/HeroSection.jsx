@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -16,10 +16,10 @@ const HeroSection = ({
     <div className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] flex flex-col  items-center">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src={imageSrc || "/placeholder.svg"}
+        <img
+          src={imageSrc }
           alt={imageAlt}
-          fill
+        
           className="w-full h-full object-cover"
         />
       </div>
