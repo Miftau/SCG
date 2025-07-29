@@ -10,7 +10,7 @@ const LicenseSection = () => {
     {
       id: "cloudlinux",
       name: "CloudLinux",
-      logo: "/scg/images/391b4ec0b6a6c8af4f95170b677c5c78446de47e.png",
+      logo: "/images/391b4ec0b6a6c8af4f95170b677c5c78446de47e.png",
       price: "15.00",
       currency: "$",
       period: "/Month",
@@ -18,7 +18,7 @@ const LicenseSection = () => {
     {
       id: "whmcs",
       name: "WHMCS",
-      logo: "/scg/images/507ba9e08079a97077a9a2273b4d2a7d395e8940.png",
+      logo: "/images/507ba9e08079a97077a9a2273b4d2a7d395e8940.png",
       price: "15.00",
       currency: "$",
       period: "/Month",
@@ -26,7 +26,7 @@ const LicenseSection = () => {
     {
       id: "litespeed",
       name: "LiteSpeed",
-      logo: "/scg/images/0066b2d2bcad17704f44334a0546dfc4ea200170.png",
+      logo: "/images/0066b2d2bcad17704f44334a0546dfc4ea200170.png",
       price: "15.00",
       currency: "$",
       period: "/Month",
@@ -34,7 +34,7 @@ const LicenseSection = () => {
     {
       id: "kernelcare",
       name: "KernelCare",
-      logo: "/scg/images/65e2f52fdf4a054291aab7886a49fa832a174f67.png",
+      logo: "/images/65e2f52fdf4a054291aab7886a49fa832a174f67.png",
       price: "15.00",
       currency: "$",
       period: "/Month",
@@ -42,7 +42,7 @@ const LicenseSection = () => {
     {
       id: "jetbackup",
       name: "JetBackup",
-      logo: "/scg/images/391b4ec0b6a6c8af4f95170b677c5c78446de47e.png",
+      logo: "/images/391b4ec0b6a6c8af4f95170b677c5c78446de47e.png",
       price: "15.00",
       currency: "$",
       period: "/Month",
@@ -50,7 +50,7 @@ const LicenseSection = () => {
     {
       id: "cpanel-whm",
       name: "cPanel & WHM",
-      logo: "/scg/images/e46cb3b47769e106847a28f95021f281c1427e27.png",
+      logo: "/images/e46cb3b47769e106847a28f95021f281c1427e27.png",
       price: "15.00",
       currency: "$",
       period: "/Month",
@@ -58,7 +58,7 @@ const LicenseSection = () => {
     {
       id: "softaculous",
       name: "Softaculous",
-      logo: "/scg/images/969221bd73e840edfad1d4118b1fe03cef9d2ab9.png",
+      logo: "/images/969221bd73e840edfad1d4118b1fe03cef9d2ab9.png",
       price: "15.00",
       currency: "$",
       period: "/Month",
@@ -66,7 +66,7 @@ const LicenseSection = () => {
     {
       id: "cloudlinux-2",
       name: "CloudLinux",
-      logo: "/scg/images/12ca73a032e2be1cb037c513e99d03532e1065a0.png",
+      logo: "/images/12ca73a032e2be1cb037c513e99d03532e1065a0.png",
       price: "15.00",
       currency: "$",
       period: "/Month",

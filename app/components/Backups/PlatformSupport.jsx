@@ -4,23 +4,23 @@ import { motion } from "framer-motion";
 const platforms = [
   {
     name: "Phpbb",
-    image: "/scg/images/2b081e2af564ba23048250b2346aa2d1006ca7d8.png",
+    image: "/images/2b081e2af564ba23048250b2346aa2d1006ca7d8.png",
   },
   {
     name: "Joomla",
-    image: "/scg/images/c1279760d98df16893193f8d684cf90b5022b958.png",
+    image: "/images/c1279760d98df16893193f8d684cf90b5022b958.png",
   },
   {
     name: "Drupal",
-    image: "/scg/images/a8f099c22358fde6d6f58dac6c01b07fbd2c9625.png",
+    image: "/images/a8f099c22358fde6d6f58dac6c01b07fbd2c9625.png",
   },
   {
     name: "Magento",
-    image: "/scg/images/226dc0bdd5ea31390b4f41d5a46ef46b115af19d.png",
+    image: "/images/226dc0bdd5ea31390b4f41d5a46ef46b115af19d.png",
   },
   {
     name: "WordPress",
-    image: "/scg/images/1f8757075395225dcd6dce9f20161229e3df05e3.png",
+    image: "/images/1f8757075395225dcd6dce9f20161229e3df05e3.png",
   },
 ];
 

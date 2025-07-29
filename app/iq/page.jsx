@@ -12,7 +12,7 @@ const IQ = () => {
   const topDomain = {
     name: ".IQ",
     price: "20 دولار فقط",
-    flag: "/scg/images/flag/iraq.png",
+    flag: "/images/flag/iraq.png",
   };
 
   const domains = [
@@ -57,7 +57,7 @@ const IQ = () => {
         title="الاستضافات"
         description="من افضل واسرع واسهل الاستضافات"
         primaryButtonText="سجل الان"
-        imagesrc="/scg/images/Group4027.png"
+        imagesrc="/images/Group4027.png"
         imageAlt="Hero Background"
       />
       <DomainSection

@@ -13,27 +13,27 @@ const Tabs = () => {
   ];
   const locations = [
     {
-      skylineSrc: "/scg/images/image1.png",
+      skylineSrc: "/images/image1.png",
       skylineAlt: "Dubai skyline with UAE flags",
-      flagSrc: "/scg/images/flag/abo.png",
+      flagSrc: "/images/flag/abo.png",
       flagAlt: "UAE Flag",
       governorate: "دبي",
       country: "الإمارات",
       ipAddress: "",
     },
     {
-      skylineSrc: "/scg/images/image2.png",
+      skylineSrc: "/images/image2.png",
       skylineAlt: "Khartoum skyline with Sudan flag",
-      flagSrc: "/scg/images/flag/sudan.png",
+      flagSrc: "/images/flag/sudan.png",
       flagAlt: "Sudan Flag",
       governorate: "الخرطوم",
       country: "السودان",
       ipAddress: "10.0.0.5",
     },
     {
-      skylineSrc: "/scg/images/image3.png",
+      skylineSrc: "/images/image3.png",
       skylineAlt: "Riyadh skyline with Saudi Arabia flag",
-      flagSrc: "/scg/images/flag/saudi.png",
+      flagSrc: "/images/flag/saudi.png",
       flagAlt: "Saudi Arabia Flag",
       governorate: "الرياض",
       country: "السعودية",

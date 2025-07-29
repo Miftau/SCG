@@ -64,7 +64,7 @@ const CustomerOpinions = () => {
             <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <img
-                  src="/scg/images/Group11709.png"
+                  src="/images/Group11709.png"
                   alt="Online Payment"
                   width={50}
                   height={50}
@@ -78,7 +78,7 @@ const CustomerOpinions = () => {
             <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <img
-                  src="/scg/images/career-icon 1.png"
+                  src="/images/career-icon 1.png"
                   alt="Online Payment"
                   width={50}
                   height={50}
@@ -92,7 +92,7 @@ const CustomerOpinions = () => {
             <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <img
-                  src="/scg/images/server-icon 1.png"
+                  src="/images/server-icon 1.png"
                   alt="Online Payment"
                   width={50}
                   height={50}
@@ -106,7 +106,7 @@ const CustomerOpinions = () => {
             <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <img
-                  src="/scg/images/Group 4072.png"
+                  src="/images/Group 4072.png"
                   alt="Online Payment"
                   width={50}
                   height={50}

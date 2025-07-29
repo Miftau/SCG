@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
       <div
         className="container px-4 md:px-6 relative z-10"
         style={{
-          backgroundImage: 'url("/scg/images/geometric-pattern.png")',
+          backgroundImage: 'url("/images/geometric-pattern.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

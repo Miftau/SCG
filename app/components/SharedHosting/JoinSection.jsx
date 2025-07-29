@@ -52,7 +52,7 @@ const JoinSection = () => {
           {/* Illustration - Hidden on mobile */}
           <div className="hidden md:block absolute bottom-0 right-0 w-[300px] h-[250px] md:w-[400px] md:h-[300px] lg:w-[500px] lg:h-[350px] translate-x-1/4 md:translate-x-1/5 lg:translate-x-1/4 z-0">
             <img
-              src="/scg/images/Group3417.png"
+              src="/images/Group3417.png"
               alt="Illustration of a browser window with gears and an awning"
               layout="fill"
               objectFit="contain"

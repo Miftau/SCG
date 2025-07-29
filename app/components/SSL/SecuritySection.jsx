@@ -17,7 +17,7 @@ const SecuritySection = () => {
           className="flex justify-center md:justify-center"
         >
           <img
-            src="/scg/images/ssl-panel 1.svg" // Reference to the embedded image file [^1]
+            src="/images/ssl-panel 1.svg" // Reference to the embedded image file [^1]
             alt="Website security illustration with HTTPS protocol and a shield icon" // Descriptive alt text for accessibility [^2]
             width={400} // Intrinsic width for aspect ratio calculation [^2]
             height={300} // Intrinsic height for aspect ratio calculation [^2]

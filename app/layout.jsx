@@ -1,6 +1,8 @@
 import { Cairo, Geist as GeistSans, Geist_Mono as GeistMono } from "next/font/google"
 import "./globals.css"
 import Navbar from "./components/Header/Navbar"
+import Footer from "./components/Footer/Footer"
+import { NavigationMenuDemo } from "./components/Header/MainNavbar"
 
 const geistSans = GeistSans({
   variable: "--font-geist-sans",
@@ -27,8 +29,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <body className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}>
-        <Navbar />
+       <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )

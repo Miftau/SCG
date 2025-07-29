@@ -9,7 +9,7 @@ const BankTransfer = () => {
     {
       id: 1,
       name: " ايبان",
-      image: "/scg/images/bank2.png",
+      image: "/images/bank2.png",
       description:
         "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
       moreInfo: "المزيد",
@@ -17,7 +17,7 @@ const BankTransfer = () => {
     {
       id: 2,
       name: "فوري",
-      image: "/scg/images/bank3.png",
+      image: "/images/bank3.png",
       description:
         "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
       moreInfo: "المزيد",
@@ -25,7 +25,7 @@ const BankTransfer = () => {
     {
       id: 3,
       name: "بنكك",
-      image: "/scg/images/bank4.png",
+      image: "/images/bank4.png",
       description:
         "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
       moreInfo: "المزيد",
@@ -33,7 +33,7 @@ const BankTransfer = () => {
     {
       id: 4,
       name: "اوو - كاش",
-      image: "/scg/images/bank1.png",
+      image: "/images/bank1.png",
       description:
         "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
       moreInfo: "المزيد",

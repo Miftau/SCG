@@ -10,7 +10,7 @@ const StrongSecurity = () => {
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Shield */}
         <img
-          src="/scg/images/Group 3094.png"
+          src="/images/Group 3094.png"
           alt="Security Shield"
           width={800}
           height={800}

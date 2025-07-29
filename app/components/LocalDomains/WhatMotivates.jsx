@@ -8,7 +8,7 @@ const WhatMotivates = () => {
         {/* Left Column: Illustration */}
         <div className="flex justify-center md:order-1">
           <img
-            src="/scg/images/why-register-ly1.png"
+            src="/images/why-register-ly1.png"
             width={600}
             height={400}
             alt="Domain illustration"

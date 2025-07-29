@@ -12,7 +12,7 @@ const Asks = () => {
             {/* الكارت الأول */}
             <div className="bg-white flex flex-col justify-center items-center md:items-start gap-y-4 p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
               <img
-                src="/scg/images/Group228.png"
+                src="/images/Group228.png"
                 alt="Asks Icon"
                 width={50}
                 height={50}
@@ -23,7 +23,7 @@ const Asks = () => {
             {/* الكارت الثاني */}
             <div className="bg-white flex flex-col justify-center items-center md:items-start gap-y-4 p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
               <img
-                src="/scg/images/download 1.png"
+                src="/images/download 1.png"
                 alt="Asks Icon"
                 width={50}
                 height={50}

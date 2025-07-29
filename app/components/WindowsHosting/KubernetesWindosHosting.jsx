@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 const KubernetesWindosHosting = () => {
   const locations = [
     {
-      skylineSrc: "/scg/images/Group 3275.png",
+      skylineSrc: "/images/Group 3275.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:
         "قم بتكوين المجموعات الخاصة بك وإدارتها ونشرها بسرعة في خطوات بسيطة وبدون وقت يُذكر..",
     },
     {
-      skylineSrc: "/scg/images/Group 3274.png",
+      skylineSrc: "/images/Group 3274.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:
         "قم بتكوين المجموعات الخاصة بك وإدارتها ونشرها بسرعة في خطوات بسيطة وبدون وقت يُذكر.",
     },
     {
-      skylineSrc: "/scg/images/Group3277.png",
+      skylineSrc: "/images/Group3277.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:

@@ -26,7 +26,7 @@ const MainFeature = () => {
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
             <img
-              src="/scg/images/Layer3.png"
+              src="/images/Layer3.png"
               alt="Cloud Servers"
               fill
               className="object-contain"
@@ -36,7 +36,7 @@ const MainFeature = () => {
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
             <img
-              src="/scg/images/9d73dec4c85f02c04b8b670a9a50329be6156ae1.png"
+              src="/images/9d73dec4c85f02c04b8b670a9a50329be6156ae1.png"
               alt="Cloud Servers"
               fill
               className="object-contain"
@@ -46,7 +46,7 @@ const MainFeature = () => {
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-24 h-24 relative">
             <img
-              src="/scg/images/linux-feat1.png"
+              src="/images/linux-feat1.png"
               alt="Cloud Servers"
               fill
               className="object-contain"
@@ -56,7 +56,7 @@ const MainFeature = () => {
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
             <img
-              src="/scg/images/cpanel.png"
+              src="/images/cpanel.png"
               alt="Cloud Servers"
               fill
               className="object-contain"
@@ -66,7 +66,7 @@ const MainFeature = () => {
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
             <img
-              src="/scg/images/Group 2368.png"
+              src="/images/Group 2368.png"
               alt="Cloud Servers"
               fill
               className="object-contain"
@@ -76,7 +76,7 @@ const MainFeature = () => {
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
             <img
-              src="/scg/images/Group 2653.png"
+              src="/images/Group 2653.png"
               alt="Cloud Servers"
               fill
               className="object-contain"
@@ -87,7 +87,7 @@ const MainFeature = () => {
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
             <img
-              src="/scg/images/cpanel.png"
+              src="/images/cpanel.png"
               alt="Cloud Servers"
               fill
               className="object-contain"
@@ -97,7 +97,7 @@ const MainFeature = () => {
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
             <img
-              src="/scg/images/Group 2368.png"
+              src="/images/Group 2368.png"
               alt="Cloud Servers"
               fill
               className="object-contain"
@@ -107,7 +107,7 @@ const MainFeature = () => {
         <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
           <div className="w-20 h-20 relative">
             <img
-              src="/scg/images/Group 2653.png"
+              src="/images/Group 2653.png"
               alt="Cloud Servers"
               fill
               className="object-contain"

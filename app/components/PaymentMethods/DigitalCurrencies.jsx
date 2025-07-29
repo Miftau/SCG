@@ -24,7 +24,7 @@ const DigitalCurrencies = () => {
       >
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
           <img
-            src="/scg/images/digitalcurrencies.png"
+            src="/images/digitalcurrencies.png"
             alt="Online Payment"
             width={150}
             height={150}
@@ -33,7 +33,7 @@ const DigitalCurrencies = () => {
         </div>
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
           <img
-            src="/scg/images/digitalcurrencies1.png"
+            src="/images/digitalcurrencies1.png"
             alt="Online Payment"
             width={150}
             height={150}
@@ -42,7 +42,7 @@ const DigitalCurrencies = () => {
         </div>
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
           <img
-            src="/scg/images/digitalcurrencies2.png"
+            src="/images/digitalcurrencies2.png"
             alt="Online Payment"
             height={150}
             width={150}
@@ -51,7 +51,7 @@ const DigitalCurrencies = () => {
         </div>
         <div className="w-[200px] h-[200px] flex items-center justify-center bg-white p-8 rounded-lg shadow-md  hover:shadow-xl transition-shadow duration-300 ">
           <img
-            src="/scg/images/digitalcurrencies3.png"
+            src="/images/digitalcurrencies3.png"
             alt="Online Payment"
             height={150}
             width={150}

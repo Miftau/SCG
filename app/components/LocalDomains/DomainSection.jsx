@@ -6,7 +6,7 @@ const DomainSection = ({ title, description }) => {
       <div className="relative">
         {/* الخلفية */}
         <img
-          src="/scg/images/Mask Group 26.png"
+          src="/images/Mask Group 26.png"
           alt="Online Payment"
           className="object-contain w-full"
         />
@@ -14,7 +14,7 @@ const DomainSection = ({ title, description }) => {
         {/* المحتوى في المنتصف */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center max-w-xl px-4">
           <img
-            src="/scg/images/number-1-register-libyan-spider-ly 1.png"
+            src="/images/number-1-register-libyan-spider-ly 1.png"
             alt="Online Payment"
             className="mx-auto mb-4"
           />

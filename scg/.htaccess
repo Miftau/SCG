@@ -1,0 +1,10 @@
+# احذف www أو خليه حسب رغبتك
+RewriteEngine On
+Options -Indexes
+
+# دعم HTML5 routes
+RewriteBase /scg/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [L]

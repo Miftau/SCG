@@ -3,27 +3,30 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { NavigationMenuDemo } from "../Header/MainNavbar";
 
 const HeroSection = ({
   title,
   description,
   primaryButtonText,
   secondaryButtonText,
-  imageSrc,
+  imagesrc,
   imageAlt,
 }) => {
   return (
-    <div className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] flex flex-col  items-center">
+    <div className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px]  flex flex-col  items-center">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src={imageSrc }
+          src={imagesrc}
           alt={imageAlt}
-        
+
           className="w-full h-full object-cover"
         />
       </div>
       {/* Content above image */}
+      <NavigationMenuDemo />
+
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{

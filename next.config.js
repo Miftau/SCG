@@ -1,11 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",
-  basePath: "/scg",
-  assetPrefix: "/scg",
-  images: {
-    unoptimized: true,
-  },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   output: "export",
+//   basePath: "",
+//   assetPrefix: "",
+//   images: {
+//     unoptimized: true,
+//   },
+// };
+
+// module.exports = nextConfig;

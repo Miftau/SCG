@@ -10,7 +10,7 @@ const ECommercePlatforms = () => {
   const platforms = [
     {
       id: 1,
-      imageSrc: "/scg/images/Layer2.png",
+      imageSrc: "/images/Layer2.png",
       title: "Magento Cluster",
       description:
         "مجموعة Magento قابلة للتطوير التلقائي وذات توفرية عالية مع موازنة التحميل وتكرار البيانات والتخزين المؤقت للمحتوى وتخزين جلسة المستخدم.",
@@ -19,7 +19,7 @@ const ECommercePlatforms = () => {
     },
     {
       id: 2,
-      imageSrc: "/scg/images/Layer2.png",
+      imageSrc: "/images/Layer2.png",
       title: "Magento",
       description:
         "Magento هو برنامج ومنصة للتجارة الإلكترونية موثوق به من قبل العلامات التجارية الرائدة في العالم. طور عملك التجاري على الإنترنت مع Magento!",
@@ -28,7 +28,7 @@ const ECommercePlatforms = () => {
     },
     {
       id: 3,
-      imageSrc: "/scg/images/download20.png",
+      imageSrc: "/images/download20.png",
       title: "Cyclos 4 Pro",
       description: "Cyclos 4 PRO عبارة عن منصة دفع للشركات والمؤسسات الكبرى.",
       linkText: "اطلق الان",
@@ -36,7 +36,7 @@ const ECommercePlatforms = () => {
     },
     {
       id: 4,
-      imageSrc: "/scg/images/download23.png",
+      imageSrc: "/images/download23.png",
       title: "Maian Cart",
       description:
         "Maian Cart عبارة عن منصة تجارة إلكترونية سريعة وقوية ومجانية تم إنشاؤها باستخدام PHP و MySQL والتي تحتوي على جميع الميزات التي تحتاجها لتشغيل متجرك عبر الإنترنت.",
@@ -45,7 +45,7 @@ const ECommercePlatforms = () => {
     },
     {
       id: 5,
-      imageSrc: "/scg/images/download22.png",
+      imageSrc: "/images/download22.png",
       title: "OpenCart",
       description:
         "OpenCart هو نظام تسوق عبر الإنترنت مفتوح المصدر يعتمد على PHP.",
@@ -54,7 +54,7 @@ const ECommercePlatforms = () => {
     },
     {
       id: 6,
-      imageSrc: "/scg/images/download21.png",
+      imageSrc: "/images/download21.png",
       title: "PrestShop",
       description:
         "PrestaShop هو حل مفتوح المصدر وقابل للتخصيص تمامًا لبيع المنتجات عبر الإنترنت، وهو فعال وسريع وسهل الاستخدام.",

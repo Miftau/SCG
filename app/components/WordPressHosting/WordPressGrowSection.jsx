@@ -5,21 +5,21 @@ const WordPressGrowSection = () => {
 
     const locations = [
     {
-      skylineSrc: "/scg/images/Group 3275.png",
+      skylineSrc: "/images/Group 3275.png",
       skylineAlt: "Cloud Services Skyline",
       title: "حظر البريد الإلكتروني غير المصرح به",
       descrption:
         "ارفع سرعة موقعك مع إضافة لايت اسبيد كاش الأفضل على الاطلاق. أنشئ نسخ احتياطية (backups) لموقعك بضغطة زر.",
     },
     {
-      skylineSrc: "/scg/images/Group 3274.png",
+      skylineSrc: "/images/Group 3274.png",
       skylineAlt: "Cloud Services Skyline",
       title: "تصفح وتنصيب وإدارة المكونات الإضافية",
       descrption:
         "نوفر لك امكانية تثبيت المكونات الإضافية على ووردبريس وإدارتها دون الحاجة لمغادرة لوحة تحكم المستخدم الخاصة بك.",
     },
     {
-      skylineSrc: "/scg/images/Group3277.png",
+      skylineSrc: "/images/Group3277.png",
       skylineAlt: "Cloud Services Skyline",
       title: "لتحكم الكامل في إدارة ووردبريس",
       descrption:

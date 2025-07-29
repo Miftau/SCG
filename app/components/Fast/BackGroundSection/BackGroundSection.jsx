@@ -18,7 +18,7 @@ const BackGroundSection = () => {
       {/* الصورة في النص */}
       <div className="relative z-10 w-[90%] max-w-[900px] aspect-[900/907]">
         <img
-          src="/scg/images/Group19550.svg"
+          src="/images/Group19550.svg"
           alt="Center Illustration"
           fill
           className="object-contain"
