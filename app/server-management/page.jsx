@@ -10,10 +10,9 @@ const ServerManagement = () => {
   return (
     <div className="overflow-x-hidden">
       <HeroSection
-        title="الاستضافات المشتركة"
-        description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
-        primaryButtonText="انشاء حساب"
-        secondaryButtonText="عرض الاسعار"
+        title="إدارة الخوادم"
+        description="دعنا ندير جميع خوادمك من أجلك!"
+        primaryButtonText="تسجيل الان"
         imagesrc="/images/Group4027.png"
         imageAlt="Hero Background"
       />

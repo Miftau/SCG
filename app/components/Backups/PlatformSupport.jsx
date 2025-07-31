@@ -58,7 +58,7 @@ const PlatformSupport = () => {
               <img
                 src={platform.image}
                 alt={platform.name}
-                fill
+                
                 className="object-contain"
               />
             </div>

@@ -28,7 +28,7 @@ const MainFeature = () => {
             <img
               src="/images/Layer3.png"
               alt="Cloud Servers"
-              fill
+              
               className="object-contain"
             />
           </div>
@@ -38,7 +38,7 @@ const MainFeature = () => {
             <img
               src="/images/9d73dec4c85f02c04b8b670a9a50329be6156ae1.png"
               alt="Cloud Servers"
-              fill
+              
               className="object-contain"
             />
           </div>
@@ -48,7 +48,7 @@ const MainFeature = () => {
             <img
               src="/images/linux-feat1.png"
               alt="Cloud Servers"
-              fill
+              
               className="object-contain"
             />
           </div>
@@ -58,7 +58,7 @@ const MainFeature = () => {
             <img
               src="/images/cpanel.png"
               alt="Cloud Servers"
-              fill
+              
               className="object-contain"
             />
           </div>
@@ -68,7 +68,7 @@ const MainFeature = () => {
             <img
               src="/images/Group 2368.png"
               alt="Cloud Servers"
-              fill
+              
               className="object-contain"
             />
           </div>
@@ -78,7 +78,7 @@ const MainFeature = () => {
             <img
               src="/images/Group 2653.png"
               alt="Cloud Servers"
-              fill
+              
               className="object-contain"
             />
           </div>
@@ -89,7 +89,7 @@ const MainFeature = () => {
             <img
               src="/images/cpanel.png"
               alt="Cloud Servers"
-              fill
+              
               className="object-contain"
             />
           </div>
@@ -99,7 +99,7 @@ const MainFeature = () => {
             <img
               src="/images/Group 2368.png"
               alt="Cloud Servers"
-              fill
+              
               className="object-contain"
             />
           </div>
@@ -109,7 +109,7 @@ const MainFeature = () => {
             <img
               src="/images/Group 2653.png"
               alt="Cloud Servers"
-              fill
+              
               className="object-contain"
             />
           </div>

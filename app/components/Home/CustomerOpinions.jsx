@@ -42,7 +42,7 @@ const testimonials = [
 
 const CustomerOpinions = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="">
       {/* Customer Reviews Section */}
       <section className="py-16 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-16">

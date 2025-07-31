@@ -64,7 +64,7 @@ const ElectronicWallets = () => {
               <img
                 src={item.image}
                 alt={item.name}
-                fill
+          
                 className="object-contain"
               />
             </div>
