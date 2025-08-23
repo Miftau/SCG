@@ -14,19 +14,19 @@ const Navbar = () => {
   return (
     <header className="w-full bg-white border-b border-gray-200">
       <div className="container mx-auto px-4">
-        {/* Flex wrapper that stacks on small screens */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between h-auto sm:h-12 py-2 sm:py-0 text-xs sm:text-sm text-gray-600 gap-2 sm:gap-0">
+        {/* Flex wrapper - always horizontal, but wraps on small screens */}
+        <div className="flex flex-wrap items-center justify-between h-auto py-2 sm:py-0 text-xs sm:text-sm text-gray-600 gap-2 sm:gap-0">
 
           {/* Left side - Contact info */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             {/* Phone */}
             <div className="flex items-center gap-1 sm:gap-2">
               <Phone className="w-4 h-4" />
               <span>+880181239633</span>
             </div>
 
-            {/* Divider (hidden on mobile) */}
-            <span className="hidden sm:inline text-gray-300">|</span>
+            {/* Divider */}
+            <span className="text-gray-300 hidden xs:inline">|</span>
 
             {/* Email */}
             <div className="flex items-center gap-1 sm:gap-2">
@@ -38,10 +38,10 @@ const Navbar = () => {
           {/* Right side - Country + Auth */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-6">
             {/* Country Selector */}
-            <div className="flex items-center gap-2 cursor-pointer w-full xs:w-auto sm:w-auto">
+            <div className="flex items-center gap-2 cursor-pointer">
               <Globe className="w-4 h-4" />
               <Select defaultValue="turkey">
-                <SelectTrigger className="w-[120px] h-8 text-xs sm:text-sm">
+                <SelectTrigger className="w-[110px] sm:w-[120px] h-8 text-xs sm:text-sm">
                   <SelectValue placeholder="Select country" />
                 </SelectTrigger>
                 <SelectContent>

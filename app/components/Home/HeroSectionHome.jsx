@@ -1,26 +1,39 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { NavigationMenuDemo } from "../Header/MainNavbar";
 
 const HeroSectionHome = () => {
   return (
-    <div className="relative w-full min-h-screen bg-[#092346]">
-      {/* Background image */}
-        <div className="absolute inset-0">
-          <motion.div
-            initial={{ opacity: 0, y: 300 }}
-            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }}
-            className="w-full h-full relative"
-          >
-            {/* Background image */}
-            <img src="/images/groupHero-Bt0B6L23.svg" className="absolute inset-0 w-full h-full object-cover" />
-
-          </motion.div>
-        </div>
+    <div className="relative w-full min-h-[100svh] bg-[#092346] overflow-hidden">
+      {/* Responsive Background image */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <motion.div
+          initial={{ opacity: 0, y: 300 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5, ease: "easeOut" },
+          }}
+          className="relative w-full h-full"
+        >
+          <Image
+            src="/images/groupHero-Bt0B6L23.svg"
+            alt="Hero background"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+        </motion.div>
+      </div>
 
       {/* Content over background */}
-         <NavigationMenuDemo />
-      <div className="relative z-10 text-white flex flex-col items-center justify-center h-screen">
+      <div className="relative z-20">
+        <NavigationMenuDemo />
+      </div>
+
+      <div className="relative z-10 text-white flex flex-col items-center justify-center min-h-[100svh]">
         <div className="w-full max-w-4xl flex flex-col items-center justify-center px-4 text-center">
           <p className="text-3xl sm:text-4xl md:text-7xl font-extrabold text-[#3684FF]">
             حلول
@@ -28,11 +41,12 @@ const HeroSectionHome = () => {
           <p className="text-lg sm:text-xl md:text-4xl font-bold pt-4 sm:pt-6 md:pt-8">
             استضفات الويب المثالية
           </p>
-          <p className="text-lg sm:text-xs md:text-sm  pt-2 sm:pt-4 ">
+          <p className="text-lg sm:text-xs md:text-sm pt-2 sm:pt-4">
             شركة العنكبوت الليبي هي الشركة الرائدة في تقديم حلول التكنولوجيا
             <br />
             والخدمات السحابية في ليبيا.
           </p>
+
           {/* Search box */}
           <div className="w-full mt-8 sm:mt-12">
             <div className="relative flex items-center bg-white rounded-full overflow-hidden w-full max-w-[600px] mx-auto">
@@ -40,23 +54,24 @@ const HeroSectionHome = () => {
                 type="text"
                 placeholder="بحث عن نطاق جديد"
                 className="w-full px-4 py-4 text-gray-500 focus:outline-none bg-white rounded-r-full text-right placeholder:text-gray-400 text-sm sm:text-base"
-                suppressHydrationWarning={true} // Added to suppress hydration warning
+                suppressHydrationWarning={true}
               />
               <button
                 className="absolute left-2 sm:left-4 bg-[#3684FF] text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 font-bold rounded-full hover:bg-blue-600 transition-colors duration-300 text-sm sm:text-base"
-                suppressHydrationWarning={true} // Added to suppress hydration warning
+                suppressHydrationWarning={true}
               >
                 ابحث
               </button>
             </div>
           </div>
+
+          {/* Logos */}
           <div className="flex gap-4 mt-8">
             <img
               src="/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
               alt="Center Illustration"
               width={50}
               height={50}
-              quality={100}
               className="object-contain"
             />
             <img
