@@ -1,16 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { useState } from 'react';
 
-module.exports = nextConfig;
 
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   output: "export",
-//   basePath: "",
-//   assetPrefix: "",
-//   images: {
-//     unoptimized: true,
-//   },
-// };
-
-// module.exports = nextConfig;
+const nextConfig = {
+  /* config options here */
+  images: {
+    unoptimized: true,
+  },
+}
+export default nextConfig;

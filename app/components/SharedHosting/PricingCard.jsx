@@ -1,16 +1,74 @@
-"use client";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-const PricingCard = () => {
-  const pricingPlans = [
-    {
-      planName: "P2-HOST",
-      price: "91.30",
-      currency: "د.ل",
-      originalPrice: "120",
-      discountText: "تخفيض 30%",
-      buttonText: "اطلب الان",
+'use client';
+import React from "react";
+
+const PricingCard = ({ plan, index }) => {
+  const getPlanColor = () => {
+    switch (index) {
+      case 0: return { border: 'border-yellow-400', topBar: 'bg-yellow-400' };
+      case 1: return { border: 'border-gray-300', topBar: 'bg-gray-300' };
+      case 2: return { border: 'border-blue-400', topBar: 'bg-blue-400' };
+      default: return { border: 'border-gray-300', topBar: 'bg-gray-300' };
+    }
+  };
+
+  const colors = getPlanColor();
+
+  return (
+    <div className={`rounded-xl shadow-lg border ${colors.border} relative transform hover:scale-105 transition-transform duration-300`}>
+      {index === 0 && (
+        <div className="absolute top-0 left-0 right-0 h-3 bg-yellow-400 rounded-t-xl"></div>
+      )}
+      {index === 1 && (
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gray-300 rounded-t-xl"></div>
+      )}
+      {index === 2 && (
+        <div className="absolute top-0 left-0 right-0 h-3 bg-blue-400 rounded-t-xl"></div>
+      )}
+      
+      <div className="p-6 sm:p-8">
+        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">{plan.name}</h3>
+        <div className="flex items-baseline mb-6">
+          <span className="text-4xl sm:text-5xl font-bold text-gray-800">{plan.price}</span>
+          <span className="text-gray-500 ml-1 text-sm">د.ل.</span>
+          <span className="text-xs text-gray-500 ml-2 line-through">{plan.originalPrice} د.ل</span>
+          <span className="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded ml-2">{plan.discount}</span>
+        </div>
+        
+        <button className="w-full bg-[#2B1F51] text-white py-3 rounded-lg hover:bg-[#2B1F51]/90 transition-colors duration-300 text-sm sm:text-base font-medium">
+          اطلب الان
+        </button>
+        
+        <ul className="space-y-3 mt-6">
+          {plan.features.map((feature, i) => (
+            <li key={i} className="text-sm text-gray-600 flex items-center">
+              <svg className="h-4 w-4 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      <div className="px-6 sm:px-8 pb-8">
+        <button className="text-gray-500 text-sm hover:text-[#2B1F51] transition-colors duration-300 inline-flex items-center">
+          <svg className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+          compare packages
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const PricingSection = () => {
+  const plans = [
+    { 
+      name: "P2-HOST", 
+      price: "91.30", 
+      originalPrice: "120", 
+      discount: "30%", 
       features: [
         "60GB NVMe Storage",
         "15 Website (s)",
@@ -21,18 +79,14 @@ const PricingCard = () => {
         "Unlimited MySQL & SQL Databases",
         "Unlimited Email Account",
         "Unlimited FTP Accounts",
-        "Dedicated Name Server(ns1,ns2)",
-      ],
-      compareLinkText: "compare packages",
-      borderColorClass: "border-t-yellow-400",
+        "Dedicated Name Server(ns1,ns2)"
+      ] 
     },
-    {
-      planName: "P2-HOST",
-      price: "91.30",
-      currency: "د.ل",
-      originalPrice: "120",
-      discountText: "تخفيض 30%",
-      buttonText: "اطلب الان",
+    { 
+      name: "P2-HOST", 
+      price: "91.30", 
+      originalPrice: "120", 
+      discount: "30%", 
       features: [
         "60GB NVMe Storage",
         "15 Website (s)",
@@ -43,18 +97,14 @@ const PricingCard = () => {
         "Unlimited MySQL & SQL Databases",
         "Unlimited Email Account",
         "Unlimited FTP Accounts",
-        "Dedicated Name Server(ns1,ns2)",
-      ],
-      compareLinkText: "compare packages",
-      borderColorClass: "border-t-gray-300",
+        "Dedicated Name Server(ns1,ns2)"
+      ] 
     },
-    {
-      planName: "P2-HOST",
-      price: "91.30",
-      currency: "د.ل",
-      originalPrice: "120",
-      discountText: "تخفيض 30%",
-      buttonText: "اطلب الان",
+    { 
+      name: "P2-HOST", 
+      price: "91.30", 
+      originalPrice: "120", 
+      discount: "30%", 
       features: [
         "60GB NVMe Storage",
         "15 Website (s)",
@@ -65,75 +115,22 @@ const PricingCard = () => {
         "Unlimited MySQL & SQL Databases",
         "Unlimited Email Account",
         "Unlimited FTP Accounts",
-        "Dedicated Name Server(ns1,ns2)",
-      ],
-      compareLinkText: "compare packages",
-      borderColorClass: "border-t-blue-500",
-    },
+        "Dedicated Name Server(ns1,ns2)"
+      ] 
+    }
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-      <div className="container px-4 md:px-6">
-        <div className="mb-12 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">
-            اختار الخطط
-          </h2>
+    /* Pricing Section */
+    <section className="py-12 sm:py-16 lg:py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#2B1F51] mb-4">اختر الخط</h2>
         </div>
-        <div className="grid gap-6 md:grid-cols-3 lg:gap-8">
-          {pricingPlans.map((plan, index) => (
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.4, ease: "easeOut" },
-              }}
-              key={index}
-              className={`relative flex flex-col items-center rounded-lg border bg-white p-6 shadow-md ${plan.borderColorClass} border-t-8`}
-            >
-              <div className="mb-4 text-center">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {plan.planName}
-                </h3>
-                <div className="mt-2 flex items-baseline justify-center">
-                  <span className="text-5xl font-bold text-gray-900">
-                    {plan.price}
-                  </span>
-                  <span className="mx-2 text-2xl font-medium text-gray-600">
-                    {plan.currency}
-                  </span>
-                </div>
-                <div className="mt-1 text-sm text-gray-500">
-                  <span className="line-through">
-                    {plan.originalPrice} {plan.currency}
-                  </span>
-                  <span className="mx-4 rounded-md bg-pink-100 px-4 py-0.5 text-xs font-medium text-pink-600">
-                    {plan.discountText}
-                  </span>
-                </div>
-              </div>
-              <Button className="mb-6 w-full bg-[#4a327a] text-white hover:bg-[#4a327a]/90">
-                {plan.buttonText}
-              </Button>
-              <ul className="mb-6 w-full space-y-3 text-center text-gray-700">
-                {plan.features.map((feature, featureIndex) => (
-                  <li
-                    key={featureIndex}
-                    className={
-                      featureIndex === plan.features.length - 1
-                        ? "text-sm"
-                        : "font-bold"
-                    }
-                  >
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              <Link href="#" className="text-sm text-gray-600 hover:underline">
-                {plan.compareLinkText}
-              </Link>
-            </motion.div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
+          {plans.map((plan, index) => (
+            <PricingCard key={index} plan={plan} index={index} />
           ))}
         </div>
       </div>
@@ -141,4 +138,4 @@ const PricingCard = () => {
   );
 };
 
-export default PricingCard;
+export default PricingSection;

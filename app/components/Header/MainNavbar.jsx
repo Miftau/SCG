@@ -11,10 +11,9 @@ import {
 
 export function NavigationMenuDemo() {
     return (
-        <div className=" w-full px-8">
-            <div className="flex items-center justify-between  gap-8">
-
-                <NavigationMenu className="relative z-50 text-white">
+        <div className="w-full px-8">
+            <div className="flex items-center justify-between gap-8">
+                <NavigationMenu className="relative z-90 text-white">
                     <NavigationMenuList>
                         <NavigationMenuItem>
                             <NavigationMenuTrigger className="text-white hover:text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0">
@@ -22,12 +21,14 @@ export function NavigationMenuDemo() {
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <div className="grid gap-3 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-2">
-                                    <Link href="/security" className="space-y-3">
-                                        <h4 className="font-medium leading-none">الأمان</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            ميزات أمان متطورة لحماية بياناتك ومواقعك الإلكترونية.
-                                        </p>
-                                    </Link>
+                                    <NavigationMenuLink asChild>
+                                        <Link href="/security" className="space-y-3">
+                                            <h4 className="font-medium leading-none">الأمان</h4>
+                                            <p className="text-sm text-muted-foreground">
+                                                ميزات أمان متطورة لحماية بياناتك ومواقعك الإلكترونية.
+                                            </p>
+                                        </Link>
+                                    </NavigationMenuLink>
                                     <Link href="/speed" className="space-y-3">
                                         <h4 className="font-medium leading-none">السرعة</h4>
                                         <p className="text-sm text-muted-foreground">حلول استضافة محسنة لضمان أسرع أوقات تحميل.</p>
@@ -64,10 +65,12 @@ export function NavigationMenuDemo() {
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <div className="grid gap-3 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-2">
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">عنا</h4>
-                                        <p className="text-sm text-muted-foreground">تعرف على المزيد عن شركتنا وقيمنا وموقعنا.</p>
-                                    </div>
+                                    <NavigationMenuLink asChild>
+                                        <div className="space-y-3">
+                                            <h4 className="font-medium leading-none">عنا</h4>
+                                            <p className="text-sm text-muted-foreground">تعرف على المزيد عن شركتنا وقيمنا وموقعنا.</p>
+                                        </div>
+                                    </NavigationMenuLink>
                                     <div className="space-y-3">
                                         <h4 className="font-medium leading-none">اتصل بنا</h4>
                                         <p className="text-sm text-muted-foreground">تواصل مع فريقنا لأي استفسارات أو دعم.</p>
@@ -102,10 +105,12 @@ export function NavigationMenuDemo() {
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <div className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
-                                    <Link href="/eg" className="space-y-3">
-                                        <h4 className="font-medium leading-none">تسجيل النطاقات</h4>
-                                        <p className="text-sm text-muted-foreground">سجل نطاقات جديدة أو قم بنقل نطاقاتك الحالية بسهولة.</p>
-                                    </Link>
+                                    <NavigationMenuLink asChild>
+                                        <Link href="/eg" className="space-y-3">
+                                            <h4 className="font-medium leading-none">تسجيل النطاقات</h4>
+                                            <p className="text-sm text-muted-foreground">سجل نطاقات جديدة أو قم بنقل نطاقاتك الحالية بسهولة.</p>
+                                        </Link>
+                                    </NavigationMenuLink>
                                     <Link href="/eg" className="space-y-3">
                                         <h4 className="font-medium leading-none">النطاقات المحلية</h4>
                                         <p className="text-sm text-muted-foreground">احصل على امتدادات نطاقات محلية لمنطقتك أي بلدك.</p>
@@ -140,10 +145,12 @@ export function NavigationMenuDemo() {
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <div className="grid gap-3 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-3">
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">خوادم VPS</h4>
-                                        <p className="text-sm text-muted-foreground">خوادم افتراضية خاصة مع موارد مخصصة لمشاريعك.</p>
-                                    </div>
+                                    <NavigationMenuLink asChild>
+                                        <div className="space-y-3">
+                                            <h4 className="font-medium leading-none">خوادم VPS</h4>
+                                            <p className="text-sm text-muted-foreground">خوادم افتراضية خاصة مع موارد مخصصة لمشاريعك.</p>
+                                        </div>
+                                    </NavigationMenuLink>
                                     <Link href="/cloud-servers" className="space-y-3">
                                         <h4 className="font-medium leading-none">الخوادم السحابية</h4>
                                         <p className="text-sm text-muted-foreground">خوادم سحابية مرنة وقابلة للتوسع لأي نوع من الأعمال.</p>
@@ -176,10 +183,12 @@ export function NavigationMenuDemo() {
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <div className="grid gap-3 p-6 md:w-[300px] lg:w-[400px] lg:grid-cols-2">
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">الموزع العادي</h4>
-                                        <p className="text-sm text-muted-foreground">خطة استضافة أساسية للموزعين لبدء عملياتهم.</p>
-                                    </div>
+                                    <NavigationMenuLink asChild>
+                                        <div className="space-y-3">
+                                            <h4 className="font-medium leading-none">الموزع العادي</h4>
+                                            <p className="text-sm text-muted-foreground">خطة استضافة أساسية للموزعين لبدء عملياتهم.</p>
+                                        </div>
+                                    </NavigationMenuLink>
                                     <div className="space-y-3">
                                         <h4 className="font-medium leading-none">الموزع للبيس</h4>
                                         <p className="text-sm text-muted-foreground">ميزات محسنة لشبكات الموزعين المتنامية.</p>
@@ -197,18 +206,19 @@ export function NavigationMenuDemo() {
                         </NavigationMenuItem>
 
                         <NavigationMenuItem>
-                            <NavigationMenuTrigger
-                             className="text-white hover:!text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0">
+                            <NavigationMenuTrigger className="text-white hover:text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0">
                                 الاستضافات
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <div className="grid gap-3 p-6 md:w-[400px] lg:w-[700px] lg:grid-cols-3">
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">الاستضافات المشاركة</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            استضافة مرنة ومناسبة من حيث التكلفة للشركات الصغيرة والمواقع الشخصية.
-                                        </p>
-                                    </div>
+                                    <NavigationMenuLink asChild>
+                                        <div className="space-y-3">
+                                            <h4 className="font-medium leading-none">الاستضافات المشاركة</h4>
+                                            <p className="text-sm text-muted-foreground">
+                                                استضافة مرنة ومناسبة من حيث التكلفة للشركات الصغيرة والمواقع الشخصية.
+                                            </p>
+                                        </div>
+                                    </NavigationMenuLink>
                                     <Link href="/shared-hosting" className="space-y-3">
                                         <h4 className="font-medium leading-none">الاستضافة السحابية</h4>
                                         <p className="text-sm text-muted-foreground">حلول استضافة قابلة للتوسع نمو مع احتياجات عملك.</p>
@@ -278,12 +288,7 @@ export function NavigationMenuDemo() {
     )
 }
 
-function ListItem({
-    title,
-    children,
-    href,
-    ...props
-}) {
+function ListItem({ title, children, href, ...props }) {
     return (
         <li {...props}>
             <NavigationMenuLink asChild>

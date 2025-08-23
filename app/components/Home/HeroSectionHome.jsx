@@ -6,18 +6,18 @@ const HeroSectionHome = () => {
   return (
     <div className="relative w-full min-h-screen bg-[#092346]">
       {/* Background image */}
-      <div className="absolute inset-0">
-        <motion.div
-          initial={{ opacity: 0, y: 300 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.5, ease: "easeOut" },
-          }}
-          className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/groupHero-Bt0B6L23.svg')" }}
-        ></motion.div>
-      </div>
+        <div className="absolute inset-0">
+          <motion.div
+            initial={{ opacity: 0, y: 300 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }}
+            className="w-full h-full relative"
+          >
+            {/* Background image */}
+            <img src="/images/groupHero-Bt0B6L23.svg" className="absolute inset-0 w-full h-full object-cover" />
+
+          </motion.div>
+        </div>
+
       {/* Content over background */}
          <NavigationMenuDemo />
       <div className="relative z-10 text-white flex flex-col items-center justify-center h-screen">

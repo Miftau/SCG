@@ -111,7 +111,7 @@ const ServerLocation = () => {
           <AnimatedCircle key={index} circle={circle} index={index} />
         ))}
       </motion.div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mt-12 text-end">
         {locations.map((location, index) => (
           <motion.div
             key={index}
@@ -121,15 +121,15 @@ const ServerLocation = () => {
               y: 0,
               transition: { duration: 0.4, ease: "easeOut", delay: index * 0.05 }, // Staggered fade-in for location cards
             }}
-            className="flex flex-col items-center sm:flex-row sm:justify-around bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow text-center sm:text-start"
+            className="flex flex-col items-center sm:flex-row sm:justify-around bg-white rounded-lg shadow-md p-4 hover:shadow-xl justify-between transition hover:scale-105 text-center sm:text-start"
           >
             <div className="mb-2 sm:mb-0">
               <img
                 src={location.flag }
                 alt={`${location.name} Flag`} // Descriptive alt text [^1]
-                width={50}
-                height={50}
-                className="rounded-full"
+                width={80}
+                height={80}
+                className="undefined relative before:absolute before:w-16 before:h-2 before:bg-black before:bottom-0 before:left-0 "
               />
             </div>
             <div>
