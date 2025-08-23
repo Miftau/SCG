@@ -28,8 +28,6 @@ const SharedHosting = () => {
       <BeastSection />
       <FeaturesSection/>
       <PartnersGrid/>
-      <ClickSection/>
-      <JoinSection />
       <Asks/>
    
     </div>

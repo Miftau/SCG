@@ -1,305 +1,264 @@
-"use client"
-import Link from "next/link"
-import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+'use client';
+import React, { useState } from 'react';
+import { ChevronDown, ChevronUp, Menu, X } from 'lucide-react';
 
 export function NavigationMenuDemo() {
-    return (
-        <div className="w-full px-8">
-            <div className="flex items-center justify-between gap-8">
-                <NavigationMenu className="relative z-90 text-white">
-                    <NavigationMenuList>
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger className="text-white hover:text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0">
-                                التكنولوجيا
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <div className="grid gap-3 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-2">
-                                    <NavigationMenuLink asChild>
-                                        <Link href="/security" className="space-y-3">
-                                            <h4 className="font-medium leading-none">الأمان</h4>
-                                            <p className="text-sm text-muted-foreground">
-                                                ميزات أمان متطورة لحماية بياناتك ومواقعك الإلكترونية.
-                                            </p>
-                                        </Link>
-                                    </NavigationMenuLink>
-                                    <Link href="/speed" className="space-y-3">
-                                        <h4 className="font-medium leading-none">السرعة</h4>
-                                        <p className="text-sm text-muted-foreground">حلول استضافة محسنة لضمان أسرع أوقات تحميل.</p>
-                                    </Link>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">لوحة التحكم</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            قم بإدارة خدمات الاستضافة الخاصة بك بسهولة باستخدام لوحة التحكم التفاعلية لدينا.
-                                        </p>
-                                    </div>
-                                    <Link href="/data-center" className="space-y-3">
-                                        <h4 className="font-medium leading-none">مراكز البيانات</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            اكتشف مراكز البيانات الحديثة لدينا للبنية التحتية من الدرجة الأولى.
-                                        </p>
-                                    </Link>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">حالة الخوادم</h4>
-                                        <p className="text-sm text-muted-foreground">تحقق من الحالة الحالية ووقت التشغيل لجميع خوادمنا.</p>
-                                    </div>
-                                    <Link href="/backups" className="space-y-3">
-                                        <h4 className="font-medium leading-none">النسخ الاحتياطية</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            تأكد من أن بياناتك آمنة دائماً من خلال خدمات النسخ الاحتياطي المنتظمة.
-                                        </p>
-                                    </Link>
-                                </div>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
+  const [openMenu, setOpenMenu] = useState(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger className="text-white hover:text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0">
-                                الشركة
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <div className="grid gap-3 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-2">
-                                    <NavigationMenuLink asChild>
-                                        <div className="space-y-3">
-                                            <h4 className="font-medium leading-none">عنا</h4>
-                                            <p className="text-sm text-muted-foreground">تعرف على المزيد عن شركتنا وقيمنا وموقعنا.</p>
-                                        </div>
-                                    </NavigationMenuLink>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">اتصل بنا</h4>
-                                        <p className="text-sm text-muted-foreground">تواصل مع فريقنا لأي استفسارات أو دعم.</p>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">الوظائف</h4>
-                                        <p className="text-sm text-muted-foreground">انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.</p>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">مركز الإعلام والأخبار</h4>
-                                        <p className="text-sm text-muted-foreground">ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.</p>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">برنامج الموزعين</h4>
-                                        <p className="text-sm text-muted-foreground">كن موزعاً وابدأ عملك معنا.</p>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">شركائنا</h4>
-                                        <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit</p>
-                                    </div>
-                                    <Link href="/payment-methods" className="space-y-3">
-                                        <h4 className="font-medium leading-none">طرق الدفع</h4>
-                                        <p className="text-sm text-muted-foreground">استكشف جميع خيارات الدفع المتاحة لخدماتنا.</p>
-                                    </Link>
-                                </div>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
+  const menuItems = [
+    {
+      label: 'التكنولوجيا',
+      id: 'technology',
+      items: [
+        { title: 'الأمان', description: 'ميزات أمان متطورة لحماية بياناتك ومواقعك الإلكترونية.', href: '/security' },
+        { title: 'السرعة', description: 'حلول استضافة محسنة لضمان أسرع أوقات تحميل.', href: '/speed' },
+        { title: 'لوحة التحكم', description: 'قم بإدارة خدمات الاستضافة الخاصة بك بسهولة باستخدام لوحة التحكم التفاعلية لدينا.', href: null },
+        { title: 'مراكز البيانات', description: 'اكتشف مراكز البيانات الحديثة لدينا للبنية التحتية من الدرجة الأولى.', href: '/data-center' },
+        { title: 'حالة الخوادم', description: 'تحقق من الحالة الحالية ووقت التشغيل لجميع خوادمنا.', href: null },
+        { title: 'النسخ الاحتياطي', description: 'تأكد من أن بياناتك آمنة دائماً من خلال خدمات النسخ الاحتياطي المنتظمة.', href: '/backups' }
+      ]
+    },
+    {
+      label: 'الشركة',
+      id: 'company',
+      items: [
+        { title: 'عنا', description: 'تعرف على المزيد عن شركتنا وقيمنا وموقعنا.', href: null },
+        { title: 'اتصل بنا', description: 'تواصل مع فريقنا لأي استفسارات أو دعم.', href: null },
+        { title: 'الوظائف', description: 'انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.', href: null },
+        { title: 'مركز الإعلام والأخبار', description: 'ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.', href: null },
+        { title: 'برنامج الموزعين', description: 'كن موزعاً وابدأ عملك معنا.', href: null },
+        { title: 'شركائنا', description: 'Lorem ipsum dolor sit', href: null },
+        { title: 'طرق الدفع', description: 'استكشف جميع خيارات الدفع المتاحة لخدماتنا.', href: '/payment-methods' }
+      ]
+    },
+    {
+      label: 'النطاقات',
+      id: 'domains',
+      items: [
+        { title: 'تسجيل النطاقات', description: 'سجل نطاقات جديدة أو قم بنقل نطاقاتك الحالية بسهولة.', href: '/eg' },
+        { title: 'النطاقات المحلية', description: 'احصل على امتدادات نطاقات محلية لمنطقتك أي بلدك.', href: '/eg' },
+        { title: 'نقل نطاق', description: 'نقل النطاقات بسلاسة من موزعين آخرين.', href: '/eg' },
+        { title: 'whois', description: 'Lorem ipsum dolor sit', href: null },
+        { title: 'شهادات الأمان SSL', description: 'تأكد من تأمين الاتصالات لموقعك الإلكتروني باستخدام شهادات SSL.', href: '/ssl' },
+        { title: 'كلود فلير', description: 'قم بتحسين أمان وأداء موقعك الإلكتروني باستخدام Cloudflare.', href: null }
+      ]
+    },
+    {
+      label: 'الخوادم',
+      id: 'servers',
+      items: [
+        { title: 'خوادم VPS', description: 'خوادم افتراضية خاصة مع موارد مخصصة لمشاريعك.', href: null },
+        { title: 'الخوادم السحابية', description: 'خوادم سحابية مرنة وقابلة للتوسع لأي نوع من الأعمال.', href: '/cloud-servers' },
+        { title: 'الخوادم الكاملة', description: 'خوادم مخصصة مع تحكم كامل في بيئتك.', href: '/server-management' },
+        { title: 'تراخيص الخوادم', description: 'احصل على التراخيص اللازمة لبرنامج الخادم الخاص بك.', href: '/server-licenses' },
+        { title: 'الدعم الفني للخوادم', description: 'احصل على دعم الخبراء لصيانة وإدارة الخوادم.', href: '/server-management' },
+        { title: 'النسخ الاحتياطي', description: 'قم بتأمين بياناتك مع خدمات النسخ الاحتياطي المنتظمة.', href: '/backups' }
+      ]
+    },
+    {
+      label: 'استضافة الموزعين',
+      id: 'resellers',
+      items: [
+        { title: 'الموزع العادي', description: 'خطة استضافة أساسية للموزعين لبدء عملياتهم.', href: null },
+        { title: 'الموزع للبيس', description: 'ميزات محسنة لشبكات الموزعين المتنامية.', href: null },
+        { title: 'برنامج الموزعين', description: 'انضم إلى برنامج الموزعين لدينا وابدأ في الكسب.', href: null },
+        { title: 'الموزع الترا', description: 'استضافة متميزة لعمليات الموزعين على نطاق واسع.', href: null }
+      ]
+    },
+    {
+      label: 'الاستضافات',
+      id: 'hosting',
+      items: [
+        { title: 'الاستضافات المشاركة', description: 'استضافة مرنة ومناسبة من حيث التكلفة للشركات الصغيرة والمواقع الشخصية.', href: null },
+        { title: 'الاستضافة السحابية', description: 'حلول استضافة قابلة للتوسع نمو مع احتياجات عملك.', href: '/shared-hosting' },
+        { title: 'استضافات الووردبريس', description: 'Optimized hosting environment tailored for WordPress websites.', href: '/wordpress-hosting' },
+        { title: 'Softaculous Hosting', description: 'One-click installs for over 400 applications using Softaculous.', href: null },
+        { title: 'استضافات الأعمال', description: 'Professional-grade hosting for growing businesses with high performance.', href: '/business-hosting' },
+        { title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: null },
+        { title: 'استضافات البريد', description: 'Reliable email hosting with custom domains for professional communication.', href: '/mail-hosting' },
+        { title: 'استضافات ويندوز', description: 'Windows-based hosting with support for .NET and other Microsoft technologies.', href: '/windows-hosting' },
+        { title: 'سحابة نمور', description: 'Secure and high-performance cloud hosting for enterprise applications.', href: null }
+      ]
+    }
+  ];
 
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger className="text-white hover:text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0">
-                                النطاقات
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <div className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
-                                    <NavigationMenuLink asChild>
-                                        <Link href="/eg" className="space-y-3">
-                                            <h4 className="font-medium leading-none">تسجيل النطاقات</h4>
-                                            <p className="text-sm text-muted-foreground">سجل نطاقات جديدة أو قم بنقل نطاقاتك الحالية بسهولة.</p>
-                                        </Link>
-                                    </NavigationMenuLink>
-                                    <Link href="/eg" className="space-y-3">
-                                        <h4 className="font-medium leading-none">النطاقات المحلية</h4>
-                                        <p className="text-sm text-muted-foreground">احصل على امتدادات نطاقات محلية لمنطقتك أي بلدك.</p>
-                                    </Link>
-                                    <Link href="/eg" className="space-y-3">
-                                        <h4 className="font-medium leading-none">نقل نطاق</h4>
-                                        <p className="text-sm text-muted-foreground">نقل النطاقات بسلاسة من موزعين آخرين.</p>
-                                    </Link>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">whois</h4>
-                                        <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit</p>
-                                    </div>
-                                    <Link href="/ssl" className="space-y-3">
-                                        <h4 className="font-medium leading-none">شهادات الأمان SSL</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            تأكد من تأمين الاتصالات لموقعك الإلكتروني باستخدام شهادات SSL.
-                                        </p>
-                                    </Link>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">كلود فلير</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            قم بتحسين أمان وأداء موقعك الإلكتروني باستخدام Cloudflare.
-                                        </p>
-                                    </div>
-                                </div>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
+  const toggleMenu = (menuId) => {
+    setOpenMenu(openMenu === menuId ? null : menuId);
+  };
 
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger className="text-white hover:text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0">
-                                الخوادم
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <div className="grid gap-3 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-3">
-                                    <NavigationMenuLink asChild>
-                                        <div className="space-y-3">
-                                            <h4 className="font-medium leading-none">خوادم VPS</h4>
-                                            <p className="text-sm text-muted-foreground">خوادم افتراضية خاصة مع موارد مخصصة لمشاريعك.</p>
-                                        </div>
-                                    </NavigationMenuLink>
-                                    <Link href="/cloud-servers" className="space-y-3">
-                                        <h4 className="font-medium leading-none">الخوادم السحابية</h4>
-                                        <p className="text-sm text-muted-foreground">خوادم سحابية مرنة وقابلة للتوسع لأي نوع من الأعمال.</p>
-                                    </Link>
-                                    <Link href="/server-management" className="space-y-3">
-                                        <h4 className="font-medium leading-none">الخوادم الكاملة</h4>
-                                        <p className="text-sm text-muted-foreground">خوادم مخصصة مع تحكم كامل في بيئتك.</p>
-                                    </Link>
-                                    <Link href="/server-licenses" className="space-y-3">
-                                        <h4 className="font-medium leading-none">تراخيص الخوادم</h4>
-                                        <p className="text-sm text-muted-foreground">احصل على التراخيص اللازمة لبرنامج الخادم الخاص بك.</p>
-                                    </Link>
-                                    <Link href="/server-management" className="space-y-3">
-                                        <h4 className="font-medium leading-none">الدعم الفني للخوادم</h4>
-                                        <p className="text-sm text-muted-foreground">احصل على دعم الخبراء لصيانة وإدارة الخوادم.</p>
-                                    </Link>
-                                    <Link href="/backups" className="space-y-3">
-                                        <h4 className="font-medium leading-none">النسخ الاحتياطي</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            قم بتأمين بياناتك مع خدمات النسخ الاحتياطي المنتظمة.
-                                        </p>
-                                    </Link>
-                                </div>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
+  const closeAllMenus = () => {
+    setOpenMenu(null);
+    setIsMobileMenuOpen(false);
+  };
 
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger className="text-white hover:text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0">
-                                استضافة الموزعين
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <div className="grid gap-3 p-6 md:w-[300px] lg:w-[400px] lg:grid-cols-2">
-                                    <NavigationMenuLink asChild>
-                                        <div className="space-y-3">
-                                            <h4 className="font-medium leading-none">الموزع العادي</h4>
-                                            <p className="text-sm text-muted-foreground">خطة استضافة أساسية للموزعين لبدء عملياتهم.</p>
-                                        </div>
-                                    </NavigationMenuLink>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">الموزع للبيس</h4>
-                                        <p className="text-sm text-muted-foreground">ميزات محسنة لشبكات الموزعين المتنامية.</p>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">برنامج الموزعين</h4>
-                                        <p className="text-sm text-muted-foreground">انضم إلى برنامج الموزعين لدينا وابدأ في الكسب.</p>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">الموزع الترا</h4>
-                                        <p className="text-sm text-muted-foreground">استضافة متميزة لعمليات الموزعين على نطاق واسع.</p>
-                                    </div>
-                                </div>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
-
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger className="text-white hover:text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0">
-                                الاستضافات
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <div className="grid gap-3 p-6 md:w-[400px] lg:w-[700px] lg:grid-cols-3">
-                                    <NavigationMenuLink asChild>
-                                        <div className="space-y-3">
-                                            <h4 className="font-medium leading-none">الاستضافات المشاركة</h4>
-                                            <p className="text-sm text-muted-foreground">
-                                                استضافة مرنة ومناسبة من حيث التكلفة للشركات الصغيرة والمواقع الشخصية.
-                                            </p>
-                                        </div>
-                                    </NavigationMenuLink>
-                                    <Link href="/shared-hosting" className="space-y-3">
-                                        <h4 className="font-medium leading-none">الاستضافة السحابية</h4>
-                                        <p className="text-sm text-muted-foreground">حلول استضافة قابلة للتوسع نمو مع احتياجات عملك.</p>
-                                    </Link>
-                                    <Link href="/wordpress-hosting" className="space-y-3">
-                                        <h4 className="font-medium leading-none">استضافات الووردبريس</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            Optimized hosting environment tailored for WordPress websites.
-                                        </p>
-                                    </Link>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">Softaculous Hosting</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            One-click installs for over 400 applications using Softaculous.
-                                        </p>
-                                    </div>
-                                    <Link href="/business-hosting" className="space-y-3">
-                                        <h4 className="font-medium leading-none">استضافات الأعمال</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            Professional-grade hosting for growing businesses with high performance.
-                                        </p>
-                                    </Link>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">استضافات المبرمجين</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            Advanced hosting solutions with tools and features for developers.
-                                        </p>
-                                    </div>
-                                    <Link href="/mail-hosting" className="space-y-3">
-                                        <h4 className="font-medium leading-none">استضافات البريد</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            Reliable email hosting with custom domains for professional communication.
-                                        </p>
-                                    </Link>
-                                    <Link href="/windows-hosting" className="space-y-3">
-                                        <h4 className="font-medium leading-none">استضافات ويندوز</h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            Windows-based hosting with support for .NET and other Microsoft technologies.
-                                        </p>
-                                    </Link>
-                                    <div className="space-y-3">
-                                        <h4 className="font-medium leading-none">سحابة نمور </h4>
-                                        <p className="text-sm text-muted-foreground">
-                                            Secure and high-performance cloud hosting for enterprise applications.
-                                        </p>
-                                    </div>
-                                </div>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
-
-                        <NavigationMenuItem>
-                            <NavigationMenuLink
-                                asChild
-                                className="text-white hover:text-gray-200 !bg-transparent !shadow-none hover:!bg-transparent focus:!bg-transparent !ring-0"
-                            >
-                                <Link href="/">الرئيسية</Link>
-                            </NavigationMenuLink>
-                        </NavigationMenuItem>
-                    </NavigationMenuList>
-                </NavigationMenu>
-
-                <div className="text-white font-bold text-xl z-50">
-                    <span className="text-blue-400">▼</span> VULTR
-                </div>
+  return (
+    <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
+      {/* Navigation Bar */}
+      <nav className="bg-gray-900 bg-opacity-90 backdrop-blur-sm border-b border-gray-700 sticky top-0 z-50">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <div className="flex items-center space-x-2">
+              <div className="text-white font-bold text-xl md:text-2xl">
+                <span className="text-blue-400">▼</span> VULTR
+              </div>
             </div>
-        </div>
-    )
-}
 
-function ListItem({ title, children, href, ...props }) {
-    return (
-        <li {...props}>
-            <NavigationMenuLink asChild>
-                <Link
-                    href={href}
-                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                    <div className="text-sm font-medium leading-none">{title}</div>
-                    <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">{children}</p>
-                </Link>
-            </NavigationMenuLink>
-        </li>
-    )
+            {/* Desktop Menu */}
+            <div className="hidden md:flex items-center space-x-1">
+              {menuItems.map((menuItem) => (
+                <div key={menuItem.id} className="relative group">
+                  <button
+                    onClick={() => toggleMenu(menuItem.id)}
+                    className="flex items-center space-x-1 px-3 py-2 text-white hover:text-grey-300 transition-all duration-300 bg-transparent border-none cursor-pointer text-sm font-medium rounded-lg hover:bg-blue-900 hover:bg-opacity-20 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                  >
+                    <span>{menuItem.label}</span>
+                    <div className="transition-transform duration-300">
+                      {openMenu === menuItem.id ? (
+                        <ChevronUp className="w-4 h-4" />
+                      ) : (
+                        <ChevronDown className="w-4 h-4" />
+                      )}
+                    </div>
+                  </button>
+
+                  {/* Dropdown Menu */}
+                  {openMenu === menuItem.id && (
+                    <div className="absolute top-full left-0 mt-2 w-80 md:w-96 lg:w-[500px] bg-gray-800 bg-opacity-95 backdrop-blur-sm rounded-xl shadow-2xl border border-gray-700 z-50 overflow-hidden animate-fadeIn">
+                      <div className="p-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                          {menuItem.items.map((item, index) => (
+                            <div
+                              key={index}
+                              className={`p-3 rounded-lg transition-all duration-300 hover:bg-blue-600 hover:bg-opacity-20 cursor-pointer ${
+                                item.href ? 'hover:scale-105' : ''
+                              }`}
+                            >
+                              {item.href ? (
+                                <a
+                                  href={item.href}
+                                  className="block text-white hover:text-blue-300 transition-colors duration-300"
+                                  onClick={closeAllMenus}
+                                >
+                                  <h4 className="font-semibold text-sm md:text-base leading-tight mb-1">
+                                    {item.title}
+                                  </h4>
+                                  <p className="text-xs md:text-sm text-gray-300 leading-relaxed">
+                                    {item.description}
+                                  </p>
+                                </a>
+                              ) : (
+                                <div className="text-white">
+                                  <h4 className="font-semibold text-sm md:text-base leading-tight mb-1">
+                                    {item.title}
+                                  </h4>
+                                  <p className="text-xs md:text-sm text-gray-300 leading-relaxed">
+                                    {item.description}
+                                  </p>
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
+
+              {/* Home Link */}
+              <a
+                href="/"
+                className="px-3 py-2 text-white hover:text-blue-300 transition-all duration-300 bg-transparent border-none cursor-pointer text-sm font-medium rounded-lg hover:bg-blue-600 hover:bg-opacity-20 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              >
+                الرئيسية
+              </a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden p-2 text-white hover:text-blue-300 transition-colors duration-300"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-gray-800 bg-opacity-95 backdrop-blur-sm border-t border-gray-700">
+            <div className="container mx-auto px-4 py-4 space-y-2">
+              {menuItems.map((menuItem) => (
+                <div key={menuItem.id} className="border-b border-gray-700 pb-2">
+                  <button
+                    onClick={() => toggleMenu(menuItem.id)}
+                    className="flex items-center justify-between w-full px-3 py-2 text-white hover:text-blue-300 transition-colors duration-300"
+                  >
+                    <span className="font-medium">{menuItem.label}</span>
+                    <div className="transition-transform duration-300">
+                      {openMenu === menuItem.id ? (
+                        <ChevronUp className="w-4 h-4" />
+                      ) : (
+                        <ChevronDown className="w-4 h-4" />
+                      )}
+                    </div>
+                  </button>
+                  
+                  {openMenu === menuItem.id && (
+                    <div className="mt-2 ml-4 space-y-2">
+                      {menuItem.items.map((item, index) => (
+                        <div key={index} className="pl-4">
+                          {item.href ? (
+                            <a
+                              href={item.href}
+                              className="block py-2 text-gray-300 hover:text-white transition-colors duration-300 text-sm"
+                              onClick={closeAllMenus}
+                            >
+                              {item.title}
+                            </a>
+                          ) : (
+                            <div className="py-2 text-gray-400 text-sm">
+                              {item.title}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+              
+              <a
+                href="/"
+                className="block px-3 py-2 text-white hover:text-blue-300 transition-colors duration-300 font-medium"
+                onClick={closeAllMenus}
+              >
+                الرئيسية
+              </a>
+            </div>
+          </div>
+        )}
+      </nav>
+
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out;
+        }
+      `}</style>
+    </div>
+  );
 }

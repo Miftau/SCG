@@ -16,7 +16,7 @@ const HeroSection = ({
   imageAltBottom,
 }) => {
   return (
-    <div className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] flex flex-col items-center overflow-hidden">
+    <div className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] sm:min-h-[400px] flex flex-col items-center overflow-hidden">
       {/* Background gradient base */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF] z-0" />
 
@@ -35,20 +35,21 @@ const HeroSection = ({
 
       {/* Top background image */}
       {imageTop && (
-        <div className="absolute top-80 right-60 z-10 pointer-events-none">
-          <Image
-            src={imageTop}
-            alt={imageAltTop || "Background top"}
-            width={1100}
-            height={1400}
-            priority
-            className="object-cover opacity-80 mix-blend-overlay"
-          />
-        </div>
-      )}
+      <div className="absolute top-40 sm:top-150 md:top-80 right-4 sm:right-20 md:right-40 lg:right-60 z-10 pointer-events-none w-full max-w-[600px] md:max-w-[800px] lg:max-w-[1100px]">
+        <Image
+          src={imageTop}
+          alt={imageAltTop || "Background top"}
+          width={1100}
+          height={1400}
+          priority
+          className="w-full h-auto object-cover opacity-80 mix-blend-overlay"
+        />
+      </div>
+    )}
+
 
       {/* Navbar */}
-      <div className="relative z-30 w-full">
+      <div className="relative z-50 w-full">
         <NavigationMenuDemo />
       </div>
 
@@ -63,10 +64,10 @@ const HeroSection = ({
         viewport={{ once: true }}
         className="relative z-30 text-center text-white px-4 max-w-3xl mx-auto py-8 md:py-12 lg:py-16"
       >
-        <h1 className="text-3xl font-bold mb-3 md:text-4xl lg:text-5xl leading-snug">
+        <h1 className="text-xl font-bold mb-3 md:text-2xl lg:text-3xl leading-snug">
           {title}
         </h1>
-        <p className="text-base mb-6 leading-relaxed md:text-lg lg:text-xl pt-4 text-gray-300">
+        <p className="text-base mb-4 leading-relaxed md:text-lg lg:text-xl pt-4 text-gray-300">
           {description}
         </p>
         <div className="flex justify-center gap-4">
