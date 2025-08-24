@@ -22,7 +22,7 @@ const HeroSection = ({
 
       {/* Bottom background image */}
       {imageBottom && (
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-5">
           <Image
             src={imageBottom}
             alt={imageAltBottom || "Background bottom"}
@@ -32,20 +32,6 @@ const HeroSection = ({
           />
         </div>
       )}
-
-      {/* Top background image */}
-      {imageTop && (
-      <div className="absolute top-40 sm:top-150 md:top-80 right-4 sm:right-20 md:right-40 lg:right-60 z-10 pointer-events-none w-full max-w-[600px] md:max-w-[800px] lg:max-w-[1100px]">
-        <Image
-          src={imageTop}
-          alt={imageAltTop || "Background top"}
-          width={1100}
-          height={1400}
-          priority
-          className="w-full h-auto object-cover opacity-80 mix-blend-overlay"
-        />
-      </div>
-    )}
 
 
       {/* Navbar */}

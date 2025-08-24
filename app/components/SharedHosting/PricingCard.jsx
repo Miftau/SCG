@@ -50,14 +50,8 @@ const PricingCard = ({ plan, index }) => {
         </ul>
       </div>
       
-      <div className="px-6 sm:px-8 pb-8">
-        <button className="text-gray-500 text-sm hover:text-[#2B1F51] transition-colors duration-300 inline-flex items-center">
-          <svg className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-          compare packages
-        </button>
-      </div>
+      <div class="w-full h-[2px] bg-black bg-opacity-50 mt-4"></div>
+      <p class="mt-4 mb-8 text-center __web-inspector-hide-shortcut__">compare packages</p>
     </div>
   );
 };
