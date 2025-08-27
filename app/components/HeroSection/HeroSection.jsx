@@ -1,3 +1,158 @@
+// "use client";
+
+// import { Button } from "@/components/ui/button";
+// import { motion } from "framer-motion";
+// import { NavigationMenuDemo } from "../Header/MainNavbar";
+// import Image from "next/image";
+
+// const HeroSection = ({
+//   title,
+//   description,
+//   primaryButtonText,
+//   secondaryButtonText,
+//   imageTop,       // top background
+//   imageBottom,    // bottom background
+//   imageAltTop,
+//   imageAltBottom,
+//   centerImageSrc,
+//   leftImageSrc,
+//   rightImageSrc,
+//   centerImageAlt,
+//   leftImageAlt,
+//   rightImageAlt,
+// }) => {
+//   return (
+//     <div className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] sm:min-h-[400px] flex flex-col items-center ">
+//       {/* Background gradient base */}
+//       <div className="absolute inset-0" />
+
+//       {/* Bottom background image */}
+//       {imageBottom && (
+//         <div
+//           className="absolute inset-0 z-5 bg-cover bg-center"
+//           aria-label={imageAltBottom || "Background bottom"}
+//           style={{ backgroundImage: `url(${imageBottom})` }}
+//         />
+//       )}
+
+
+//       {/* Navbar */}
+//       <div className="relative z-50 w-full">
+//         <NavigationMenuDemo />
+//       </div>
+
+//       {/* Main content */}
+//       <motion.div
+//         initial={{ opacity: 0, y: 100 }}
+//         whileInView={{
+//           opacity: 1,
+//           y: 0,
+//           transition: { duration: 0.4, ease: "easeOut" },
+//         }}
+//         viewport={{ once: true }}
+//         className="relative z-30 text-center text-white px-4 max-w-3xl mx-auto py-8 md:py-12 lg:py-16"
+//       >
+//         <h1 className="text-xl font-bold mb-3 md:text-2xl lg:text-3xl leading-snug">
+//           {title}
+//         </h1>
+//         <p className="text-base mb-4 leading-relaxed md:text-lg lg:text-xl pt-4 text-gray-300">
+//           {description}
+//         </p>
+//         <div className="flex justify-center gap-4">
+//           {primaryButtonText && (
+//             <Button className="bg-white text-[#0A1C3F] hover:bg-gray-100 px-6 py-3 text-base md:px-8 md:py-4 md:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+//               {primaryButtonText}
+//             </Button>
+//           )}
+//           {secondaryButtonText && (
+//             <Button
+//               variant="outline"
+//               className="border-white text-white hover:bg-white hover:text-[#0A1C3F] px-6 py-3 text-base bg-transparent md:px-8 md:py-4 md:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+//             >
+//               {secondaryButtonText}
+//             </Button>
+//           )}
+//         </div>
+//       </motion.div>
+
+//       {/* Foreground images overlay */}
+//       {(centerImageSrc || leftImageSrc || rightImageSrc) && (
+//         <div className="pointer-events-none absolute inset-0 z-40">
+//           {centerImageSrc && (
+//             <div className="absolute left-1/2 -translate-x-1/2 bottom-[12%] md:bottom-[10%]">
+//               <div className="relative">
+//                 <Image
+//                   src="/images/Vector-ani.png"
+//                   alt="base"
+//                   width={260}
+//                   height={80}
+//                   className="absolute left-1/2 -translate-x-1/2 -bottom-6 pointer-events-none"
+//                   priority
+//                 />
+//                 <Image
+//                   src={centerImageSrc}
+//                   alt={centerImageAlt || "Center graphic"}
+//                   width={220}
+//                   height={220}
+//                   priority
+//                 />
+//               </div>
+//             </div>
+//           )}
+//           {leftImageSrc && (
+//             <div className="absolute left-[20%] md:left-[24%] bottom-[36%] md:bottom-[34%]">
+//               <div className="relative">
+//                 <Image
+//                   src="/images/Vector-ani.png"
+//                   alt="base"
+//                   width={190}
+//                   height={60}
+//                   className="absolute left-1/2 -translate-x-1/2 -bottom-4 pointer-events-none"
+//                   priority
+//                 />
+//                 <Image
+//                   src={leftImageSrc}
+//                   alt={leftImageAlt || "Left graphic"}
+//                   width={160}
+//                   height={160}
+//                   priority
+//                 />
+//               </div>
+//             </div>
+//           )}
+//           {rightImageSrc && (
+//             <div className="absolute right-[20%] md:right-[24%] bottom-[36%] md:bottom-[34%]">
+//               <div className="relative">
+//                 <Image
+//                   src="/images/Vector-ani.png"
+//                   alt="base"
+//                   width={190}
+//                   height={60}
+//                   className="absolute left-1/2 -translate-x-1/2 -bottom-4 pointer-events-none"
+//                   priority
+//                 />
+//                 <Image
+//                   src={rightImageSrc}
+//                   alt={rightImageAlt || "Right graphic"}
+//                   width={160}
+//                   height={160}
+//                   priority
+//                 />
+//               </div>
+//             </div>
+//           )}
+
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+
+// export default HeroSection;
+
+
+
 "use client";
 
 import { Button } from "@/components/ui/button";
