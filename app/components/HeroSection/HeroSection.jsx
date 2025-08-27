@@ -202,14 +202,43 @@ const HeroSection = ({
   rightImageAlt,
 }) => {
   return (
-    <div className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] sm:min-h-[400px] flex flex-col items-center ">
-      {/* Background */}
+    <div className="relative w-full h-screen min-h-[400px] md:min-h-[600px] lg:min-h-[900px] flex flex-col items-center overflow-hidden">
+      {/* Background gradient base */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF] z-0" />
+
+      {/* Bottom background image */}
       {imageBottom && (
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          aria-label={imageAltBottom || "Background bottom"}
-          style={{ backgroundImage: `url(${imageBottom})` }}
-        />
+        <div className="absolute inset-0 z-5">
+          <Image
+            src={imageBottom}
+            alt={imageAltBottom || "Background bottom"}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center w-full h-full"
+            quality={85}
+          />
+        </div>
+      )}
+
+      {/* Top background image with growing animation */}
+      {imageTop && (
+        <motion.div
+          className="absolute inset-0 z-10"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+        >
+          <Image
+            src={imageTop}
+            alt={imageAltTop || "Background top"}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center w-full h-full"
+            quality={85}
+          />
+        </motion.div>
       )}
 
       {/* Navbar */}

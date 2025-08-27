@@ -36,9 +36,9 @@ export default function DisableRightClick({ children }) {
 
     // ----- 4. DevTools detection (safe) -----
     let devToolsOpenCounter = 0;
-    const threshold = 100; // Further reduced threshold for testing
+    const threshold = 200; 
     const checkDevTools = () => {
-      const isDesktop = window.innerWidth > 1000; // Ignore small screens
+      const isDesktop = window.innerWidth > 768; // Ignore small screens
       if (!isDesktop) {
         console.log("Skipping DevTools check: Not a desktop screen");
         return;
@@ -61,7 +61,7 @@ export default function DisableRightClick({ children }) {
       if (devToolsOpenCounter > 3) {
         console.warn("DevTools detected!");
         // Disabled aggressive actions for testing
-        // window.location.href = "about:blank";
+        window.location.href = "about:blank";
         // document.body.innerHTML = "";
       }
     };
