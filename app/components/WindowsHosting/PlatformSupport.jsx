@@ -5,27 +5,27 @@ import { motion } from "framer-motion";
 const platforms = [
   {
     name: "مركز المعلومات والتوثيق",
-    image: "/images/a876ccb0b019f9fc5dc76046c3efb52ea3870823.jpg",
+    image: "/images/partner1.jpg",
   },
   {
     name: "لجنة الإفراجات المالية",
-    image: "/images/Group (10).png",
+    image: "/images/partner2.png",
   },
   {
     name: "صندوق الضمان الاجتماعي",
-    image: "/images/Social-Security-Fund 1.png",
+    image: "/images/partner3.png",
   },
-  {
+    {
     name: "صندوق الضمان الاجتماعي",
-    image: "/images/Social-Security-Fund 1.png",
+    image: "/images/partner3.png",
   },
   {
     name: "مصلحة السجل التجاري",
-    image: "/images/Group (10).png",
+    image: "/images/partner2.png",
   },
   {
     name: "صيدلية ذات الصواري",
-    image: "/images/35ed025d3689ce6be5e970a1d2d80e19579cb130.png",
+    image: "/images/partner6.png",
   },
 ];
 
@@ -60,8 +60,9 @@ const PlatformSupport = () => {
                 <img
                   src={platform.image}
                   alt={platform.name}
-                  fill
-                  className="object-contain"
+                  width={100}
+                  height={100}
+                  className="object-contain w-full h-full"
                 />
               </div>
             </div>
