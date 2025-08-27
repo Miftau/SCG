@@ -15,7 +15,7 @@ const FreeToolsSection = () => {
           }}
           className="space-y-4"
         >
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#4A3B7F]">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#092346]">
             أدوات مجانية نقدمها مع جميع الخطط
           </h2>
           <p className="mx-auto max-w-[800px] text-lg text-[#6B7280] md:text-xl">
@@ -28,7 +28,7 @@ const FreeToolsSection = () => {
               href="#"
               className={
                 buttonVariants({ variant: "outline" }) +
-                " border-2 border-[#4A3B7F] text-[#4A3B7F] hover:bg-[#4A3B7F]/10 px-8 py-2 rounded-lg"
+                " border-2 border-[#4A3B7F] text-[#092346] hover:bg-[#4A3B7F]/10 px-8 py-2 rounded-lg"
               }
             >
               اطلب الآن!

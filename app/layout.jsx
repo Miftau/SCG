@@ -31,11 +31,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}
       >
-        <DisableRightClick>
+        {/* <DisableRightClick> */}
           <Navbar />
           {children}
           <Footer />
-        </DisableRightClick>
+        {/* </DisableRightClick> */}
       </body>
     </html>
   );

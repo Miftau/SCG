@@ -9,26 +9,29 @@ import ImageSection from "../components/WordPressHosting/ImageSection";
 import BeastSection from "../components/DataCenter/BeastSection/BeastSection";
 import Asks from "../components/DataCenter/Asks/Asks";
 import FeatureSection from "../components/WordPressHosting/FeatureSection";
+import AdvantageSection from "../components/WordPressHosting/AdvantageSection";
+
 
 const WordPressHosting = () => {
   return (
     <div>
       <HeroSection
-        title="استضافة WordPress المُدارة"
-        description="انتقل بموقعك الالكتروني إلى مستوى أعلى من السرعة والأداء بسرعة تتجاوز الــ 5 أضعاف. بحلول مصممة خصيصاً لمضاعفة السرعة وتقديم أفضل سرعة أداء لموقعك"
-        primaryButtonText="انشاء حساب"
-        secondaryButtonText="عرض الاسعار"
-        imagesrc="/images/Group4027.png"
-        imageAlt="Hero Background"
+        title="استضافة ووردبريس مُدارة بأداء فائق وسرعة لا مثيل لها"
+        description="احصل على استضافة ووردبريس مُدارة بالكامل مع أداء فائق وسرعة لا مثيل لها، مما يضمن لموقعك الإلكتروني تجربة مستخدم سلسة وسريعة."
+        primaryButtonText="ابدأ الآن"
+        secondaryButtonText="تعرّف على المزيد"
+        imageBottom="/images/wpfull.svg"
+        imageAltTop="Background top"
+
       />
       <FreeToolsSection />
       <WordPressGrowSection />
       <PricingCard />
       <WordpressFeatures />
       <ArabicSection />
-      <imgSection />
+      <ImageSection />
       <FeatureSection />
-      <BeastSection />
+      <AdvantageSection />
       <Asks />
     </div>
   );
