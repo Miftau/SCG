@@ -15,9 +15,16 @@ const WorkHosting = () => {
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imagesrc="/images/Group4027.png"
+        imageBottom="/images/business-hero.svg"
         imageAlt="Hero Background"
       />
+      <div className="h-24 sm:h-32 lg:h-48 w-full overflow-hidden">
+        <img
+          src="/images/clouds-graph 1.svg"
+          alt="Decorative Top"
+          className="w-full h-full object-cover opacity-50"
+        />
+      </div>
       <PricingCard />
       <BackGroundSection />
       <GrowSection/>

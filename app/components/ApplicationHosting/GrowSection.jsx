@@ -32,7 +32,7 @@ const GrowSection = () => {
           انطلق أسرع وسارع في نموّ عملك
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full pt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {locations.map((location, index) => (
           <motion.div
             initial={{ opacity: 0, y: 100 }}

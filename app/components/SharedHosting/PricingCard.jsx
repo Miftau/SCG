@@ -116,10 +116,10 @@ const PricingSection = () => {
 
   return (
     /* Pricing Section */
-    <section className="py-12 sm:py-16 lg:py-20 bg-white">
+    <section className="py-4 sm:py-4 lg:py-8 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#2B1F51] mb-4">اختر الخط</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#2B1F51] mb-2">اختر الخط</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">

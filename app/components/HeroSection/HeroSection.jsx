@@ -207,11 +207,11 @@ const HeroSection = ({
   rightImageAlt,
 }) => {
   return (
-    <div className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] sm:min-h-[400px] flex flex-col items-center">
+    <div className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] sm:min-h-[400px] z-20 flex flex-col items-center">
       {/* Background */}
       {imageBottom && (
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center z-20"
           aria-label={imageAltBottom || "Background bottom"}
           style={{ backgroundImage: `url(${imageBottom})` }}
         />
