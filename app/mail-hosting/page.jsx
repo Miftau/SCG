@@ -7,6 +7,7 @@ import Asks from "../components/DataCenter/Asks/Asks";
 import AllNeedSection from "../components/MailHosting/AllNeedSection";
 import StrongSecurity from "../components/MailHosting/StrongSecurity";
 import EasyTransitionSection from "../components/MailHosting/EasyTransitionSection";
+import MailHostAdvantages from "../components/MailHosting/MailHostAdvantages";
 
 const MailHosting = () => {
   return (
@@ -16,14 +17,14 @@ const MailHosting = () => {
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imagesrc="/images/Group4027.png"
+        imageBottom="/images/mailhero.svg"
         imageAlt="Hero Background"
       />
       <PricingCard />
       <AllNeedSection />
       <DashboardFeatures />
       <StrongSecurity />
-      <BeastSection />
+      <MailHostAdvantages />
       <EasyTransitionSection />
       <Asks />
     </div>
