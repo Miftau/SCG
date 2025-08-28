@@ -20,7 +20,7 @@ const platforms = [
   },
   {
     name: "WordPress",
-    image: "/images/1f8757075395225dcd6dce9f20161229e3df05e3.png",
+    image: "/images/wp_logo.png",
   },
 ];
 
