@@ -13,7 +13,7 @@ const ServerManagement = () => {
         title="إدارة الخوادم"
         description="دعنا ندير جميع خوادمك من أجلك!"
         primaryButtonText="تسجيل الان"
-        imagesrc="/images/Group4027.png"
+         imageBottom="/images/server-m.svg"
         imageAlt="Hero Background"
       />
       <PricingCard />
