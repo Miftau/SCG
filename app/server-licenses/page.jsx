@@ -14,8 +14,8 @@ const ServerLicenses = () => {
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imagesrc="/images/Group4027.png"
-        imageAlt="Hero Background"
+        imageBottom="/images/server-l.svg"
+        imageAltBottom="Hero Background"
       />
       <PricingCard />
       <LicenseSection />
