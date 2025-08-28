@@ -15,8 +15,14 @@ const WindowsHosting = () => {
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imagesrc="/images/Group4027.png"
-        imageAlt="Hero Background"
+        imageBottom="/images/bottom-back-shared.png"
+        imageAltBottom="Hero Background"
+        centerImageSrc="/images/Group 3565.png"
+        leftImageSrc="/images/Group (2).png"
+        rightImageSrc="/images/Group (2).png"
+        centerImageAlt="Windows center graphic"
+        leftImageAlt="Left graphic"
+        rightImageAlt="Right graphic"
       />
       <KubernetesWindosHosting />
       <PricingCard />

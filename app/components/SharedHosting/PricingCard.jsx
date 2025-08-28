@@ -50,8 +50,8 @@ const PricingCard = ({ plan, index }) => {
         </ul>
       </div>
       
-      <div class="w-full h-[2px] bg-black bg-opacity-50 mt-4"></div>
-      <p class="mt-4 mb-8 text-center __web-inspector-hide-shortcut__">compare packages</p>
+      <div className="w-full h-[2px] bg-black bg-opacity-50 mt-4"></div>
+      <p className="mt-4 mb-8 text-center __web-inspector-hide-shortcut__">compare packages</p>
     </div>
   );
 };

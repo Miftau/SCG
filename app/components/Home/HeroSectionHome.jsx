@@ -4,7 +4,7 @@ import { NavigationMenuDemo } from "../Header/MainNavbar";
 
 const HeroSectionHome = () => {
   return (
-    <div className="relative text-white w-full hero bg-[#092346] lg:h-[90vh] h-[80vh] relative mb-10">
+    <div className="relative text-white w-full hero bg-[#092346] lg:h-[90vh] h-[80vh] mb-10">
       <div className="hidden" />
       {/* Background image */}
         <div className="absolute inset-0">
