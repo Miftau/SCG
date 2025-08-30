@@ -57,8 +57,8 @@ const AE = () => {
         title="الاستضافات"
         description="من افضل واسرع واسهل الاستضافات"
         primaryButtonText="سجل الان"
-        imagesrc="/images/Group4027.png"
-        imageAlt="Hero Background"
+        imageBottom="/images/ae.svg"
+        imageAltBottom="Hero Background"
       />
       <DomainSection
         title="احصل على اسم نطاق sa. من المسجل رقم #1"
