@@ -13,8 +13,8 @@ const ServerManagement = () => {
         title="إدارة الخوادم"
         description="دعنا ندير جميع خوادمك من أجلك!"
         primaryButtonText="تسجيل الان"
-         imageBottom="/images/server-m.svg"
-        imageAlt="Hero Background"
+        imageBottom="/images/server-m.svg"
+        imageAltBottom="Hero Background"
       />
       <PricingCard />
       <BackupsGrowSection />

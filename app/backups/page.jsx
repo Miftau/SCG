@@ -14,12 +14,12 @@ const Backups = () => {
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imagesrc="/images/Group4027.png"
-        imageAlt="Hero Background"
+        imageBottom="/images/backups.svg"
+        imageAltBottom="Hero Background"
       />
       <PricingCard />
-      <PlatformSupport />
       <BackupsGrowSection />
+      <PlatformSupport />
       <BeastSection />
       <Asks />
     </div>
