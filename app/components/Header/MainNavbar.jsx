@@ -15,7 +15,7 @@ export function NavigationMenuDemo() {
         { title: 'السرعة', description: 'حلول استضافة محسنة لضمان أسرع أوقات تحميل.', href: '/speed' },
         { title: 'لوحة التحكم', description: 'قم بإدارة خدمات الاستضافة الخاصة بك بسهولة باستخدام لوحة التحكم التفاعلية لدينا.', href: null },
         { title: 'مراكز البيانات', description: 'اكتشف مراكز البيانات الحديثة لدينا للبنية التحتية من الدرجة الأولى.', href: '/data-center' },
-        { title: 'حالة الخوادم', description: 'تحقق من الحالة الحالية ووقت التشغيل لجميع خوادمنا.', href: null },
+        { title: 'حالة الخوادم', description: 'تحقق من الحالة الحالية ووقت التشغيل لجميع خوادمنا.', href: '/status' },
         { title: 'النسخ الاحتياطي', description: 'تأكد من أن بياناتك آمنة دائماً من خلال خدمات النسخ الاحتياطي المنتظمة.', href: '/backups' }
       ]
     },
@@ -23,12 +23,12 @@ export function NavigationMenuDemo() {
       label: 'الشركة',
       id: 'company',
       items: [
-        { title: 'عنا', description: 'تعرف على المزيد عن شركتنا وقيمنا وموقعنا.', href: null },
-        { title: 'اتصل بنا', description: 'تواصل مع فريقنا لأي استفسارات أو دعم.', href: null },
-        { title: 'الوظائف', description: 'انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.', href: null },
-        { title: 'مركز الإعلام والأخبار', description: 'ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.', href: null },
-        { title: 'برنامج الموزعين', description: 'كن موزعاً وابدأ عملك معنا.', href: null },
-        { title: 'شركائنا', description: 'Lorem ipsum dolor sit', href: null },
+        { title: 'عنا', description: 'تعرف على المزيد عن شركتنا وقيمنا وموقعنا.', href: '/about-us' },
+        { title: 'اتصل بنا', description: 'تواصل مع فريقنا لأي استفسارات أو دعم.', href: '/contact-us' },
+        { title: 'الوظائف', description: 'انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.', href: '/careers' },
+        { title: 'مركز الإعلام والأخبار', description: 'ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.', href: '/news' },
+        { title: 'برنامج الموزعين', description: 'كن موزعاً وابدأ عملك معنا.', href: '/distributors-program' },
+        { title: 'شركائنا', description: 'Lorem ipsum dolor sit', href: 'our-partners' },
         { title: 'طرق الدفع', description: 'استكشف جميع خيارات الدفع المتاحة لخدماتنا.', href: '/payment-methods' }
       ]
     },
@@ -39,16 +39,16 @@ export function NavigationMenuDemo() {
         { title: 'تسجيل النطاقات', description: 'سجل نطاقات جديدة أو قم بنقل نطاقاتك الحالية بسهولة.', href: '/eg' },
         { title: 'النطاقات المحلية', description: 'احصل على امتدادات نطاقات محلية لمنطقتك أي بلدك.', href: '/eg' },
         { title: 'نقل نطاق', description: 'نقل النطاقات بسلاسة من موزعين آخرين.', href: '/eg' },
-        { title: 'whois', description: 'Lorem ipsum dolor sit', href: null },
+        { title: 'whois', description: 'Lorem ipsum dolor sit', href: '/whois' },
         { title: 'شهادات الأمان SSL', description: 'تأكد من تأمين الاتصالات لموقعك الإلكتروني باستخدام شهادات SSL.', href: '/ssl' },
-        { title: 'كلود فلير', description: 'قم بتحسين أمان وأداء موقعك الإلكتروني باستخدام Cloudflare.', href: null }
+        { title: 'كلود فلير', description: 'قم بتحسين أمان وأداء موقعك الإلكتروني باستخدام Cloudflare.', href: '/cloudflare' }
       ]
     },
     {
       label: 'الخوادم',
       id: 'servers',
       items: [
-        { title: 'خوادم VPS', description: 'خوادم افتراضية خاصة مع موارد مخصصة لمشاريعك.', href: null },
+        { title: 'خوادم VPS', description: 'خوادم افتراضية خاصة مع موارد مخصصة لمشاريعك.', href: '/vps' },
         { title: 'الخوادم السحابية', description: 'خوادم سحابية مرنة وقابلة للتوسع لأي نوع من الأعمال.', href: '/cloud-servers' },
         { title: 'الخوادم الكاملة', description: 'خوادم مخصصة مع تحكم كامل في بيئتك.', href: '/server-management' },
         { title: 'تراخيص الخوادم', description: 'احصل على التراخيص اللازمة لبرنامج الخادم الخاص بك.', href: '/server-licenses' },
@@ -70,15 +70,15 @@ export function NavigationMenuDemo() {
       label: 'الاستضافات',
       id: 'hosting',
       items: [
-        { title: 'الاستضافات المشاركة', description: 'استضافة مرنة ومناسبة من حيث التكلفة للشركات الصغيرة والمواقع الشخصية.', href: null },
-        { title: 'الاستضافة السحابية', description: 'حلول استضافة قابلة للتوسع نمو مع احتياجات عملك.', href: '/shared-hosting' },
+        { title: 'الاستضافات المشاركة', description: 'استضافة مرنة ومناسبة من حيث التكلفة للشركات الصغيرة والمواقع الشخصية.', href: '/shared-hosting' },
+        { title: 'الاستضافة السحابية', description: 'حلول استضافة قابلة للتوسع نمو مع احتياجات عملك.', href: '/cloud-hosting' },
         { title: 'استضافات الووردبريس', description: 'Optimized hosting environment tailored for WordPress websites.', href: '/wordpress-hosting' },
-        { title: 'Softaculous Hosting', description: 'One-click installs for over 400 applications using Softaculous.', href: null },
+        { title: 'Softaculous Hosting', description: 'One-click installs for over 400 applications using Softaculous.', href: '/softaculous-hosting' },
         { title: 'استضافات الأعمال', description: 'Professional-grade hosting for growing businesses with high performance.', href: '/business-hosting' },
-        { title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: null },
+        { title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: '/developer-hosting' },
         { title: 'استضافات البريد', description: 'Reliable email hosting with custom domains for professional communication.', href: '/mail-hosting' },
         { title: 'استضافات ويندوز', description: 'Windows-based hosting with support for .NET and other Microsoft technologies.', href: '/windows-hosting' },
-        { title: 'سحابة نمور', description: 'Secure and high-performance cloud hosting for enterprise applications.', href: null }
+        { title: 'سحابة نمور', description: 'Secure and high-performance cloud hosting for enterprise applications.', href: '/tiger-cloud' }
       ]
     }
   ];

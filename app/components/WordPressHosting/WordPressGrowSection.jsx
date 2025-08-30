@@ -48,12 +48,7 @@ const WordPressGrowSection = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full pt-8">
-        <div className="pointer-events-none select-none absolute top-16 sm:top-20 right-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] opacity-40">
-            <img src={RIGHT_CUBE_SVG} alt="" aria-hidden="true" className="w-full h-auto" />
-          </div>
-          <div className="pointer-events-none select-none absolute top-16 left-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] opacity-40">
-            <img src={LEFT_CUBE_SVG} alt="" aria-hidden="true" className="w-full h-auto" />
-          </div>
+        
         {locations.map((location, index) => (
           <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -65,6 +60,12 @@ const WordPressGrowSection = () => {
             key={index}
             className=" bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-4 "
           >
+            <div className="pointer-events-none select-none absolute top-16 sm:top-20 right-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] opacity-40 z-0" >
+            <img src={RIGHT_CUBE_SVG} alt="" aria-hidden="true" className="w-full h-auto" />
+          </div>
+          <div className="pointer-events-none select-none absolute top-16 left-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] opacity-40 z-0">
+            <img src={LEFT_CUBE_SVG} alt="" aria-hidden="true" className="w-full h-auto" />
+          </div>
             <div className="">
               <img
                 src={location.skylineSrc}

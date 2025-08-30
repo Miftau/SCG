@@ -1,154 +1,71 @@
 "use client";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { HardDrive, MemoryStick, Cpu } from "lucide-react";
 import { motion } from "framer-motion";
-const PricingSection = () => {
-  const pricingPlans = [
-    {
-      id: "plan-1",
-      headerColor: "bg-[#FEE572]",
-      title: "أوبيليونز ناتيف",
-      price: "91.30",
-      billingPeriod: "دل/ربع سنوي",
-      features: [
-        { icon: HardDrive, value: "20GB", label: "تخزين SSD" },
-        { icon: MemoryStick, value: "2GB", label: "الذاكرة" },
-        { icon: Cpu, value: "1", label: "vCPU" },
-      ],
-      buttonText: "اطلب الان",
-    },
-    {
-      id: "plan-2",
-      headerColor: "bg-[#E0E0E0]", // Light gray from image
-      title: "أوبيليونز ناتيف",
-      price: "91.30",
-      billingPeriod: "دل/ربع سنوي",
-      features: [
-        { icon: HardDrive, value: "20GB", label: "تخزين SSD" },
-        { icon: MemoryStick, value: "2GB", label: "الذاكرة" },
-        { icon: Cpu, value: "1", label: "vCPU" },
-      ],
-      buttonText: "اطلب الان",
-    },
-    {
-      id: "plan-3",
-      headerColor: "bg-[#87B9F0]", // Blue from image
-      title: "أوبيليونز ناتيف",
-      price: "91.30",
-      billingPeriod: "دل/ربع سنوي",
-      features: [
-        { icon: HardDrive, value: "20GB", label: "تخزين SSD" },
-        { icon: MemoryStick, value: "2GB", label: "الذاكرة" },
-        { icon: Cpu, value: "1", label: "vCPU" },
-      ],
-      buttonText: "اطلب الان",
-    },
-    {
-      id: "plan-4",
-      headerColor: "bg-[#FEE572]", // Yellow from image
-      title: "أوبيليونز ناتيف",
-      price: "91.30",
-      billingPeriod: "دل/ربع سنوي",
-      features: [
-        { icon: HardDrive, value: "20GB", label: "تخزين SSD" },
-        { icon: MemoryStick, value: "2GB", label: "الذاكرة" },
-        { icon: Cpu, value: "1", label: "vCPU" },
-      ],
-      buttonText: "اطلب الان",
-    },
-    {
-      id: "plan-5",
-      headerColor: "bg-[#E0E0E0]", // Light gray from image
-      title: "أوبيليونز ناتيف",
-      price: "91.30",
-      billingPeriod: "دل/ربع سنوي",
-      features: [
-        { icon: HardDrive, value: "20GB", label: "تخزين SSD" },
-        { icon: MemoryStick, value: "2GB", label: "الذاكرة" },
-        { icon: Cpu, value: "1", label: "vCPU" },
-      ],
-      buttonText: "اطلب الان",
-    },
-    {
-      id: "plan-6",
-      headerColor: "bg-[#87B9F0]", // Blue from image
-      title: "أوبيليونز ناتيف",
-      price: "91.30",
-      billingPeriod: "دل/ربع سنوي",
-      features: [
-        { icon: HardDrive, value: "20GB", label: "تخزين SSD" },
-        { icon: MemoryStick, value: "2GB", label: "الذاكرة" },
-        { icon: Cpu, value: "1", label: "vCPU" },
-      ],
-      buttonText: "اطلب الان",
-    },
+import { HardDrive, MemoryStick, Cpu } from 'lucide-react';
+
+const PricingCards = () => {
+  const plans = [
+    { title: "أوبليوز ناتف", price: "91.30", color: "border-t-yellow-400" },
+    { title: "أوبليوز ناتف", price: "91.30", color: "border-t-gray-300" },
+    { title: "أوبليوز ناتف", price: "91.30", color: "border-t-blue-400" },
+    { title: "أوبليوز ناتف", price: "91.30", color: "border-t-yellow-400" },
+    { title: "أوبليوز ناتف", price: "91.30", color: "border-t-gray-300" },
+    { title: "أوبليوز ناتف", price: "91.30", color: "border-t-blue-400" },
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32  dark:bg-gray-900">
-      <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-3 lg:gap-8">
-        {pricingPlans.map((plan) => (
+    <div className="w-full py-16 px-6 bg-white">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-[#2D2F34]">
+        اختر الخطة المناسبة
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {plans.map((plan, idx) => (
           <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 0.4, ease: "easeOut" },
-            }}
-            className="card-hover"
-            key={plan.id}
+            key={idx}
+            whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0,0,0,0.1)" }}
+            className={`relative bg-white rounded-xl shadow-md overflow-hidden 
+                       border-t-8 ${plan.color} p-6 flex flex-col items-center text-center`}
           >
-            <Card className="flex flex-col items-center text-center rounded-lg shadow-lg overflow-hidden p-0">
-              <CardHeader
-                className={`w-full py-2 rounded-xl ${plan.headerColor}`}
-              ></CardHeader>
-              <CardContent className="flex flex-col items-center justify-center p-6 flex-grow">
-                <CardTitle className="text-2xl font-bold text-gray-800 dark:text-gray-900 mb-4">
-                  {plan.title}
-                </CardTitle>{" "}
-                {/* Moved here */}
-                <div className="text-5xl font-bold text-gray-900 dark:text-gray-50 mb-2">
-                  {plan.price}
+            <h3 className="text-lg font-semibold text-[#2D2F34] mb-4">
+              {plan.title}
+            </h3>
+            <p className="text-4xl font-bold text-[#2D2F34] mb-6">
+              {plan.price}
+              <div className="text-base font-medium text-gray-500 mt-8"> ريال سعودي</div>
+            </p>
+
+            {/* Specs Icons Section with Circular Outline */}
+            <div className="flex items-center justify-center gap-6 mb-16">
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300">
+                  <HardDrive className="w-6 h-6 text-blue-500" />
                 </div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
-                  {plan.billingPeriod}
-                </p>
-                <div className="flex justify-around w-full max-w-xs mb-6">
-                  {plan.features.map((feature, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col items-center gap-1"
-                    >
-                      <feature.icon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                        {feature.value}
-                      </span>
-                      <span className="text-xs text-gray-500 dark:text-gray-400">
-                        {feature.label}
-                      </span>
-                    </div>
-                  ))}
+                <p className="text-xs text-gray-500 mt-1">20GB</p>
+                <p className="text-xs text-gray-600">تخزين SSD</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300">
+                  <MemoryStick className="w-6 h-6 text-blue-500" />
                 </div>
-                <div className="w-1/3 h-0.5 bg-gray-300 dark:bg-gray-700 mb-6" />
-              </CardContent>
-              <CardFooter className="w-full p-6">
-                <Button className="w-full bg-[#3F3F6F] hover:bg-[#3F3F6F]/90 text-white font-bold py-2 px-4 rounded">
-                  {plan.buttonText}
-                </Button>
-              </CardFooter>
-            </Card>
+                <p className="text-xs text-gray-500 mt-1">2GB</p>
+                <p className="text-xs text-gray-600">الذاكرة</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300">
+                  <Cpu className="w-6 h-6 text-blue-500" />
+                </div>
+                <p className="text-xs text-gray-500 mt-1">1</p>
+                <p className="text-xs text-gray-600">vCPU</p>
+              </div>
+            </div>
+
+            <button className="bg-[#2D2F34] text-white px-6 py-2 rounded-lg hover:bg-[#41434A] transition">
+              اطلب الآن
+            </button>
           </motion.div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
-export default PricingSection;
+export default PricingCards;

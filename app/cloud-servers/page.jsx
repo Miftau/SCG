@@ -6,7 +6,9 @@ import NISTFrameworkSection from "../components/CloudServers/NISTFrameworkSectio
 import MainFeature from "../components/CloudServers/MainFeature";
 import BeastSection from "../components/DataCenter/BeastSection/BeastSection";
 import Asks from "../components/DataCenter/Asks/Asks";
-import ImageSection from "../components/CloudServers/ImageSection";
+import CloudImageSection from "../components/CloudServers/CloudImageSection";
+import DashboardFeatures from "../components/Home/DashboardFeatures";
+import PartnersGrid from "../components/SharedHosting/PartnersGrid";
 
 const CloudServers = () => {
   return (
@@ -16,15 +18,17 @@ const CloudServers = () => {
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imagesrc="/images/Group4027.png"
+        imageBottom="/images/cloud-server-hero.svg"
         imageAlt="Hero Background"
       />
       <PricingSection />
       <FeaturesSection />
       <NISTFrameworkSection />
       <MainFeature/>
-      <imgSection />
+      <DashboardFeatures />
+      <CloudImageSection />
       <BeastSection />
+      <PartnersGrid />
       <Asks />
     </div>
   );

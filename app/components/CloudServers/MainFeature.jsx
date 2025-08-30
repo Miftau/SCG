@@ -1,19 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 const MainFeature = () => {
   return (
     <div className="container px-4 md:px-12">
-      <div>
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
+      {/* Background Image */}
+      <div className="w-full h-90 mb-10 relative -z-5 opacity-50">
+        <img
+          src="/images/imgsecbg.svg"
+          alt="Cloud Servers"
+          className="object-cover"
+        />
+      </div>
+
+      {/* Title */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900 dark:text-white">
           مزايا رئيسية
         </h2>
-        <p className="text-center font-medium text-muted-foreground">
-          قم بامتلاك مُخدّمك المخصص مع نظام التشغيل المفضل لديك والتطبيقات
-          المثبتة مسبقًا.
+        <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          قم بامتلاك مُخدّمك المخصص مع نظام التشغيل المفضل لديك والتطبيقات المثبتة مسبقًا.
         </p>
       </div>
 
+      {/* Logo Grid */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{
@@ -21,96 +32,91 @@ const MainFeature = () => {
           y: 0,
           transition: { duration: 0.4, ease: "easeOut" },
         }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-6 gap-8"
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
       >
-        <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
-          <div className="w-20 h-20 relative">
+        {/* Row 1 */}
+        <div className="card-hover bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
+          <div className="w-32 h-32">
             <img
               src="/images/Layer3.png"
               alt="Cloud Servers"
-              
-              className="object-contain"
+              className="object-contain w-full h-full p-0"
             />
           </div>
         </div>
-        <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
-          <div className="w-20 h-20 relative">
+        <div className="card-hover bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
+          <div className="w-32 h-32 relative">
             <img
               src="/images/9d73dec4c85f02c04b8b670a9a50329be6156ae1.png"
               alt="Cloud Servers"
-              
-              className="object-contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>
-        <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
-          <div className="w-24 h-24 relative">
+        <div className="card-hover bg-white py-2 -px-4 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
+          <div className="w-32 h-32 relative">
             <img
               src="/images/linux-feat1.png"
               alt="Cloud Servers"
-              
-              className="object-contain"
-            />
-          </div>
-        </div>
-        <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
-          <div className="w-20 h-20 relative">
-            <img
-              src="/images/cpanel.png"
-              alt="Cloud Servers"
-              
-              className="object-contain"
-            />
-          </div>
-        </div>
-        <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
-          <div className="w-20 h-20 relative">
-            <img
-              src="/images/Group 2368.png"
-              alt="Cloud Servers"
-              
-              className="object-contain"
-            />
-          </div>
-        </div>
-        <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
-          <div className="w-20 h-20 relative">
-            <img
-              src="/images/Group 2653.png"
-              alt="Cloud Servers"
-              
-              className="object-contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>
 
-        <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
-          <div className="w-20 h-20 relative">
+        {/* Row 2 */}
+        <div className="card-hover bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
+          <div className="w-32 h-32 relative">
             <img
-              src="/images/cpanel.png"
+              src="/images/microsoft-GkOjRO04.svg"
               alt="Cloud Servers"
-              
-              className="object-contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>
-        <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
+        <div className="card-hover bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
+          <div className="w-32 h-32 relative">
+            <img
+              src="/images/cloudlinux-logo1.svg"
+              alt="Cloud Servers"
+              className="object-contain w-full h-full"
+            />
+          </div>
+        </div>
+        <div className="card-hover bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
+          <div className="w-32 h-32 relative">
+            <img
+              src="/images/isp_logo1.svg"
+              alt="Cloud Servers"
+              className="object-contain w-full h-full"
+            />
+          </div>
+        </div>
+
+        {/* Row 3 */}
+        <div className="card-hover bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
+          <div className="w-32 h-32 relative">
+            <img
+              src="/images/cpanel.png"
+              alt="Cloud Servers"
+              className="object-contain w-full h-full"
+            />
+          </div>
+        </div>
+        <div className="card-hover bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
           <div className="w-20 h-20 relative">
             <img
               src="/images/Group 2368.png"
               alt="Cloud Servers"
-              
-              className="object-contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>
-        <div className="card-hover bg-white p-6 rounded-lg shadow-xl flex justify-center items-center">
-          <div className="w-20 h-20 relative">
+        <div className="card-hover bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
+          <div className="w-32 h-32 relative">
             <img
               src="/images/Group 2653.png"
               alt="Cloud Servers"
-              
-              className="object-contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>
