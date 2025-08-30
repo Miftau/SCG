@@ -8,7 +8,7 @@ const MainFeature = () => {
       {/* Background Image */}
       <div className="w-full h-90 mb-10 relative -z-5 opacity-50">
         <img
-          src="/images/cloud-s-imgsec.svg"
+          src="/images/vps-f-back.svg"
           alt="Cloud Servers"
           className="object-cover"
         />
