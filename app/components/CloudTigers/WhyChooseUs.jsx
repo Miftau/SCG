@@ -31,14 +31,25 @@ const WhyChooseUs = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div
-        className="container px-4 md:px-6 relative z-10"
+        className="container px-4 md:px-6 relative z-10 h-full w-full"
         style={{
           backgroundImage: 'url("/images/geometric-pattern.png")',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: "contain",
+          backgroundPosition: "left top",
           backgroundRepeat: "no-repeat",
         }}
+        
       >
+        <div
+        className="container px-4 md:px-6 relative z-10 h-32 w-64 ml-auto"
+        style={{
+          backgroundImage: 'url("/images/geometric-pattern.png")',
+          backgroundSize: "contain",
+          backgroundPosition: "right top",
+          backgroundRepeat: "no-repeat",
+        }}
+        
+      ></div>
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#2B1F51]">
             لماذا نختار النمور

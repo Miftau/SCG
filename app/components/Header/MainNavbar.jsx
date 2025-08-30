@@ -1,10 +1,11 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown, ChevronUp, Menu, X } from 'lucide-react';
 
 export function NavigationMenuDemo() {
   const [openMenu, setOpenMenu] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const timeoutRef = useRef(null);
 
   const menuItems = [
     {
@@ -62,7 +63,7 @@ export function NavigationMenuDemo() {
       items: [
         { title: 'الموزع العادي', description: 'خطة استضافة أساسية للموزعين لبدء عملياتهم.', href: null },
         { title: 'الموزع للبيس', description: 'ميزات محسنة لشبكات الموزعين المتنامية.', href: null },
-        { title: 'برنامج الموزعين', description: 'انضم إلى برنامج الموزعين لدينا وابدأ في الكسب.', href: null },
+        { title: 'برنامج الموزعين', description: 'انضم إلى برنامج الموزعين لدينا وابدأ في الكسب.', href: '/distributors-program' },
         { title: 'الموزع الترا', description: 'استضافة متميزة لعمليات الموزعين على نطاق واسع.', href: null }
       ]
     },
@@ -75,13 +76,26 @@ export function NavigationMenuDemo() {
         { title: 'استضافات الووردبريس', description: 'Optimized hosting environment tailored for WordPress websites.', href: '/wordpress-hosting' },
         { title: 'Softaculous Hosting', description: 'One-click installs for over 400 applications using Softaculous.', href: '/softaculous-hosting' },
         { title: 'استضافات الأعمال', description: 'Professional-grade hosting for growing businesses with high performance.', href: '/business-hosting' },
-        { title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: '/developer-hosting' },
+        { title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: '/programmers' },
         { title: 'استضافات البريد', description: 'Reliable email hosting with custom domains for professional communication.', href: '/mail-hosting' },
         { title: 'استضافات ويندوز', description: 'Windows-based hosting with support for .NET and other Microsoft technologies.', href: '/windows-hosting' },
-        { title: 'سحابة نمور', description: 'Secure and high-performance cloud hosting for enterprise applications.', href: '/tiger-cloud' }
+        { title: 'سحابة نمور', description: 'Secure and high-performance cloud hosting for enterprise applications.', href: '/cloud-tiger' }
       ]
     }
   ];
+
+  const handleMouseEnter = (menuId) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setOpenMenu(menuId);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setOpenMenu(null);
+    }, 200);
+  };
 
   const toggleMenu = (menuId) => {
     setOpenMenu(openMenu === menuId ? null : menuId);
@@ -92,8 +106,16 @@ export function NavigationMenuDemo() {
     setIsMobileMenuOpen(false);
   };
 
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
+    <div className="bg-[#092346]">
       {/* Navigation Bar */}
       <nav className="bg-gray-900 bg-opacity-90 backdrop-blur-sm border-b border-gray-700 sticky top-0 z-50">
         <div className="container mx-auto px-4">
@@ -108,7 +130,12 @@ export function NavigationMenuDemo() {
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-1">
               {menuItems.map((menuItem) => (
-                <div key={menuItem.id} className="relative group">
+                <div
+                  key={menuItem.id}
+                  className="relative group"
+                  onMouseEnter={() => handleMouseEnter(menuItem.id)}
+                  onMouseLeave={handleMouseLeave}
+                >
                   <button
                     onClick={() => toggleMenu(menuItem.id)}
                     className="flex items-center space-x-1 px-3 py-2 text-white hover:text-grey-300 transition-all duration-300 bg-transparent border-none cursor-pointer text-sm font-medium rounded-lg hover:bg-blue-900 hover:bg-opacity-20 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
@@ -125,7 +152,11 @@ export function NavigationMenuDemo() {
 
                   {/* Dropdown Menu */}
                   {openMenu === menuItem.id && (
-                    <div className="absolute top-full left-0 mt-2 w-80 md:w-96 lg:w-[500px] bg-gray-800 bg-opacity-95 backdrop-blur-sm rounded-xl shadow-2xl border border-gray-700 z-50 overflow-hidden animate-fadeIn">
+                    <div
+                      className="absolute top-full left-0 mt-2 w-80 md:w-96 lg:w-[500px] bg-gray-800 bg-opacity-95 backdrop-blur-sm rounded-xl shadow-2xl border border-gray-700 z-50 overflow-hidden animate-fadeIn"
+                      onMouseEnter={() => clearTimeout(timeoutRef.current)}
+                      onMouseLeave={handleMouseLeave}
+                    >
                       <div className="p-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {menuItem.items.map((item, index) => (
@@ -241,7 +272,6 @@ export function NavigationMenuDemo() {
           </div>
         )}
       </nav>
-
 
       <style jsx>{`
         @keyframes fadeIn {

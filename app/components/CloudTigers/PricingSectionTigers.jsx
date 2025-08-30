@@ -74,9 +74,9 @@ const PricingSectionTigers = () => {
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 ">
+    <section className="w-full py-8 md:py-12 lg:py-16 ">
       <div className="container px-4 md:px-6">
-        <div className="mb-12 text-center">
+        <div className="mb-8 text-center">
           <h2 className="text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">
             منتجات VPS
           </h2>

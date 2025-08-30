@@ -33,7 +33,7 @@ const CloudFeaturesSection = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
           بنية تحتية مرنة، سهلة الإدارة وقابلة للتوسع
         </h2>
-        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
           تجمع سحابة العنكبوت Cloud LS كلا من موارد الحوسبة، التخزين والشبكات
           إضافة إلى أدوات التحليلات والمراقبة المتقدمة في منصة سحابية واحدة سهلة
           الاستخدام.

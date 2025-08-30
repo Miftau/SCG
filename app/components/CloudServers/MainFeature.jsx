@@ -32,19 +32,19 @@ const MainFeature = () => {
           y: 0,
           transition: { duration: 0.4, ease: "easeOut" },
         }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"
       >
         {/* Row 1 */}
-        <div className="card-hover bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
-          <div className="w-32 h-32">
+        <div className="group bg-gray-50 rounded-xl p-3 text-center hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 hover:bg-blue-50 border border-gray-100 flex flex-col items-center justify-center">
+          <div className="w-32 h-32 relative">
             <img
               src="/images/Layer3.png"
               alt="Cloud Servers"
-              className="object-contain w-full h-full p-0"
+              className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
             />
           </div>
         </div>
-        <div className="card-hover bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex justify-center items-center transition-transform duration-200 hover:scale-105">
+        <div className="group bg-gray-50 rounded-xl p-3 text-center hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 hover:bg-blue-50 border border-gray-100 flex flex-col items-center justify-center">
           <div className="w-32 h-32 relative">
             <img
               src="/images/9d73dec4c85f02c04b8b670a9a50329be6156ae1.png"

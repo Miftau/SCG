@@ -15,7 +15,7 @@ const CloudTigers = () => {
         description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
         primaryButtonText="انشاء حساب"
         secondaryButtonText="عرض الاسعار"
-        imagesrc="/images/cloud-tiger-hero.svg"
+        imageBottom="/images/cloud-tiger-hero.svg"
         imageAlt="Hero Background"
       />
       <CloudFeaturesSection />

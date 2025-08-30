@@ -17,19 +17,26 @@ const PaymentSection = () => {
             y: 0,
             transition: { duration: 0.4, ease: "easeOut" },
           }}
-          className="relative bg-gradient-to-br from-white to-gray-50 hover:from-gray-300 transition duration-300 ease-in-out rounded-xl p-8 md:p-12 shadow-lg flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 overflow-hidden mb-16"
+          className="relative bg-gradient-to-br from-white to-gray-50 hover:from-gray-300 transition duration-300 ease-in-out rounded-xl p-8 md:p-12 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8 overflow-hidden mb-12"
         >
           <img
             src="/images/right-blocks.png"
             alt="Abstract background pattern"
             width={200}
             height={200}
-            className="absolute  bg-gray-700 bottom-0 right-0 opacity-10 translate-x-1/4 translate-y-1/4"
+            className="absolute  bg-transparent bottom-0 right-0 opacity-70 translate-x-1/4 translate-y-1/4"
           />
 
           <p className="text-xl md:text-2xl font-semibold text-right text-[#333366] flex-1">
             ادفع باستخدام فوري أو أكثر من 20 طريقة دفع أخرى
           </p>
+          <img
+            src="/images/right-blocks.png"
+            alt="Abstract background pattern"
+            width={200}
+            height={200}
+            className="absolute  bg-transparent bottom-0 left-0 opacity-70 -translate-x-1/4 -translate-y-1/4"
+          />
           <div className="">
             <img
               src="/images/payment.png"
