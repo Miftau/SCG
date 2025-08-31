@@ -13,7 +13,7 @@ const HeroSection = ({
 }) => {
   return (
     <div
-      className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] sm:min-h-[400px] flex flex-col items-center overflow-hidden"
+      className="relative text-white w-full hero bg-[#092346] lg:h-[90vh] h-[80vh] mb-10"
     >
       {/* Background */}
       {imageBottom && (
