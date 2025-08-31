@@ -25,11 +25,11 @@ export function NavigationMenuDemo() {
       id: 'company',
       items: [
         { title: 'عنا', description: 'تعرف على المزيد عن شركتنا وقيمنا وموقعنا.', href: '/about-us' },
-        { title: 'اتصل بنا', description: 'تواصل مع فريقنا لأي استفسارات أو دعم.', href: '/contact-us' },
-        { title: 'الوظائف', description: 'انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.', href: '/careers' },
-        { title: 'مركز الإعلام والأخبار', description: 'ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.', href: '/news' },
+        //{ title: 'اتصل بنا', description: 'تواصل مع فريقنا لأي استفسارات أو دعم.', href: '/contact-us' },
+        //{ title: 'الوظائف', description: 'انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.', href: '/careers' },
+        //{ title: 'مركز الإعلام والأخبار', description: 'ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.', href: '/news' },
         { title: 'برنامج الموزعين', description: 'كن موزعاً وابدأ عملك معنا.', href: '/distributors-program' },
-        { title: 'شركائنا', description: 'Lorem ipsum dolor sit', href: 'our-partners' },
+        //{ title: 'شركائنا', description: 'Lorem ipsum dolor sit', href: 'our-partners' },
         { title: 'طرق الدفع', description: 'استكشف جميع خيارات الدفع المتاحة لخدماتنا.', href: '/payment-methods' }
       ]
     },
@@ -40,7 +40,7 @@ export function NavigationMenuDemo() {
         { title: 'تسجيل النطاقات', description: 'سجل نطاقات جديدة أو قم بنقل نطاقاتك الحالية بسهولة.', href: '/eg' },
         { title: 'النطاقات المحلية', description: 'احصل على امتدادات نطاقات محلية لمنطقتك أي بلدك.', href: '/eg' },
         { title: 'نقل نطاق', description: 'نقل النطاقات بسلاسة من موزعين آخرين.', href: '/eg' },
-        { title: 'whois', description: 'Lorem ipsum dolor sit', href: '/whois' },
+        //{ title: 'whois', description: 'Lorem ipsum dolor sit', href: '/whois' },
         { title: 'شهادات الأمان SSL', description: 'تأكد من تأمين الاتصالات لموقعك الإلكتروني باستخدام شهادات SSL.', href: '/ssl' },
         { title: 'كلود فلير', description: 'قم بتحسين أمان وأداء موقعك الإلكتروني باستخدام Cloudflare.', href: '/cloudflare' }
       ]
@@ -51,8 +51,8 @@ export function NavigationMenuDemo() {
       items: [
         { title: 'خوادم VPS', description: 'خوادم افتراضية خاصة مع موارد مخصصة لمشاريعك.', href: '/vps' },
         { title: 'الخوادم السحابية', description: 'خوادم سحابية مرنة وقابلة للتوسع لأي نوع من الأعمال.', href: '/cloud-servers' },
-        { title: 'الخوادم الكاملة', description: 'خوادم مخصصة مع تحكم كامل في بيئتك.', href: '/server-management' },
-        { title: 'تراخيص الخوادم', description: 'احصل على التراخيص اللازمة لبرنامج الخادم الخاص بك.', href: '/server-licenses' },
+        //{ title: 'الخوادم الكاملة', description: 'خوادم مخصصة مع تحكم كامل في بيئتك.', href: '/server-management' },
+        //{ title: 'تراخيص الخوادم', description: 'احصل على التراخيص اللازمة لبرنامج الخادم الخاص بك.', href: '/server-licenses' },
         { title: 'الدعم الفني للخوادم', description: 'احصل على دعم الخبراء لصيانة وإدارة الخوادم.', href: '/server-management' },
         { title: 'النسخ الاحتياطي', description: 'قم بتأمين بياناتك مع خدمات النسخ الاحتياطي المنتظمة.', href: '/backups' }
       ]
@@ -61,10 +61,10 @@ export function NavigationMenuDemo() {
       label: 'استضافة الموزعين',
       id: 'resellers',
       items: [
-        { title: 'الموزع العادي', description: 'خطة استضافة أساسية للموزعين لبدء عملياتهم.', href: null },
-        { title: 'الموزع للبيس', description: 'ميزات محسنة لشبكات الموزعين المتنامية.', href: null },
+        //{ title: 'الموزع العادي', description: 'خطة استضافة أساسية للموزعين لبدء عملياتهم.', href: null },
+        //{ title: 'الموزع للبيس', description: 'ميزات محسنة لشبكات الموزعين المتنامية.', href: null },
         { title: 'برنامج الموزعين', description: 'انضم إلى برنامج الموزعين لدينا وابدأ في الكسب.', href: '/distributors-program' },
-        { title: 'الموزع الترا', description: 'استضافة متميزة لعمليات الموزعين على نطاق واسع.', href: null }
+        //{ title: 'الموزع الترا', description: 'استضافة متميزة لعمليات الموزعين على نطاق واسع.', href: null }
       ]
     },
     {
@@ -74,9 +74,9 @@ export function NavigationMenuDemo() {
         { title: 'الاستضافات المشاركة', description: 'استضافة مرنة ومناسبة من حيث التكلفة للشركات الصغيرة والمواقع الشخصية.', href: '/shared-hosting' },
         { title: 'الاستضافة السحابية', description: 'حلول استضافة قابلة للتوسع نمو مع احتياجات عملك.', href: '/cloud-hosting' },
         { title: 'استضافات الووردبريس', description: 'Optimized hosting environment tailored for WordPress websites.', href: '/wordpress-hosting' },
-        { title: 'Softaculous Hosting', description: 'One-click installs for over 400 applications using Softaculous.', href: '/softaculous-hosting' },
+        //{ title: 'Softaculous Hosting', description: 'One-click installs for over 400 applications using Softaculous.', href: '/softaculous-hosting' },
         { title: 'استضافات الأعمال', description: 'Professional-grade hosting for growing businesses with high performance.', href: '/business-hosting' },
-        { title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: '/programmers' },
+        //{ title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: '/programmers' },
         { title: 'استضافات البريد', description: 'Reliable email hosting with custom domains for professional communication.', href: '/mail-hosting' },
         { title: 'استضافات ويندوز', description: 'Windows-based hosting with support for .NET and other Microsoft technologies.', href: '/windows-hosting' },
         { title: 'سحابة نمور', description: 'Secure and high-performance cloud hosting for enterprise applications.', href: '/cloud-tiger' }
