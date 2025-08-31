@@ -24,7 +24,7 @@ export function NavigationMenuDemo() {
       label: 'الشركة',
       id: 'company',
       items: [
-        { title: 'عنا', description: 'تعرف على المزيد عن شركتنا وقيمنا وموقعنا.', href: '/about-us' },
+        { title: 'عنا', description: 'تعرف على المزيد عن شركتنا وقيمنا وموقعنا.', href: '/about' },
         //{ title: 'اتصل بنا', description: 'تواصل مع فريقنا لأي استفسارات أو دعم.', href: '/contact-us' },
         //{ title: 'الوظائف', description: 'انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.', href: '/careers' },
         //{ title: 'مركز الإعلام والأخبار', description: 'ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.', href: '/news' },
