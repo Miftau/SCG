@@ -10,7 +10,7 @@ import Asks from "../components/DataCenter/Asks/Asks";
 
 const AE = () => {
   const topDomain = {
-    name: ".TR",
+    name: ".Ae",
     price: "20 دولار فقط",
     flag: "/images/flag/sudan.png",
   };
