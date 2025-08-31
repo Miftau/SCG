@@ -17,7 +17,7 @@ const DistributorsProgram = () => {
                 title="برنامج الموزعين"
                 description="حقق الأرباح ووسع خدماتك."
                 primaryButtonText="سجل الان"
-                imageBottom="/images/dist-hero.svg"
+                imagesrc="/images/dist-hero.svg"
                 imageAlt="Hero Background"
             />
             <KubernetesSection />
