@@ -121,9 +121,9 @@ const ServerLocation = () => {
               y: 0,
               transition: { duration: 0.4, ease: "easeOut", delay: index * 0.05 }, // Staggered fade-in for location cards
             }}
-            className="flex flex-col items-center sm:flex-row sm:justify-around bg-white rounded-lg shadow-md p-4 hover:shadow-xl justify-between transition hover:scale-105 text-center sm:text-start"
+            className="flex flex-col items-center sm:flex-row sm:justify-around bg-white rounded-md shadow-md p-2 hover:shadow-xl justify-between transition hover:scale-105 text-center sm:text-start"
           >
-            <div className="mb-2 sm:mb-0">
+            <div>
               <img
                 src={location.flag }
                 alt={`${location.name} Flag`} // Descriptive alt text [^1]
@@ -133,16 +133,9 @@ const ServerLocation = () => {
               />
             </div>
             <div>
-              <p className="text-lg sm:text-xl font-semibold">{location.name}</p>
-              <p className="text-sm font-medium text-gray-600 flex justify-center sm:justify-start items-center gap-2 mt-1">
-                <span
-                  className="inline-block w-2.5 h-2.5 rounded-full"
-                  style={{ backgroundColor: location.color }}
-                ></span>
-                <span className="font-semibold" style={{ color: location.color }}>
+              <h1 className="mb-6 text-xl !mb-2 font-semibold">{location.name}</h1>
+              <p className="text-sm text-green-500">              
                   {location.response}
-                </span>
-                <span>الاستجابة</span>
               </p>
             </div>
           </motion.div>

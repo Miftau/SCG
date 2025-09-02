@@ -91,10 +91,10 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
             viewport={{ once: true }}
           >
-            <h2 className="inline-block bg-[#2B1F51] text-white text-base sm:text-lg font-semibold px-4 sm:px-6 py-2 rounded-lg">
+            <h2 className="text-center w-fit mx-auto bg-[#092346] text-white font-bold text-2xl p-2 rounded-xl mb-4">
               خدماتنا
             </h2>
-            <p className="text-lg sm:text-2xl lg:text-4xl mb-4 sm:mb-6 text-center">
+            <p className="lg:text-4xl text-xl mb-6 text-center">
               اكتشف الخدمات المقدمة لك
             </p>
           </motion.div>
@@ -146,20 +146,20 @@ export default function ServicesSection() {
 
                 {/* Content */}
                 <div className="px-4 mt-4 text-start">
-                  <h1 className="text-3xl rtl:text-2xl font-semibold">
+                  <h1 className="text-2xl rtl:text-xl font-semibold">
                     {service.title}
                   </h1>
-                  <p className="font-thin mb-4">
+                  <p className="font-thin mb-2">
                     {service.description}
                   </p>
-                  <div className="flex items-start justify-between mt-8 px-4 flex-row-reverse"></div>
 
                 </div>
+                <div className="flex items-start justify-between mt-8 px-4 flex-row-reverse"></div>
 
                   {/* Price Button */}
                   <div className="mt-8 mx-auto">
                     <div 
-                    className="bg-[#2B1F51] hover:bg-transparent transition hover:text-[#2B1F51] hover:border-2 hover:border-[#2B1F51] text-white rounded-md px-12 py-2 w-fit mx-auto cursor-pointer py-3 px-16 mb-6"
+                    className="bg-[#092346] hover:bg-transparent transition hover:text-[#092346] hover:border-2 hover:border-primary text-white rounded-md px-12 py-2 w-fit mx-auto cursor-pointer py-3 px-6 mb-6 text-lg font-semibold"
                   >
                     {service.price}
                   </div>
