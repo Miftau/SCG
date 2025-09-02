@@ -1,4 +1,3 @@
-// app/components/KubernetesHostingIntro.jsx
 'use client';
 
 import React from 'react';

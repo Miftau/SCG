@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection/HeroSection'
-import KubernetesHostingIntro from '../components/SharedHosting/KubernetesHostingIntro'
+import KubernetesHostingIntro from '../components/Microsoft365/KubernetesHostingIntro'
 import PricingCard from '../components/SharedHosting/PricingCard'
 import ClickSection from '../components/SharedHosting/ClickSection'
 import JoinSection from '../components/SharedHosting/JoinSection'
