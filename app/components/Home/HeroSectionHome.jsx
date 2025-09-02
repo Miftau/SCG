@@ -40,7 +40,7 @@ const HeroSectionHome = () => {
           </p>
           {/* Search box */}
           <div className="flex justify-center w-full">
-            <div className="relative mt-4 w-1/2 md:w-3/4">
+            <div className="relative mt-4 w-3/4">
               <input
                 type="search"
                 placeholder="بحث عن نطاق جديد"
