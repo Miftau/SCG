@@ -6,7 +6,7 @@ const DigitalCurrencies = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="">
-        <p className="text-[#2B1F51] text-center text-4xl font-bold">
+        <p className="text-[#2B1F51] capitalize text-center text-4xl font-semi-bold">
           العملات الرقمية
         </p>
         <p className="text-[#2B1F51] text-center text-lg font-medium pt-6">

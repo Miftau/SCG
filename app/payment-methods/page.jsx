@@ -11,10 +11,9 @@ const PaymentMethods = () => {
   return (
     <div className="overflow-x-hidden">
       <HeroSection
-        title="الاستضافات المشتركة"
-        description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
-        primaryButtonText="انشاء حساب"
-        secondaryButtonText="عرض الاسعار"
+        title="طرق الدفع"
+        description="ادفع بالطريقة التي تناسبك واستمتع بتجربة دفع سهلة وسلسة" 
+        secondaryButtonText="أبدأالآن"
         imageBottom="/images/payment-m.svg"
         imageAltBottom="Hero Background"
       />

@@ -6,36 +6,32 @@ import { motion } from "framer-motion";
 
 const BankTransfer = () => {
   const bank = [
-    {
+     {
       id: 1,
-      name: " ايبان",
-      image: "/images/bank2.png",
-      description:
-        "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
+      name: "بنكك",
+      image: "/images/bank4.png",
+      description:"تعرف على المزيد حول مصرفك، وخدماته، وكيف يساعدك في إدارة معاملاتك المالية بشكل آمن وفعال.",
       moreInfo: "المزيد",
     },
     {
       id: 2,
-      name: "فوري",
-      image: "/images/bank3.png",
-      description:
-        "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
+      name: " ايبان",
+      image: "/images/bank2.png",
+      description:"فهم أهمية رقم الحساب المصرفي الدولي (IBAN) في المعاملات الدولية وكيف يضمن تحويلات مالية آمنة ودقيقة.",
       moreInfo: "المزيد",
     },
-    {
+     {
       id: 3,
-      name: "بنكك",
-      image: "/images/bank4.png",
-      description:
-        "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
+      name: "تحويلات فورية",
+      image: "/images/bank3.png",
+      description:"أرسل واستقبل الأموال على الفور مع حلول دفع آمنة وموثوقة مصممة لإنجاز المعاملات بسرعة",
       moreInfo: "المزيد",
     },
     {
       id: 4,
       name: "اوو - كاش",
       image: "/images/bank1.png",
-      description:
-        "كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش عن اووكاش عن اووكاش عناووكاش كلام عن اووكاش كلام عن اووكاش كلام عن اووكاش",
+      description:"اكتشف مزايا Aww-Cash للمدفوعات الرقمية السلسة والإدارة المالية السهلة.",
       moreInfo: "المزيد",
     },
   ];
@@ -43,7 +39,7 @@ const BankTransfer = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="">
-        <p className="text-[#2B1F51] text-center text-4xl font-bold">
+        <p className="text-[#2B1F51] text-center text-4xl font-semi-bold">
           طرق دفع التحويل البنكي
         </p>
         <p className="text-[#2B1F51] text-center text-lg font-medium pt-6">
@@ -71,10 +67,10 @@ const BankTransfer = () => {
               />
             </div>
 
-            <div className="pt-4 border-b-2 border-[#2B1F51] w-1/4"></div>
-            <p className="pt-6 text-2xl font-bold"> {item.name}</p>
-            <p className="pt-6 font-bold text-[#2B1F51]">{item.description}</p>
-            <p className="pt-8 font-extrabold text-xl">{item.moreInfo}</p>
+            <div className="pt-2 border-b-4 border-[#2B1F51] w-1/4"></div>
+            <p className="pt-6 text-2xl font-semi-bold"> {item.name}</p>
+            <p className="pt-6 text-sm text-[#2B1F51]">{item.description}</p>
+            <p className="pt-8 text-lg">{item.moreInfo}</p>
           </motion.div>
         ))}
       </div>

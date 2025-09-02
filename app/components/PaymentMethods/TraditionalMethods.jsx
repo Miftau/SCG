@@ -32,7 +32,7 @@ const TraditionalMethods = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="">
-        <p className="text-center text-4xl font-bold">طرق الدفع التقليدية</p>
+        <p className="text-center text-4xl font-semi-bold">طرق الدفع التقليدية</p>
       </div>
 
       <div className="pt-10">
