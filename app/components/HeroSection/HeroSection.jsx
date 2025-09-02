@@ -40,7 +40,7 @@ const HeroSection = ({
           {secondaryButtonText && (
             <Button
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#0A1C3F] px-6 py-20 text-base bg-transparent md:px-8 md:py-4 md:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className="border-white text-white hover:bg-white w-1/2 md:w-2/5 hover:text-[#0A1C3F] px-6 text-base bg-transparent md:px-8 md:py-4 md:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               {secondaryButtonText}
             </Button>
