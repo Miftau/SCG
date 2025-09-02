@@ -55,7 +55,7 @@ const HeroSectionHome = () => {
               </button>
             </div>
           </div>
-          {/* <div className="flex gap-4 mt-8">
+          <div className="flex gap-4 mt-8">
             <img
               src="/images/542e8bd45065bae71f3f7a0e25f1b8d34418216f.png"
               alt="Center Illustration"
@@ -92,7 +92,7 @@ const HeroSectionHome = () => {
               height={50}
               className="object-contain"
             />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
