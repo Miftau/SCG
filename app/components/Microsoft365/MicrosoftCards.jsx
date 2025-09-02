@@ -111,7 +111,7 @@ const MicrosoftCards = () => {
                 <div className="p-4 flex flex-col h-full">
                   
                   {/* Title + Icon aligned to right */}
-                  <div className="flex items-center justify-end mb-2 space-x-4 space-x-reverse">
+                  <div className="flex items-center justify-end mb-2 space-x-72">
                     <h3 className="text-lg font-semibold text-gray-900">{card.title}</h3>
                     <motion.div
                       variants={iconVariants}
@@ -146,10 +146,6 @@ const MicrosoftCards = () => {
         </div>
       </div>
 
-      {/* Floating Animation */}
-      <div className="fixed top-1/4 left-1/4 w-16 h-16 bg-blue-100 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '0s' }}></div>
-      <div className="fixed top-1/3 right-1/4 w-12 h-12 bg-green-100 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '1s' }}></div>
-      <div className="fixed bottom-1/4 left-1/3 w-8 h-8 bg-purple-100 rounded-full opacity-20 animate-bounce" style={{ animationDelay: '2s' }}></div>
     </div>
   );
 };

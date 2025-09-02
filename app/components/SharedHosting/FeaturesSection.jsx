@@ -1,63 +1,39 @@
 // app/components/FeaturesSection.jsx
-"use client";
-
-import React from 'react';
+import React from "react";
 
 const FeaturesSection = () => {
+  const features = [
+    "Backup and recovery for physical, virtual and cloud environments.",
+    "Malware protection and anti-ransomware.",
+    "Protect and manage peripheral devices.",
+    "Detect and respond to advanced threats.",
+    "Email protection and archiving.",
+    "Cloud-based disaster recovery.",
+    "Central management and control.",
+    "Central management and control.",
+    "Central management and control.",
+  ];
+
+  const icon = (
+    <img
+      src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_9_78481)'%3e%3cpath%20d='M12%200C5.37262%200%200%205.37262%200%2012C0%2018.6277%205.37262%2024%2012%2024C18.6277%2024%2024%2018.6277%2024%2012C24%205.37262%2018.6277%200%2012%200ZM12%2022.5236C6.21037%2022.5236%201.5%2017.7896%201.5%2012C1.5%206.21033%206.21037%201.49995%2012%201.49995C17.7896%201.49995%2022.5%206.21035%2022.5%2012C22.5%2017.7896%2017.7896%2022.5236%2012%2022.5236ZM16.7891%207.60913L9.74848%2014.694L6.57785%2011.5234C6.28498%2011.2305%205.81023%2011.2305%205.51698%2011.5234C5.2241%2011.8162%205.2241%2012.291%205.51698%2012.5839L9.2291%2016.2964C9.52198%2016.5889%209.99673%2016.5889%2010.29%2016.2964C10.3237%2016.2626%2010.3526%2016.2259%2010.3789%2016.1876L17.8504%208.66998C18.1429%208.3771%2018.1429%207.90235%2017.8504%207.60913C17.5571%207.31625%2017.0824%207.31625%2016.7891%207.60913Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_9_78481'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+      alt="check icon"
+      className="w-6 h-6 flex-shrink-0"
+    />
+  );
+
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Main Heading */}
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6 leading-tight">
-          لست واثقًا من أين ستبدأ؟ لا تقلق، سنقوم بمساعدتك
-        </h1>
-
-        {/* Subheading */}
-        <p className="text-lg text-gray-600 text-center mb-6 max-w-3xl mx-auto leading-relaxed">
-          شركة العكوت التي وصفها مرؤدا رسمياً لحلول مايكروسوفت السحابية، على استعداد لمساعدتك مؤسسات في شأي حل الإنتاجية السحابي "مايكروسوفت 365" ودمجه بالكامل مع أبنة عملك.
-        </p>
-
-        {/* Description */}
-        <p className="text-base text-gray-600 text-center mb-12 max-w-3xl mx-auto leading-relaxed">
-          نفتخر بخدمتنا للعديد من الشركات في رحلتهم لتنفيذ عملية انتقالهم إلى خدمات مايكروسوفت 365 بنجاح – ونسردنا مساعدتكم أنتم كذلك!
-        </p>
-
-        {/* Call to Action Button */}
-        <div className="flex justify-center mb-16">
-          <button className="border border-black text-black font-semibold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 hover:bg-black hover:text-white shadow-sm">
-            اطلب الآن!
-          </button>
-        </div>
-
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {[
-            { text: "تغييرات الإعدادات" },
-            { text: "التدريب" },
-            { text: "الدعم الفني" },
-            { text: "ضبط الإعدادات والتخصيص" },
-            { text: "ترحيل البيانات والمستخدمين" },
-            { text: "ترحيل SharePoint Online" }
-          ].map((feature, index) => (
-            <div key={index} className="flex flex-col items-center text-center group">
-              <div className="w-10 h-10 border border-black rounded-full flex items-center justify-center mb-4 group-hover:border-gray-500 transition-colors duration-300 group-hover:bg-gray-100">
-                <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <p className="text-gray-700 font-medium">{feature.text}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Bottom Image */}
-        <div className="flex justify-center">
-          <img 
-            src="/images/ls-start-graphic1.svg" 
-            alt="Process illustration" 
-            className="w-full max-w-4xl h-auto object-cover"
-          />
-        </div>
+    <section className="my-12">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 gap-y-8 my-12">
+        {features.map((feature, index) => (
+          <div key={index} className="flex items-start gap-2 mx-16">
+            {icon}
+            <p className="text-gray-800">{feature}</p>
+          </div>
+        ))}
+      </div>
+      <div className="mt-8 flex justify-center">
+        <img src="/images/Group%202431-ClP1STLt.svg" alt="features illustration" />
       </div>
     </section>
   );
