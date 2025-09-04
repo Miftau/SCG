@@ -1,5 +1,6 @@
 import JavaScriptObfuscator from "javascript-obfuscator";
 
+
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
@@ -90,6 +91,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  
   async rewrites() {
     return [];
   },

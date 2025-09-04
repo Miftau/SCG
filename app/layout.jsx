@@ -2,7 +2,9 @@ import { Cairo, Geist as GeistSans, Geist_Mono as GeistMono } from "next/font/go
 import "./globals.css";
 import Navbar from "./components/Header/Navbar";
 import Footer from "./components/Footer/Footer";
-import DisableRightClick from "./components/DisableRightClick"; // import wrapper
+import DisableRightClick from "./components/DisableRightClick";
+import { TranslatorProvider } from "./context/TranslatorContext";
+
 
 const geistSans = GeistSans({
   variable: "--font-geist-sans",
@@ -31,11 +33,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}
       >
+        <TranslatorProvider>
         <DisableRightClick>
           <Navbar />
           {children}
           <Footer />
         </DisableRightClick> 
+        </TranslatorProvider>
       </body>
     </html>
   );
