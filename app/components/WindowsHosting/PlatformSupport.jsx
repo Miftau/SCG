@@ -15,10 +15,6 @@ const platforms = [
     name: "صندوق الضمان الاجتماعي",
     image: "/images/partner3.png",
   },
-    {
-    name: "صندوق الضمان الاجتماعي",
-    image: "/images/partner3.png",
-  },
   {
     name: "مصلحة السجل التجاري",
     image: "/images/partner2.png",
@@ -51,9 +47,9 @@ const PlatformSupport = () => {
           {platforms.map((platform, index) => (
             <div
               key={index}
-              className="w-[200px] h-[200px] flex flex-col-reverse items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="w-[220px] h-[200px] flex flex-col-reverse items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
             >
-              <p className="text-[#2B1F51] text-center text-xl font-bold">
+              <p className="text-[#2B1F51] text-center text-sm">
                 {platform.name}
               </p>
               <div className="w-[100px] h-[100px] relative">
