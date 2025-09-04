@@ -2,19 +2,19 @@ import React from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
 import PricingCard from "../components/SharedHosting/PricingCard";
 import KubernetesWindosHosting from "../components/WindowsHosting/KubernetesWindosHosting";
-import BeastSection from "../components/DataCenter/BeastSection/BeastSection";
 import CloudAdoptionSupport from "../components/WindowsHosting/CloudAdoptionSupport";
 import Asks from "../components/DataCenter/Asks/Asks";
 import PlatformSupport from "../components/WindowsHosting/PlatformSupport";
+import WindowsKeyAdSection from "../components/WindowsKeyAdSection";
 
 const WindowsHosting = () => {
   return (
     <div className="overflow-x-hidden">
       <HeroSection
-        title="الاستضافات المشتركة"
-        description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
+        title="استضافة ويندوز"
+        description="واحدة من أفضل وأسرع وأسهل خدمات الاستضافة"
         primaryButtonText="انشاء حساب"
-        secondaryButtonText="عرض الاسعار"
+        secondaryButtonText="سجل الآن"
         imageBottom="/images/winds-hero.svg"
         imageAltBottom="Hero Background"
     
@@ -22,7 +22,7 @@ const WindowsHosting = () => {
       <KubernetesWindosHosting />
       <PricingCard />
       <CloudAdoptionSupport />
-      <BeastSection />
+      <WindowsKeyAdSection/>
       <PlatformSupport  />
       <Asks />
     </div>
