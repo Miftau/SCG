@@ -6,7 +6,6 @@ import { NavigationMenuDemo } from "../Header/MainNavbar";
 const HeroSection = ({
   title,
   description,
-  primaryButtonText,
   secondaryButtonText,
   imageBottom,
   imageAltBottom,
@@ -31,27 +30,21 @@ const HeroSection = ({
 
       {/* Text Content */}
       <div className="relative z-30 text-center text-white px-4 max-w-3xl mx-auto py-8 md:py-12 lg:py-16">
-        <h1 className="text-xl font-bold mb-3 md:text-2xl lg:text-3xl leading-snug">
+        <h1 className="text-xl font-semi-bold mb-3 md:text-2xl lg:text-4xl leading-snug">
           {title}
         </h1>
         <p className="text-base mb-4 leading-relaxed md:text-lg lg:text-xl pt-4 text-gray-300">
           {description}
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          {primaryButtonText && (
-            <Button className="bg-white text-[#0A1C3F] hover:bg-gray-100 px-6 py-3 text-base md:px-8 md:py-4 md:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              {primaryButtonText}
-            </Button>
-          )}
+        
           {secondaryButtonText && (
             <Button
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#0A1C3F] px-6 py-3 text-base bg-transparent md:px-8 md:py-4 md:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className="border-white text-white hover:bg-white w-1/2 md:w-2/5 hover:text-[#0A1C3F] px-6 text-base bg-transparent md:px-8 md:py-4 md:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               {secondaryButtonText}
             </Button>
           )}
-        </div>
       </div>
 
     

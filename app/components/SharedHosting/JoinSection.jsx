@@ -55,7 +55,7 @@ const JoinSection = () => {
               src="/images/Group3417.png"
               alt="Illustration of a browser window with gears and an awning"
               layout="fill"
-              objectFit="contain"
+              // objectFit="contain"
               className="drop-shadow-lg"
             />
           </div>
