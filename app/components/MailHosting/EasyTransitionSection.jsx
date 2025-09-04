@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const EasyTransitionSection = () => {
   return (
-    <section className="w-5xl mx-auto py-2 md:py-4 lg:py-6 bg-[#1A2B40] text-white rounded-lg">
+    <section className="w-5xl mx-auto py-2 md:py-4 lg:py-6 bg-[#1A2B40] text-white rounded-lg mb-24">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{
@@ -26,7 +26,7 @@ const EasyTransitionSection = () => {
             الإلكتروني بدعمنا الكامل، حتى لا يكون هناك أي اضطرابات أو توقفات أو
             فقدان للبيانات من أي نوع.
           </p>
-          <p className="text-sm font-semibold text-gray-200">ابدأ الآن!</p>
+          <p className="text-white font-bold mt-4 cursor-pointer hover:scale-x-110 transition-all duration-300">ابدأ الآن!</p>
         </div>
         {/* Left side: Illustration */}
         <div className="flex justify-center md:justify-start">

@@ -10,6 +10,7 @@ import ImageSection from "../components/CloudServers/ImageSection";
 import CloudImageSection from "../components/CloudServers/CloudImageSection";
 import DashboardFeatures from "../components/Home/DashboardFeatures";
 import PartnersGrid from "../components/SharedHosting/PartnersGrid";
+import AdvantagesShared from "../components/SharedHosting/AdvantagesShared";
 
 const CloudServers = () => {
   return (
@@ -27,7 +28,7 @@ const CloudServers = () => {
       <NISTFrameworkSection />
       <MainFeature/>
       <ImageSection />
-      <BeastSection />
+      <AdvantagesShared />
       <Asks />
     </div>
   );

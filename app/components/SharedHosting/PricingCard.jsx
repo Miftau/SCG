@@ -49,7 +49,7 @@ const PricingCard = ({ plan, index }) => {
       </div>
       
       <div className="w-full h-[2px] bg-black bg-opacity-5 mt-8"></div>
-      <p className="mt-8 text-center z-5">compare packages</p>
+      <p className="my-4 text-center z-5">compare packages</p>
       
     </div>
   );

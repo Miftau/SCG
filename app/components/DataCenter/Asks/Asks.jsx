@@ -1,44 +1,40 @@
-
 import React from "react";
 import AccordionDemo from "./AccordionDemo";
 
 const Asks = () => {
   return (
-    <div className="p-0 md:p-8 frlex flex-col justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 justify-items-center md:justify-items-stretch">
-        {/* القسم الأيسر - الكروت */}
-        <div className="col-span-12 md:col-span-4">
-          <div className="flex flex-col justify-center items-center md:items-start gap-y-8">
-            {/* الكارت الأول */}
-            <div className="bg-white flex flex-col justify-center items-center md:items-start gap-y-4 p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
-              <img
-                src="/images/Group228.png"
-                alt="Asks Icon"
-                width={50}
-                height={50}
-                className="object-cover"
-              />
-              <p className="font-bold text-xl">مركز المساعدة</p>
-            </div>
-            {/* الكارت الثاني */}
-            <div className="bg-white flex flex-col justify-center items-center md:items-start gap-y-4 p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
-              <img
-                src="/images/download 1.png"
-                alt="Asks Icon"
-                width={50}
-                height={50}
-                className="object-cover"
-              />
-              <p className="font-bold text-xl">الأسئلة الشائعة</p>
-            </div>
+    <div className="p-4 md:p-8 flex flex-col justify-center items-center">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 justify-items-center md:justify-items-stretch w-full max-w-6xl">
+        
+        {/* Left side - Cards */}
+        <div className="col-span-12 md:col-span-4 flex flex-col gap-y-6">
+          {/* Card 1 - FAQ Active */}
+          <div className="bg-white flex flex-col justify-center items-center gap-y-3 px-2 py-8 rounded-xl border border-gray-200 shadow-md relative">
+            <img
+              src="/images/Group228.png" // replace with your FAQ icon
+              alt="FAQ Icon"
+              className="w-32 h-32 object-contain"
+            />
+            <p className="font-semibold text-base text-gray-800">
+              الأسئلة الشائعة
+            </p>
+            <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-blue-500 rounded-b-md"></span>
+          </div>
+
+          {/* Card 2 - Help Center */}
+          <div className="bg-white flex flex-col justify-center items-center gap-y-3 px-0 py-8 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
+            <img
+              src="/images/download 1.png" // replace with your Help Center icon
+              alt="Help Center Icon"
+              className="w-32 h-32 object-contain"
+            />
+            <p className="font-semibold text-base text-gray-800">مركز المساعدة</p>
           </div>
         </div>
 
-        {/* القسم الأيمن - Accordion */}
+        {/* Right side - Accordion */}
         <div className="col-span-12 md:col-span-8">
-          <div className="h-full w-full max-w-2xl">
-            <AccordionDemo />
-          </div>
+          <AccordionDemo />
         </div>
       </div>
     </div>

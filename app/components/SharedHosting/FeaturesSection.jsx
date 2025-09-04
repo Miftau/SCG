@@ -3,15 +3,15 @@ import React from "react";
 
 const FeaturesSection = () => {
   const features = [
-    "Backup and recovery for physical, virtual and cloud environments.",
-    "Malware protection and anti-ransomware.",
-    "Protect and manage peripheral devices.",
-    "Detect and respond to advanced threats.",
-    "Email protection and archiving.",
-    "Cloud-based disaster recovery.",
-    "Central management and control.",
-    "Central management and control.",
-    "Central management and control.",
+    "النسخ الاحتياطي والاستعادة للبيئات المادية والافتراضية والسحابية.",
+    "الحماية من البرامج الضارة ومكافحة الفدية.",
+    "حماية الأجهزة الطرفية وإدارتها.",
+    "الكشف عن التهديدات المتقدمة والاستجابة لها.",
+    "حماية البريد الإلكتروني وأرشفته.",
+    "التعافي من الكوارث عبر السحابة.",
+    "الإدارة والتحكم المركزي.",
+    "الإدارة والتحكم المركزي.",
+    "الإدارة والتحكم المركزي.",
   ];
 
   const icon = (
