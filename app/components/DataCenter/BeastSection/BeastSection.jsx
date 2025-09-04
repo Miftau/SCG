@@ -18,12 +18,7 @@ const BeastSection = () => {
       title: "التخفيف من هجمات DDoS",
       description: "يمكن أن تتسبب هجمات حجب الخدمة الموزعة (DDoS) في التوقف التام لعملك. نحن نحظر هجمات DDoS للطبقات 3 و 4 و 7 ومع تأمين معدل نقل البيانات bandwidth أثناء الهجمات."
     },
-    {
-      iconSrc: "/images/Group3773.png",
-      iconAlt: "Shared Hosting",
-      title: "الاستضافة السحابية المشتركة",
-      description: "استضف موقعك بسهولة وأريحيّة وبتكلفة اقتصادية! مع الاستضافة السحابية المشتركة. مُدارة مع عمليات DevOps المؤتمتة. تسعير الدفع حسب الاستخدام."
-    },
+
     {
       iconSrc: "/images/Group(1).png",
       iconAlt: "Security Protection",
