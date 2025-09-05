@@ -3,7 +3,7 @@ import AccordionDemo from "./AccordionDemo";
 
 const Asks = () => {
   return (
-    <div className="p-0 md:p-8 frlex flex-col justify-center items-center">
+    <div className="p-0 md:p-8 frlex flex-col justify-center items-center my-14">
       <div className="grid grid-cols-1 md:grid-cols-12 justify-items-center md:justify-items-stretch">
         {/* القسم الأيسر - الكروت */}
         <div className="col-span-12 md:col-span-4">
