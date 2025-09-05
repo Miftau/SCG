@@ -5,6 +5,7 @@ import BackupsGrowSection from "../components/Backups/BackupsGrowSection";
 import BeastSection from "../components/DataCenter/BeastSection/BeastSection";
 import Asks from "../components/DataCenter/Asks/Asks";
 import PlatformSupport from "../components/Backups/PlatformSupport";
+import WindowsKeyAdSection from "../components/WindowsKeyAdSection";
 
 const ServerManagement = () => {
   return (
@@ -13,13 +14,14 @@ const ServerManagement = () => {
         title="إدارة الخوادم"
         description="دعنا ندير جميع خوادمك من أجلك!"
         primaryButtonText="تسجيل الان"
+        secondaryButtonText="سجل الآن!"
         imageBottom="/images/server-m.svg"
         imageAltBottom="Hero Background"
       />
       <PricingCard />
       <BackupsGrowSection />
       <PlatformSupport />
-      <BeastSection />
+      <WindowsKeyAdSection/>
       <Asks />
     </div>
   );

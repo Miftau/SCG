@@ -6,6 +6,7 @@ import AchievementsTimeline from '../components/About/AchievementsTimeline'
 import BenefitsSection from '../components/Programmers/BenefitsSection'
 import WhyChooseUs from '../components/Programmers/WhyChooseUs'
 import Asks from '../components/DataCenter/Asks/Asks'
+import InsteretedContact from '../components/InsteretedContact'
 
 const page = () => {
     return (
@@ -14,6 +15,7 @@ const page = () => {
             <TigersCompany />
             <AchievementsTimeline />
             <WhyChooseUs />
+            <InsteretedContact/>
             <Asks />
 
         </div>

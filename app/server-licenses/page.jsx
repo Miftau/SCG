@@ -10,10 +10,10 @@ const ServerLicenses = () => {
   return (
     <div className="overflow-x-hidden">
       <HeroSection
-        title="الاستضافات المشتركة"
-        description="كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات المشتركة كلام و وصف للاستضافات كلام و المشتركة كلام و وصف للاستضافات المشتركة"
+        title="تراخيص الخوادم"
+        description="ترخيص واحد للخوادم الخاصة والخوادم الكاملة المخصصة"
         primaryButtonText="انشاء حساب"
-        secondaryButtonText="عرض الاسعار"
+        secondaryButtonText="سجل الآن!"
         imageBottom="/images/server-l.svg"
         imageAltBottom="Hero Background"
       />

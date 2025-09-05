@@ -7,10 +7,12 @@ const WhyChooseUs = () => {
         {
             skylineSrc: "/images/Group3277.png",
             skylineAlt: "Cloud Services Skyline",
-            title: "استضافة ثابتة بمستوى الشركات",
-            descrption:
-                "قم بتقديم تطبيقاتك الثابتة بأمان وأداء عاليين. استفد من التحديثات الفورية، والوصول العالمي، وعدم الحاجة إلى الصيانة.",
+            title: "استضافة ثابتة موثوقة",
+             descrption:
+                "استضف مواقعك الثابتة بوقت تحميل فائق السرعة واستقرار لا مثيل له. استمتع بنشر سلس مع شبكة CDN موزعة عالميًا.",
         },
+
+         
         {
             skylineSrc: "/images/Group 3275.png",
             skylineAlt: "Cloud Services Skyline",
@@ -21,22 +23,21 @@ const WhyChooseUs = () => {
         {
             skylineSrc: "/images/Group 3274.png",
             skylineAlt: "Cloud Services Skyline",
-            title: "استضافة ثابتة موثوقة",
-            descrption:
-                "استضف مواقعك الثابتة بوقت تحميل فائق السرعة واستقرار لا مثيل له. استمتع بنشر سلس مع شبكة CDN موزعة عالميًا.",
+            title: "استضافة ثابتة بمستوى الشركات",
+              descrption:
+                "قم بتقديم تطبيقاتك الثابتة بأمان وأداء عاليين. استفد من التحديثات الفورية، والوصول العالمي، وعدم الحاجة إلى الصيانة.",
         },
-
 
     ];
 
 
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 space-y-10">
             <div className="py-8">
-                <p className="text-center text-4xl font-bold text-[#2B1F51] ">
+                <p className="text-center text-4xl font-semibold text-[#2B1F51] ">
                     لماذا تختار النمور؟
                 </p>
-                <p className="text-center text-lg font-sm text-[#2B1F51] pt-4">
+                <p className="text-center text-[1.1rem] font-sm text-[#2B1F51] pt-4">
                     حلول وخدمات متطوّرة وشاملة، للأفراد والمؤسسات
                 </p>
             </div>
@@ -50,7 +51,7 @@ const WhyChooseUs = () => {
                             transition: { duration: 0.4, ease: "easeOut" },
                         }}
                         key={index}
-                        className="card-hover bg-white rounded-2xl border border-gray-200 shadow-md   p-4 "
+                        className="card-hover bg-white rounded-2xl border border-gray-200 shadow-md p-4 "
                     >
                         <div className="">
                             <img
@@ -60,30 +61,14 @@ const WhyChooseUs = () => {
                                 height={50}
                                 className=" object-cover"
                             />
-                            <p className="font-bold text-lg">{location.title}</p>
-                            <p className="font-normal text-sm text-gray-600 pt-4">
+                            <p className="text-xl pt-8">{location.title}</p>
+                            <p className="font-normal text-black pt-4">
                                 {location.descrption}
                             </p>
                             <p className="font-extrabold text-xl pt-4">{location.button}</p>
                         </div>
                     </motion.div>
                 ))}
-            </div>
-
-            <div className="w-full py-12 md:py-20 bg-white" >
-                <p className="text-center text-xl font-medium pb-16 text-[#2B1F51]">
-                    هل أنت مهتم بمعرفة كيف يمكننا مساعدة عملك على النجاح؟ . اتصل بنا .
-
-                </p>
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12 lg:gap-16">
-                        <img src="/images/microsoft-GkOjRO04.svg" alt="Online Payment" width={400} height={400} className="object-contain" />
-                        <img src="/images/Group 2306-DCwOO3nP.svg" alt="Online Payment" width={400} height={400} className="object-contain" />
-                        <img src="/images/download.svg" alt="Online Payment" width={400} height={400} className="object-contain" />
-                        <img src="/images/Group 2307-nyjIzQtj.svg" alt="Online Payment" width={400} height={400} className="object-contain" />
-                        <img src="/images/Group 2309-sk_OY7Jm.svg" alt="Online Payment" width={400} height={400} className="object-contain" />
-                    </div>
-                </div>
             </div>
         </div>
     );

@@ -2,33 +2,34 @@
 import { motion } from "framer-motion";
 
 const platforms = [
-  {
-    name: "Phpbb",
-    image: "/images/2b081e2af564ba23048250b2346aa2d1006ca7d8.png",
+    {
+    name: "WordPress",
+    image: "/images/wp_logo.png",
   },
-  {
-    name: "Joomla",
-    image: "/images/c1279760d98df16893193f8d684cf90b5022b958.png",
+    {
+    name: "Magento",
+    image: "/images/226dc0bdd5ea31390b4f41d5a46ef46b115af19d.png",
   },
   {
     name: "Drupal",
     image: "/images/a8f099c22358fde6d6f58dac6c01b07fbd2c9625.png",
   },
-  {
-    name: "Magento",
-    image: "/images/226dc0bdd5ea31390b4f41d5a46ef46b115af19d.png",
+    {
+    name: "Joomla",
+    image: "/images/c1279760d98df16893193f8d684cf90b5022b958.png",
   },
-  {
-    name: "WordPress",
-    image: "/images/wp_logo.png",
+    {
+    name: "Phpbb",
+    image: "/images/2b081e2af564ba23048250b2346aa2d1006ca7d8.png",
   },
+
 ];
 
 const PlatformSupport = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-12">
       <div>
-        <p className="text-[#2B1F51] text-center text-4xl font-bold">
+        <p className="text-[#2B1F51] text-center text-4xl font-semibold">
           تُقدّم Sucuri دعم لمختلف المنصات
         </p>
         <p className="text-[#2B1F51] text-center text-lg font-medium pt-6">
@@ -51,7 +52,7 @@ const PlatformSupport = () => {
             key={index}
             className="w-[200px] h-[200px] flex flex-col-reverse items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           >
-            <p className="text-[#2B1F51] text-center text-xl font-bold">
+            <p className="text-[#2B1F51] text-center text-sm">
               {platform.name}
             </p>
             <div className="w-[100px] h-[100px] relative">
