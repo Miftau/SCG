@@ -1,4 +1,4 @@
-import { Smile, Clock, Globe, MessageCircle, MapPin } from "lucide-react"
+import { Smile, Clock, Globe, MessageCircle, MapPin, PowerCircle, PowerIcon, Power, PowerSquareIcon,  } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const AchievementsTimeline = () => {
@@ -25,15 +25,15 @@ const AchievementsTimeline = () => {
     },
   ];
    const stats = [
-    {
-      title: "رضا العملاء",
-      value: "100%",
-      icon: Smile,
+     {
+      title: "مراكز المعلومات",
+      value: "5",
+      icon: MapPin,
     },
     {
-      title: "الوقت المتاح مضمون",
+      title:"الاستقلالية",
       value: "99.9%",
-      icon: Clock,
+      icon: MessageCircle,
     },
     {
       title: "المواقع المستضافة",
@@ -41,22 +41,23 @@ const AchievementsTimeline = () => {
       icon: Globe,
     },
     {
-      title: "الاستقلالية",
+      title:"ضمان وقت التشغيل",
       value: "99.9%",
-      icon: MessageCircle,
+      icon: Power,
     },
-    {
-      title: "مراكز المعلومات",
-      value: "5",
-      icon: MapPin,
+     {
+      title: "رضا العملاء",
+      value: "100%",
+      icon: Smile,
     },
+   
   ]
 
   return (
     <div className="py-12 px-4"> {/* <-- min-h-screen تمت إزالتها */}
       <div className="max-w-4xl mx-auto">
         {/* Title */}
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">إنجازاتنا</h2>
+        <h2 className="text-4xl font-semibold text-center text-gray-800 mb-12">إنجازاتنا</h2>
 
         {/* Timeline */}
         <div className="relative">
@@ -66,16 +67,16 @@ const AchievementsTimeline = () => {
           {achievements.map((achievement, index) => (
             <div key={index} className="relative mb-12 last:mb-0">
               {/* Timeline dot */}
-              <div className="absolute right-1/2 transform translate-x-1/2 w-4 h-4 bg-purple-600 rounded-full border-4 border-[#f8f6f3] z-10"></div>
+              <div className="absolute right-1/2 transform translate-x-1/2 w-6 h-6 bg-[#480689] rounded-full border-4 z-10"></div>
 
               {/* Content */}
-              <div className={`flex ${index % 2 === 0 ? "justify-end" : "justify-start"}`}>
-                <div className={`w-5/12 ${index % 2 === 0 ? "pr-6" : "pl-6"}`}>
-                  <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                    <div className="text-sm font-semibold text-gray-700 mb-2 border-b border-gray-200 pb-1">
-                      {achievement.date}
+              <div className={`flex ${index % 2 === 0 ? "justify-start" : "justify-end"}`}>
+                <div className={`w-6/12 ${index % 2 === 0 ? "pr-6" : "pl-6"}`}>
+                  <div className=" p-4">
+                    <div className={`text-lg font-bold mb-2 pb-1 ${index % 2 === 0 ? "text-right" : "text-left" }`}>
+                      { achievement.date}
                     </div>
-                    <p className="text-gray-600 leading-relaxed text-sm">{achievement.text}</p>
+                    <p className="text-black leading-relaxed">{achievement.text}</p>
                   </div>
                 </div>
               </div>
@@ -89,11 +90,11 @@ const AchievementsTimeline = () => {
           return (
             <Card key={index} className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-200">
               <CardContent className="p-6 text-center">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-sm font-medium text-gray-600 text-right flex-1">{stat.title}</h3>
-                  <IconComponent className="w-5 h-5 text-gray-400 ml-2 flex-shrink-0" />
+                <div className="flex gap-4 mb-4">
+                  <IconComponent className="w-5 h-5 text-black ml-2 flex-shrink-0" />
+                  <h3 className=" text-black">{stat.title}</h3>
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-2">{stat.value}</div>
+                <div className="text-4xl font-semibold  text-gray-900 mb-2">{stat.value}</div>
               </CardContent>
             </Card>
           )
