@@ -2,22 +2,24 @@ import React from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
 import LaunchHero from "../components/Fast/LaunchHero/LaunchHero";
 import BackGroundSection from "../components/Fast/BackGroundSection/BackGroundSection";
-import BeastSection from "../components/DataCenter/BeastSection/BeastSection";
 import Asks from "../components/DataCenter/Asks/Asks";
+import BackupsGrowSection from "../components/Backups/BackupsGrowSection";
+import SpeedAdvantage from "../components/SpeedAdvantage";
 
 const Fast = () => {
   return (
     <div className="overflow-x-hidden">
       <HeroSection
         title="السرعة"
-        description="السرعة السرعة السرعة السرعة السرعة السرعة السرعة"
+        description="احمِ بيانات موقعك، واعرض لزوارك شهادة الأمان الخاصة بك."
         primaryButtonText="ابدا الان!"
-        imagesrc="/images/Group19.png"
-        imageAlt="Hero Background"
+        secondaryButtonText="سجل الآن"
+       imageBottom="/images/speed.svg"
+        imageAltBottom="Hero Background"
       />
       <LaunchHero />
       <BackGroundSection />
-      <BeastSection />
+      <SpeedAdvantage/>
       <Asks />
     </div>
   );

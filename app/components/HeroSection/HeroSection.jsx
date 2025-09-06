@@ -7,8 +7,8 @@ const HeroSection = ({
   title,
   description,
   secondaryButtonText,
-  imageBottom,
-  imageAltBottom,
+  imageBottom="/images/speed.svg",
+  imageAltBottom="Hero Background"
 }) => {
   return (
     <div
@@ -30,7 +30,7 @@ const HeroSection = ({
 
       {/* Text Content */}
       <div className="relative z-30 text-center text-white px-4 max-w-3xl mx-auto py-8 md:py-12 lg:py-16">
-        <h1 className="text-xl font-semibold mb-3 md:text-2xl lg:text-4xl leading-snug">
+        <h1 className="text-xl capitalize font-semibold mb-3 md:text-2xl lg:text-4xl leading-snug">
           {title}
         </h1>
         <p className="text-base mb-4 leading-relaxed pt-1 text-gray-300">

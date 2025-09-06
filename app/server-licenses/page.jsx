@@ -3,8 +3,8 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import PricingCard from "../components/SharedHosting/PricingCard";
 import LicenseSection from "../components/ServerLicenses/LicenseSection";
 import OverviewSection from "../components/ServerLicenses/OverviewSection";
-import WhyChooseUs from "../components/ServerLicenses/WhyChooseUs";
 import Asks from "../components/DataCenter/Asks/Asks";
+import WhyChooseTigerServerLicenses from "../components/WhyChooseTigerServerLicenses";
 
 const ServerLicenses = () => {
   return (
@@ -20,7 +20,7 @@ const ServerLicenses = () => {
       <PricingCard />
       <LicenseSection />
       <OverviewSection />
-      <WhyChooseUs />
+      <WhyChooseTigerServerLicenses/>
       <Asks />
     </div>
   );

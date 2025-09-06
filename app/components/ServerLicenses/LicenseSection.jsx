@@ -24,14 +24,6 @@ const LicenseSection = () => {
       period: "/Month",
     },
     {
-      id: "litespeed",
-      name: "LiteSpeed",
-      logo: "/images/0066b2d2bcad17704f44334a0546dfc4ea200170.png",
-      price: "15.00",
-      currency: "$",
-      period: "/Month",
-    },
-    {
       id: "kernelcare",
       name: "KernelCare",
       logo: "/images/65e2f52fdf4a054291aab7886a49fa832a174f67.png",
@@ -40,9 +32,17 @@ const LicenseSection = () => {
       period: "/Month",
     },
     {
-      id: "jetbackup",
-      name: "JetBackup",
-      logo: "/images/391b4ec0b6a6c8af4f95170b677c5c78446de47e.png",
+      id: "litespeed",
+      name: "LiteSpeed",
+      logo: "/images/0066b2d2bcad17704f44334a0546dfc4ea200170.png",
+      price: "15.00",
+      currency: "$",
+      period: "/Month",
+    },
+     {
+      id: "cloudlinux-2",
+      name: "CloudLinux",
+      logo: "/images/12ca73a032e2be1cb037c513e99d03532e1065a0.png",
       price: "15.00",
       currency: "$",
       period: "/Month",
@@ -63,27 +63,28 @@ const LicenseSection = () => {
       currency: "$",
       period: "/Month",
     },
-    {
-      id: "cloudlinux-2",
-      name: "CloudLinux",
-      logo: "/images/12ca73a032e2be1cb037c513e99d03532e1065a0.png",
+     {
+      id: "jetbackup",
+      name: "JetBackup",
+      logo: "/images/391b4ec0b6a6c8af4f95170b677c5c78446de47e.png",
       price: "15.00",
       currency: "$",
       period: "/Month",
     },
+   
   ];
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2
-            className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-800"
+            className="text-3xl font-semibold tracking-tighter sm:text-4xl text-gray-800"
           
           >
             هل تحتاج الى تراخيص مفرده؟
           </h2>
           <p
-            className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+            className=""
           >
             احصل على ترخيص مفرد للخوادم الخاصة و الخوادم المخصصة الكاملة
           </p>
@@ -115,10 +116,10 @@ const LicenseSection = () => {
                   <div className="h-[1px] w-full bg-gray-700"></div>
                   <div className="flex items-center justify-between w-full mt-4">
                     <div className="flex items-baseline">
-                      <span className="text-xl font-bold text-gray-900">
+                      <span className="text-2xl md:text-4xl text-[#2B1F51] font-bold">
                         {item.price}
                       </span>
-                      <span className="text-sm font-semibold text-gray-700">
+                      <span className="text-2xl md:text-4xl text-[#2B1F51] font-bold">
                         {item.currency}
                       </span>
                       <span className="text-xs text-muted-foreground">
