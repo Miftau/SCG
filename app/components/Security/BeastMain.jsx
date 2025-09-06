@@ -1,77 +1,60 @@
 "use client";
-
 import React from "react";
-import { motion } from "framer-motion";
 
 const BeastMain = () => {
-  const Beast = [
-    {
-      skylineSrc: "/images/gear-icon.png",
-      skylineAlt: "Cloud Services Skyline",
-      title: "بريد إلكتروني مخصَّص وآمن للأعمال",
-    },
-    {
-      skylineSrc: "/images/Clippath2.png",
-      skylineAlt: "Cloud Services Skyline",
-      title: "بريد إلكتروني موثوق مع ضمان وقت إتاحية 99.9٪.",
-    },
-    {
-      skylineSrc: "/images/Group3773.png",
-      skylineAlt: "Cloud Services Skyline",
-      title: "سعة تخزين البريد",
-    },
-
-    {
-      skylineSrc: "/images/Group(1).png",
-      skylineAlt: "Cloud Services Skyline",
-      title: "تصفية البريد العشوائي والحماية من الفيروسات",
-    },
-    {
-      skylineSrc: "/images/Clippath.png",
-      skylineAlt: "Cloud Services Skyline",
-      title: "مشاركة التقويم والاتصالات والمهام",
-    },
-
-    {
-      skylineSrc: "/images/visitors-icon1.png",
-      skylineAlt: "Cloud Services Skyline",
-      title: "مشاركة التقويم والاتصالات والمهام",
-    },
-  ];
-
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="">
-        <p className="text-center text-4xl font-bold pb-4">مزايا رئيسية</p>
-        <p className="text-center text-xl font-medium pb-8">
-          قم بامتلاك مُخدّمك المخصص مع نظام التشغيل المفضل لديك والتطبيقات
-          المثبتة مسبقًا.{" "}
+    <div className="relative mt-16 mb-32 md:mx-16 mx-4">
+      <div className="mb-16">
+        <h1 className="lg:text-4xl text-xl mb-6 text-center font-bold">
+          المزايا الرئيسية
+        </h1>
+        <p className="text-center mt-6">
+          امتلك خادمك المخصص مع نظام التشغيل المفضل لديك والتطبيقات المثبتة مسبقًا.
         </p>
       </div>
 
-      <div className="pt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
-          {Beast.map((item, index) => (
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.4, ease: "easeOut" },
-              }}
-              key={index}
-              className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-8 flex flex-col items-center justify-center text-center"
-            >
-              <img
-                src={item.skylineSrc}
-                alt={item.skylineAlt}
-                width={50}
-                height={50}
-                className="object-cover mb-4"
-              />
-              <p className="font-bold text-lg">{item.title}</p>
-            </motion.div>
-          ))}
+      <div className="container">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-12">
+          <div className="bg-white rounded-lg p-6 flex items-center justify-center gap-4 flex-col shadow-light transition hover:scale-105 undefined">
+            <img src="/images/control%201-ztjX8Ipp.svg" alt="PCI/DSS" />
+            <h1 className="text-center text-sm font-medium">
+              التوافق مع معيار PCI/DSS
+            </h1>
+          </div>
+
+          <div className="bg-white rounded-lg p-6 flex items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105 undefined">
+            <img src="/images/data-encrypt%201-CriIjH66.svg" alt="تشفير" />
+            <h1 className="text-center text-sm font-medium">
+              تشفير البيانات 256-بت
+            </h1>
+          </div>
+
+          <div className="bg-white rounded-lg p-6 flex items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105 undefined">
+            <img src="/images/secure-client%201-G6n8GCv6.svg" alt="تأمين" />
+            <h1 className="text-center text-sm font-medium">
+              تأمين بيانات العملاء
+            </h1>
+          </div>
+
+          <div className="bg-white rounded-lg p-6 flex items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105 undefined">
+            <img src="/images/laptop-DdcKV8iV.svg" alt="دعم فني" />
+            <h1 className="text-center text-sm font-medium">الدعم الفني</h1>
+          </div>
+
+          <div className="bg-white rounded-lg p-6 flex items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105 undefined">
+            <img
+              src="/images/Security-Monitoring-icon%201-BDBMSdm4.svg"
+              alt="ضمان"
+            />
+            <h1 className="text-center text-sm font-medium">الضمان</h1>
+          </div>
+
+          <div className="bg-white rounded-lg p-6 flex items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105 undefined">
+            <img src="/images/feat-speed%201-Crq2Kl6Q.svg" alt="HTTPS" />
+            <h1 className="text-center text-sm font-medium">
+              رمز القفل واختصار https://
+            </h1>
+          </div>
         </div>
       </div>
     </div>

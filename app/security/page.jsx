@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
 import WhyUsSection from "../components/Security/WhyUsSection";
+import ImageSection from "../components/Security/ImageSection"
 import WhoisTool from "../components/Security/WhoisTool";
 import Asks from "../components/DataCenter/Asks/Asks";
 import BeastMain from "../components/Security/BeastMain";
@@ -16,6 +17,7 @@ const Security = () => {
         imageAlt="Hero Background"
       />
       <WhyUsSection />
+      <ImageSection/>
       <WhoisTool />
       <BeastMain />
       <Asks/>
