@@ -5,9 +5,8 @@ import { motion } from "framer-motion";
 
 const ClickSection = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-      <div className="container px-4 md:px-6">
-        <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+    <section className="container mt-32">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
           {/* left Column: Text Content */}
           <motion.div
             initial={{ opacity: 0, x: 100 }}
@@ -19,10 +18,10 @@ const ClickSection = () => {
             }}
             className="flex flex-col items-end text-right space-y-6"
           >
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-[#4A2C8C]">
+            <h2 className="text-3xl text-[#4A2C8C]">
               ابدأ بسرعة مع تطبيقات بنقرة واحدة
             </h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="mt-8 font-normal text-sm">
               يدعم التكامل مع أدوات Kubernetes Engine المشهورة، مما يتيح لك
               إنشاء مجموعات تعمل على تشغيل برامج مفتوحة مسبقًا بنقرة واحدة.
             </p>
@@ -62,7 +61,6 @@ const ClickSection = () => {
             />
           </motion.div>
         </div>
-      </div>
     </section>
   );
 };
