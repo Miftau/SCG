@@ -13,7 +13,7 @@ const Security = () => {
         title="الأمان"
         description="تعزيز الأمان لموقعك الإلكتروني مع خدماتنا المتقدمة"
         primaryButtonText="ابدأ الآن"
-        imageBottom="/images/Group19548.svg"
+        imagesrc="/images/Group19548.svg"
         imageAlt="Hero Background"
       />
       <WhyUsSection />

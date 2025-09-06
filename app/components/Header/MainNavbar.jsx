@@ -79,7 +79,7 @@ export function NavigationMenuDemo() {
         //{ title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: '/programmers' },
         { title: 'استضافات البريد', description: 'Reliable email hosting with custom domains for professional communication.', href: '/mail-hosting' },
         { title: 'استضافات ويندوز', description: 'Windows-based hosting with support for .NET and other Microsoft technologies.', href: '/windows-hosting' },
-        { title: 'سحابة نمور', description: 'Secure and high-performance cloud hosting for enterprise applications.', href: '/cloud-tigers' }
+        { title: 'سحابة نمور', description: 'Secure and high-performance cloud hosting for enterprise applications.', href: '/cloud-tiger' }
       ]
     }
   ];

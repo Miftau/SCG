@@ -6,7 +6,7 @@ import BackGroundSection from '../components/DistributorsProgram/BackGroundSecti
 import PricingSection from '../components/DistributorsProgram/PricingSection'
 import ClickSection from '../components/SharedHosting/ClickSection'
 import WordPressMigrationSection from '../components/DistributorsProgram/WordPressMigrationSection'
-import AdvantageSection from '../components/WordPressHosting/AdvantageSection'
+import FeaturesSection from '../components/DistributorsProgram/FeaturesSection'
 import Asks from '../components/DataCenter/Asks/Asks'
 
 const DistributorsProgram = () => {
@@ -17,7 +17,7 @@ const DistributorsProgram = () => {
                 title="برنامج الموزعين"
                 description="حقق الأرباح ووسع خدماتك."
                 primaryButtonText="سجل الان"
-                imageBottom="/images/dist-hero.svg"
+                imagesrc="/images/dist-hero.svg"
                 imageAlt="Hero Background"
             />
             <KubernetesSection />
@@ -26,7 +26,7 @@ const DistributorsProgram = () => {
             <PricingSection />
             <ClickSection />
             <WordPressMigrationSection />
-            <AdvantageSection />
+            <FeaturesSection />
             <Asks />
         </div>
     )

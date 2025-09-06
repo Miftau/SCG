@@ -32,12 +32,13 @@ const ArabicFeaturesSection = () => {
 
 
     return (
-        <div className="relative mt-32">
-                <h1 className="lg:text-4xl text-xl mb-6 text-center !mb-20 text-[#2B1F51] ">
+        <div className="container mx-auto px-4 py-8">
+            <div className="py-8">
+                <p className="text-center text-4xl font-bold text-[#2B1F51] ">
                     انطلق بسرعة ونمي أعمالك
-                </h1>
-            <div className='container'>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 ml-12">
+                </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full pt-8">
                 {locations.map((location, index) => (
                     <motion.div
                         initial={{ opacity: 0, y: 100 }}
@@ -47,7 +48,7 @@ const ArabicFeaturesSection = () => {
                             transition: { duration: 0.4, ease: "easeOut" },
                         }}
                         key={index}
-                        className="bg-white rounded-lg px-6 py-6 flex items-start gap-4 shadow-light flex-col gap-4 justify-between transition hover:scale-105 duration-300"
+                        className="card-hover bg-white rounded-2xl border border-gray-200 shadow-md  p-4 "
                     >
                         <div className="">
                             <img
@@ -65,7 +66,6 @@ const ArabicFeaturesSection = () => {
                         </div>
                     </motion.div>
                 ))}
-            </div>
             </div>
 
         </div>
