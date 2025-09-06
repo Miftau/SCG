@@ -15,12 +15,12 @@ function InsteretedContact() {
                         <img src="/images/Group 2307-nyjIzQtj.svg" alt="Online Payment" width={400} height={400} className="object-contain" />
                         <img src="/images/Group 2309-sk_OY7Jm.svg" alt="Online Payment" width={400} height={400} className="object-contain" />
                     </div>
-                    <div className="bg-[#333C5E] p-8 mt-14 flex items-center justify-between">
+                    <div className="bg-[#333C5E] sm:p-8 p-4 mt-14 flex items-center justify-between">
                         <div className="space-y-6">
                             <h1 className="text-white font-semibold md:text-4xl text-2xl">هل تحتاج إلى مساعدة؟</h1>
                             <p className="text-white">تواصل مع نمار واحصل على المساعدة.</p>
                         </div>
-                        <button className="block text-sm sm:text-main font-semibold bg-white sm:py-4 py-2 sm:px-10 px-6 rounded-lg">اتصل الآن!</button>
+                        <button className="block text-sm sm:text-main font-semibold bg-white sm:py-4 py-2 sm:px-10 px-4 rounded-lg">اتصل الآن!</button>
                     </div>
                 </div>
             </div>
