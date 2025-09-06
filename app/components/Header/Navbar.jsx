@@ -19,7 +19,7 @@ const Navbar = () => {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   const languages = [
-    { value: "en", label: "English", flag: "/images/flag/england.png" },
+    { value: "en", label: "English", flag: "/images/flag/England.png" },
     { value: "tr", label: "Türkçe", flag: "/images/flag/turkey.png" },
     { value: "ar", label: "العربية", flag: "/images/flag/saudi.png" },
     { value: "it", label: "Italia", flag: "/images/flag/italy.png" },
