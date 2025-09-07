@@ -1,136 +1,220 @@
-'use client';
-import React from "react";
+import React from 'react';
 
-const PricingCard = ({ plan, index }) => {
-  const getPlanColor = () => {
-    switch (index) {
-      case 0: return { border: 'border-yellow-400', topBar: 'bg-yellow-400' };
-      case 1: return { border: 'border-gray-300', topBar: 'bg-gray-300' };
-      case 2: return { border: 'border-blue-400', topBar: 'bg-blue-400' };
-      default: return { border: 'border-gray-300', topBar: 'bg-gray-300' };
-    }
-  };
-
-  const colors = getPlanColor();
-
+export default function PricingCard() {
   return (
-    <div className={`rounded-xl shadow-lg border ${colors.border} relative transform hover:scale-105 transition-transform duration-300`}>
-      {index === 0 && (
-        <div className="absolute top-0 left-0 right-0 h-3 bg-yellow-400 rounded-t-xl"></div>
-      )}
-      {index === 1 && (
-        <div className="absolute top-0 left-0 right-0 h-3 bg-gray-300 rounded-t-xl"></div>
-      )}
-      {index === 2 && (
-        <div className="absolute top-0 left-0 right-0 h-3 bg-blue-400 rounded-t-xl"></div>
-      )}
-      
-      <div className="p-6 sm:p-8">
-        <h3 className="text-lg sm:text-2xl font-bold text-gray-800 mb-2 text-center">{plan.name}</h3>
-        <div className="flex flex-col justify-center gap-3 items-center mb-6">
-          <p className="text-4xl sm:text-6xl font-semi-bold text-gray-800 text-center">{plan.price}</p>
-          <span className="text-gray-500 ml-1 text-sm">د.ل./quarterly</span>        
-          </div>
-        
-        <button className="px-6 bg-[#2B1F51] text-white py-3 block my-14 text-center mx-auto rounded-lg hover:bg-[#2B1F51]/90 transition-colors duration-300 text-sm sm:text-base font-medium">
-          اطلب الان
-        </button>
-        
-        <ul className="space-y-3 mt-6">
-          {plan.features.map((feature, i) => (
-            <li key={i} className="font-medium text-gray-600 flex items-center">
-              <svg className="h-4 w-4 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              {feature}
-            </li>
-          ))}
-        </ul>
+    <div className="mt-64 relative">
+      {/* Right decorative SVG */}
+      <div className="absolute right-0 -top-52 -z-10">
+        <svg width="393" height="636" viewBox="0 0 393 636" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clipPath="url(#clip0_9_77870)">
+            <g opacity="0.71">
+              <path d="M330.305 134.66L468 71.9882L330.305 0L192.61 71.9882L330.305 134.66Z" fill="#F2F6FE"/>
+              <path d="M192.61 71.9883V427.472L330.305 489.904V134.658L192.61 71.9883Z" fill="url(#paint0_linear_9_77870)"/>
+              <path d="M468 71.9883L330.305 134.659V489.901L468 409.631" fill="url(#paint1_linear_9_77870)"/>
+              <path d="M275.391 218.09L137.695 280.761V636.003L275.391 555.733" fill="url(#paint2_linear_9_77870)"/>
+              <path d="M137.695 280.76L275.391 218.09L137.695 146.102L0.00302124 218.09L137.695 280.76Z" fill="#F2F6FE"/>
+              <path d="M7.62939e-05 218.09V573.573L137.695 636.005V280.761L7.62939e-05 218.09Z" fill="url(#paint3_linear_9_77870)"/>
+              <path d="M275.391 218.09L137.695 280.761V636.003L275.391 555.733" fill="url(#paint4_linear_9_77870)"/>
+            </g>
+          </g>
+          <defs>
+            <linearGradient id="paint0_linear_9_77870" x1="268.204" y1="547.158" x2="156.896" y2="70.7977" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white" stopOpacity="0"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_9_77870" x1="380.564" y1="287.631" x2="562.528" y2="271.179" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear_9_77870" x1="187.954" y1="433.733" x2="369.918" y2="417.281" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <linearGradient id="paint3_linear_9_77870" x1="75.5948" y1="693.26" x2="-35.713" y2="216.899" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white" stopOpacity="0"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <linearGradient id="paint4_linear_9_77870" x1="187.954" y1="433.733" x2="369.918" y2="417.28" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white" stopOpacity="0"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <clipPath id="clip0_9_77870">
+              <rect width="468" height="636" fill="white" transform="matrix(-1 0 0 1 468 0)"/>
+            </clipPath>
+          </defs>
+        </svg>
       </div>
-      
-      <div className="w-full h-[1px] bg-gray-800 bg-opacity-5 "></div>
-      <p className="py-4 text-center z-5">compare packages</p>
-      
+
+      {/* Left decorative SVG */}
+      <div className="absolute left-0 -top-52 -z-10">
+        <svg width="393" height="636" viewBox="0 0 393 636" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clipPath="url(#clip0_9_77861)">
+            <g opacity="0.71">
+              <path d="M62.6952 134.66L-75 71.9882L62.6952 0L200.39 71.9882L62.6952 134.66Z" fill="#F2F6FE"/>
+              <path d="M200.39 71.9883V427.472L62.6953 489.904V134.658L200.39 71.9883Z" fill="url(#paint0_linear_9_77861)"/>
+              <path d="M-75 71.9883L62.6952 134.659V489.901L-75 409.631" fill="url(#paint1_linear_9_77861)"/>
+              <path d="M117.609 218.09L255.305 280.761V636.003L117.609 555.733" fill="url(#paint2_linear_9_77861)"/>
+              <path d="M255.305 280.76L117.609 218.09L255.305 146.102L392.997 218.09L255.305 280.76Z" fill="#F2F6FE"/>
+              <path d="M393 218.09V573.573L255.305 636.005V280.761L393 218.09Z" fill="url(#paint3_linear_9_77861)"/>
+              <path d="M117.609 218.09L255.305 280.761V636.003L117.609 555.733" fill="url(#paint4_linear_9_77861)"/>
+            </g>
+          </g>
+          <defs>
+            <linearGradient id="paint0_linear_9_77861" x1="124.796" y1="547.158" x2="236.104" y2="70.7977" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white" stopOpacity="0"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_9_77861" x1="12.4365" y1="287.631" x2="-169.528" y2="271.179" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear_9_77861" x1="205.046" y1="433.733" x2="23.0819" y2="417.281" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <linearGradient id="paint3_linear_9_77861" x1="317.405" y1="693.26" x2="428.713" y2="216.899" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white" stopOpacity="0"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <linearGradient id="paint4_linear_9_77861" x1="205.046" y1="433.733" x2="23.0819" y2="417.28" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white" stopOpacity="0"/>
+              <stop offset="1" stopColor="#E0E7FD"/>
+            </linearGradient>
+            <clipPath id="clip0_9_77861">
+              <rect width="468" height="636" fill="white" transform="translate(-75)"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+      <div className="container mx-auto px-4">
+        <h1 className="lg:text-4xl text-xl mb-6 text-center">Choose Plan</h1>
+        
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+          {/* Plan 1 */}
+          <div className="rounded-md bg-white border-t-8 border-yellow-400 text-center p-6 shadow-lg transition hover:scale-105 mx-auto">
+            <h1 className="text-2xl ms-4">P2-HOST</h1>
+            <span className="mt-4 lg:text-5xl md:text-3xl text-xl font-light">91.30</span>
+            <span className="opacity-40 mb-4">د.ل</span>
+            <div className="mt-1 flex justify-center items-center text-sm text-gray-500">
+              <p className="line-through">120 د.ل</p>
+              <span className="ml-3 rounded-md bg-pink-100 px-3 py-0.5 text-xs font-medium text-pink-600">
+                خفيض 30%
+              </span>
+            </div>
+            
+            <div className="flex items-start justify-between mt-6 px-4 flex-row-reverse"></div>
+            
+            <div className="mt-6 mx-auto">
+              <div className="w-[280px] mx-auto">
+                <p className='bg-[#0D1164] hover:bg-transparent transition hover:text-[#0D1164] hover:border-2 hover:border-[#0D1164] text-white rounded-md px-8 py-2 w-fit mx-auto cursor-pointer'>Order Now</p>
+              </div>
+            </div>
+            
+            <div className="mt-6">
+              <div className="w-full h-[3px] bg-gray-200 bg-opacity-5"></div>
+              
+              <div className="text-start mt-4">
+                <h1><strong>60GB</strong> NVMe Storage</h1>
+                <h1 className="mt-4"><strong>15</strong> Website(s)</h1>
+                <h1 className="mt-4"><strong>4</strong> RAM</h1>
+                <h1 className="mt-4"><strong>3</strong> CPU</h1>
+                <h1 className="mt-4">cPanel Control Panel</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> Subdomains</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> MySQL & SQL Databases</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> Email Account</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> FTP Accounts</h1>
+                <p className="mt-4">Supports one-click app installer</p>
+                
+                <div className="w-full h-[2px] bg-gray-200 bg-opacity-5 mt-6"></div>
+                <p className="mt-6 text-center">compare packages</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Plan 2 */}
+          <div className="rounded-md bg-white border-t-8 border-gray-400 text-center p-6 shadow-lg transition hover:scale-105 mx-auto">
+            <h1 className="text-2xl ms-4">P2-HOST</h1>
+            <span className="mt-4 lg:text-5xl md:text-3xl text-xl font-light">91.30</span>
+            <span className="opacity-40 mb-4">د.ل</span>
+            <div className="mt-1 flex justify-center items-center text-sm text-gray-500">
+              <p className="line-through">120 د.ل</p>
+              <span className="ml-3 rounded-md bg-pink-100 px-3 py-0.5 text-xs font-medium text-pink-600">
+                خفيض 30%
+              </span>
+            </div>
+            
+            <div className="flex items-start justify-between mt-6 px-4 flex-row-reverse"></div>
+            
+            <div className="mt-6 mx-auto">
+              <div className="w-[280px] mx-auto">
+                <p className='bg-[#0D1164] hover:bg-transparent transition hover:text-[#0D1164] hover:border-2 hover:border-[#0D1164] text-white rounded-md px-8 py-2 w-fit mx-auto cursor-pointer'>Order Now</p>
+              </div>
+            </div>
+            
+            <div className="mt-6">
+              <div className="w-full h-[3px] bg-gray-200 bg-opacity-5"></div>
+              
+              <div className="text-start mt-4">
+                <h1><strong>60GB</strong> NVMe Storage</h1>
+                <h1 className="mt-4"><strong>15</strong> Website(s)</h1>
+                <h1 className="mt-4"><strong>4</strong> RAM</h1>
+                <h1 className="mt-4"><strong>3</strong> CPU</h1>
+                <h1 className="mt-4">cPanel Control Panel</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> Subdomains</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> MySQL & SQL Databases</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> Email Account</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> FTP Accounts</h1>
+                <p className="mt-4">Supports one-click app installer</p>
+                
+                <div className="w-full h-[2px] bg-gray-200 bg-opacity-5 mt-6"></div>
+                <p className="mt-6 text-center">compare packages</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Plan 3 */}
+          <div className="rounded-md bg-white border-t-8 border-blue-800 text-center p-6 shadow-lg transition hover:scale-105 mx-auto">
+            <h1 className="text-2xl ms-4">P2-HOST</h1>
+            <span className="mt-4 lg:text-5xl md:text-3xl text-xl font-light">91.30</span>
+            <span className="opacity-40 mb-4">د.ل</span>
+            <div className="mt-1 flex justify-center items-center text-sm text-gray-500">
+              <p className="line-through">120 د.ل</p>
+              <span className="ml-3 rounded-md bg-pink-100 px-3 py-0.5 text-xs font-medium text-pink-600">
+                خفيض 30%
+              </span>
+            </div>
+            
+            <div className="flex items-start justify-between mt-6 px-4 flex-row-reverse"></div>
+            
+            <div className="mt-6 mx-auto">
+              <div className="w-[280px] mx-auto">
+                <p className='bg-[#0D1164] hover:bg-transparent transition hover:text-[#0D1164] hover:border-2 hover:border-[#0D1164] text-white rounded-md px-8 py-2 w-fit mx-auto cursor-pointer'>Order Now</p>
+              </div>
+            </div>
+            
+            <div className="mt-6">
+              <div className="w-full h-[3px] bg-gray-200 bg-opacity-5"></div>
+              
+              <div className="text-start mt-4">
+                <h1><strong>60GB</strong> NVMe Storage</h1>
+                <h1 className="mt-4"><strong>15</strong> Website(s)</h1>
+                <h1 className="mt-4"><strong>4</strong> RAM</h1>
+                <h1 className="mt-4"><strong>3</strong> CPU</h1>
+                <h1 className="mt-4">cPanel Control Panel</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> Subdomains</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> MySQL & SQL Databases</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> Email Account</h1>
+                <h1 className="mt-4"><strong>Unlimited</strong> FTP Accounts</h1>
+                <p className="mt-4">Supports one-click app installer</p>
+                
+                <div className="w-full h-[2px] bg-gray-200 bg-opacity-5 mt-6"></div>
+                <p className="mt-6 text-center">compare packages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
-};
-
-const PricingSection = () => {
-  const plans = [
-    { 
-      name: "P2-HOST", 
-      price: "91.30", 
-      originalPrice: "120", 
-      discount: "30%", 
-      features: [
-        "60GB NVMe Storage",
-        "15 Website (s)",
-        "4 RAM",
-        "3 CPU",
-        "cPanel Control Panel",
-        "Unlimited Subdomains",
-        "Unlimited MySQL & SQL Databases",
-        "Unlimited Email Account",
-        "Unlimited FTP Accounts",
-        "Supports one-click app installer"
-      ] 
-    },
-    { 
-      name: "P2-HOST", 
-      price: "91.30", 
-      originalPrice: "120", 
-      discount: "30%", 
-      features: [
-        "60GB NVMe Storage",
-        "15 Website (s)",
-        "4 RAM",
-        "3 CPU",
-        "cPanel Control Panel",
-        "Unlimited Subdomains",
-        "Unlimited MySQL & SQL Databases",
-        "Unlimited Email Account",
-        "Unlimited FTP Accounts",
-        "Supports one-click app installer"
-      ] 
-    },
-    { 
-      name: "P2-HOST", 
-      price: "91.30", 
-      originalPrice: "120", 
-      discount: "30%", 
-      features: [
-        "60GB NVMe Storage",
-        "15 Website (s)",
-        "4 RAM",
-        "3 CPU",
-        "cPanel Control Panel",
-        "Unlimited Subdomains",
-        "Unlimited MySQL & SQL Databases",
-        "Unlimited Email Account",
-        "Unlimited FTP Accounts",
-        "Supports one-click app installer"
-      ] 
-    }
-  ];
-
-  return (
-    /* Pricing Section */
-    <section className="mt-64 relative">
-      <img className="absolute right-0 -top-52 -z-10" alt="" src="data:image/svg+xml,%3csvg%20width='393'%20height='636'%20viewBox='0%200%20393%20636'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_9_77870)'%3e%3cg%20opacity='0.71'%3e%3cpath%20d='M330.305%20134.66L468%2071.9882L330.305%200L192.61%2071.9882L330.305%20134.66Z'%20fill='%23F2F6FE'/%3e%3cpath%20d='M192.61%2071.9883V427.472L330.305%20489.904V134.658L192.61%2071.9883Z'%20fill='url(%23paint0_linear_9_77870)'/%3e%3cpath%20d='M468%2071.9883L330.305%20134.659V489.901L468%20409.631'%20fill='url(%23paint1_linear_9_77870)'/%3e%3cpath%20d='M275.391%20218.09L137.695%20280.761V636.003L275.391%20555.733'%20fill='url(%23paint2_linear_9_77870)'/%3e%3cpath%20d='M137.695%20280.76L275.391%20218.09L137.695%20146.102L0.00302124%20218.09L137.695%20280.76Z'%20fill='%23F2F6FE'/%3e%3cpath%20d='M7.62939e-05%20218.09V573.573L137.695%20636.005V280.761L7.62939e-05%20218.09Z'%20fill='url(%23paint3_linear_9_77870)'/%3e%3cpath%20d='M275.391%20218.09L137.695%20280.761V636.003L275.391%20555.733'%20fill='url(%23paint4_linear_9_77870)'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_9_77870'%20x1='268.204'%20y1='547.158'%20x2='156.896'%20y2='70.7977'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_9_77870'%20x1='380.564'%20y1='287.631'%20x2='562.528'%20y2='271.179'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_9_77870'%20x1='187.954'%20y1='433.733'%20x2='369.918'%20y2='417.281'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint3_linear_9_77870'%20x1='75.5948'%20y1='693.26'%20x2='-35.713'%20y2='216.899'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint4_linear_9_77870'%20x1='187.954'%20y1='433.733'%20x2='369.918'%20y2='417.28'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3cclipPath%20id='clip0_9_77870'%3e%3crect%20width='468'%20height='636'%20fill='white'%20transform='matrix(-1%200%200%201%20468%200)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"></img>
-      <img className="absolute left-0 -top-52 -z-10" alt="" src="data:image/svg+xml,%3csvg%20width='393'%20height='636'%20viewBox='0%200%20393%20636'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_9_77861)'%3e%3cg%20opacity='0.71'%3e%3cpath%20d='M62.6952%20134.66L-75%2071.9882L62.6952%200L200.39%2071.9882L62.6952%20134.66Z'%20fill='%23F2F6FE'/%3e%3cpath%20d='M200.39%2071.9883V427.472L62.6953%20489.904V134.658L200.39%2071.9883Z'%20fill='url(%23paint0_linear_9_77861)'/%3e%3cpath%20d='M-75%2071.9883L62.6952%20134.659V489.901L-75%20409.631'%20fill='url(%23paint1_linear_9_77861)'/%3e%3cpath%20d='M117.609%20218.09L255.305%20280.761V636.003L117.609%20555.733'%20fill='url(%23paint2_linear_9_77861)'/%3e%3cpath%20d='M255.305%20280.76L117.609%20218.09L255.305%20146.102L392.997%20218.09L255.305%20280.76Z'%20fill='%23F2F6FE'/%3e%3cpath%20d='M393%20218.09V573.573L255.305%20636.005V280.761L393%20218.09Z'%20fill='url(%23paint3_linear_9_77861)'/%3e%3cpath%20d='M117.609%20218.09L255.305%20280.761V636.003L117.609%20555.733'%20fill='url(%23paint4_linear_9_77861)'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_9_77861'%20x1='124.796'%20y1='547.158'%20x2='236.104'%20y2='70.7977'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_9_77861'%20x1='12.4365'%20y1='287.631'%20x2='-169.528'%20y2='271.179'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_9_77861'%20x1='205.046'%20y1='433.733'%20x2='23.0819'%20y2='417.281'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint3_linear_9_77861'%20x1='317.405'%20y1='693.26'%20x2='428.713'%20y2='216.899'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint4_linear_9_77861'%20x1='205.046'%20y1='433.733'%20x2='23.0819'%20y2='417.28'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='white'%20stop-opacity='0'/%3e%3cstop%20offset='1'%20stop-color='%23E0E7FD'/%3e%3c/linearGradient%3e%3cclipPath%20id='clip0_9_77861'%3e%3crect%20width='468'%20height='636'%20fill='white'%20transform='translate(-75)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"></img>
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semi-bold text-[#2B1F51] mb-4">اختر الخطة</h2>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
-          {plans.map((plan, index) => (
-            <PricingCard key={index} plan={plan} index={index} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default PricingSection;
+}
