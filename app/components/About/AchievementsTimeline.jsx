@@ -70,8 +70,8 @@ const AchievementsTimeline = () => {
               <div className="absolute right-1/2 transform translate-x-1/2 w-6 h-6 bg-[#480689] rounded-full border-4 z-10"></div>
 
               {/* Content */}
-              <div className={`flex ${index % 2 === 0 ? "justify-start" : "justify-end"}`}>
-                <div className={`w-6/12 ${index % 2 === 0 ? "pr-6" : "pl-6"}`}>
+              <div className={`flex ${index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"}`}>
+                <div className={`md:w-6/12 ${index % 2 === 0 ? "sm:pr-6" : "sm:pl-6"}`}>
                   <div className=" p-4">
                     <div className={`text-lg font-bold mb-2 pb-1 ${index % 2 === 0 ? "text-right" : "text-left" }`}>
                       { achievement.date}
