@@ -40,14 +40,19 @@ const securityHeaders = [
 
 const nextConfig = {
   reactStrictMode: true,
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: securityHeaders,
-      },
-    ];
-  },
+async headers() {
+  return [
+    {
+      source: "/(.*)",
+      headers: [
+        {
+          key: "Content-Security-Policy",
+          value: "frame-src https://www.google.com/ https://maps.google.com/;"
+        }
+      ]
+    }
+  ];
+},
   webpack: (config, { isServer }) => {
     if (!isServer) {
       // Temporarily disable obfuscation for testing

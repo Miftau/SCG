@@ -14,7 +14,7 @@ export function NavigationMenuDemo() {
       items: [
         { title: 'الأمان', description: 'ميزات أمان متطورة لحماية بياناتك ومواقعك الإلكترونية.', href: '/security' },
         { title: 'السرعة', description: 'حلول استضافة محسنة لضمان أسرع أوقات تحميل.', href: '/speed' },
-        { title: 'لوحة التحكم', description: 'قم بإدارة خدمات الاستضافة الخاصة بك بسهولة باستخدام لوحة التحكم التفاعلية لدينا.', href: null },
+        { title: 'لوحة التحكم', description: 'قم بإدارة خدمات الاستضافة الخاصة بك بسهولة باستخدام لوحة التحكم التفاعلية لدينا.', href: '/static-dashboard' },
         { title: 'مراكز البيانات', description: 'اكتشف مراكز البيانات الحديثة لدينا للبنية التحتية من الدرجة الأولى.', href: '/data-center' },
         { title: 'حالة الخوادم', description: 'تحقق من الحالة الحالية ووقت التشغيل لجميع خوادمنا.', href: '/status' },
         { title: 'النسخ الاحتياطي', description: 'تأكد من أن بياناتك آمنة دائماً من خلال خدمات النسخ الاحتياطي المنتظمة.', href: '/backups' }
@@ -24,8 +24,8 @@ export function NavigationMenuDemo() {
       label: 'الشركة',
       id: 'company',
       items: [
-        { title: 'عنا', description: 'تعرف على المزيد عن شركتنا وقيمنا وموقعنا.', href: '/about-us' },
-        //{ title: 'اتصل بنا', description: 'تواصل مع فريقنا لأي استفسارات أو دعم.', href: '/contact-us' },
+        { title: 'عنا', description: 'تعرف على المزيد عن شركتنا وقيمنا وموقعنا.', href: '/about' },
+        { title: 'اتصل بنا', description: 'تواصل مع فريقنا لأي استفسارات أو دعم.', href: '/contact' },
         //{ title: 'الوظائف', description: 'انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.', href: '/careers' },
         //{ title: 'مركز الإعلام والأخبار', description: 'ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.', href: '/news' },
         { title: 'برنامج الموزعين', description: 'كن موزعاً وابدأ عملك معنا.', href: '/distributors-program' },

@@ -31,6 +31,12 @@ const BeastSection = () => {
       title: "التخفيف من هجمات DDoS",
       description: "يمكن أن تتسبب هجمات حجب الخدمة الموزعة (DDoS) في التوقف التام لعملك. نحن نحظر هجمات DDoS للطبقات 3 و 4 و 7 ومع تأمين معدل نقل البيانات bandwidth أثناء الهجمات."
     },
+        {
+      iconSrc: "/images/Clippath2.png",
+      iconAlt: "DDoS Protection",
+      title: "التخفيف من هجمات DDoS",
+      description: "يمكن أن تتسبب هجمات حجب الخدمة الموزعة (DDoS) في التوقف التام لعملك. نحن نحظر هجمات DDoS للطبقات 3 و 4 و 7 ومع تأمين معدل نقل البيانات bandwidth أثناء الهجمات."
+    },
     {
       iconSrc: "/images/visitors-icon1.png",
       iconAlt: "CDN Optimization",
