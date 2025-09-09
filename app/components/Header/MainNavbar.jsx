@@ -61,10 +61,10 @@ export function NavigationMenuDemo() {
       label: 'استضافة الموزعين',
       id: 'resellers',
       items: [
-        //{ title: 'الموزع العادي', description: 'خطة استضافة أساسية للموزعين لبدء عملياتهم.', href: null },
-        //{ title: 'الموزع للبيس', description: 'ميزات محسنة لشبكات الموزعين المتنامية.', href: null },
+        { title: 'الموزع العادي', description: 'خطة استضافة أساسية للموزعين لبدء عملياتهم.', href: '/distributors-program'  },
+        { title: 'الموزع للبيس', description: 'ميزات محسنة لشبكات الموزعين المتنامية.', href:  '/distributors-plus'},
         { title: 'برنامج الموزعين', description: 'انضم إلى برنامج الموزعين لدينا وابدأ في الكسب.', href: '/distributors-program' },
-        //{ title: 'الموزع الترا', description: 'استضافة متميزة لعمليات الموزعين على نطاق واسع.', href: null }
+        { title: 'الموزع الترا', description: 'استضافة متميزة لعمليات الموزعين على نطاق واسع.', href: '/distributors-ultra' }
       ]
     },
     {
@@ -74,7 +74,7 @@ export function NavigationMenuDemo() {
         { title: 'الاستضافات المشاركة', description: 'استضافة مرنة ومناسبة من حيث التكلفة للشركات الصغيرة والمواقع الشخصية.', href: '/shared-hosting' },
         { title: 'الاستضافة السحابية', description: 'حلول استضافة قابلة للتوسع نمو مع احتياجات عملك.', href: '/cloud-hosting' },
         { title: 'استضافات الووردبريس', description: 'Optimized hosting environment tailored for WordPress websites.', href: '/wordpress-hosting' },
-        //{ title: 'Softaculous Hosting', description: 'One-click installs for over 400 applications using Softaculous.', href: '/softaculous-hosting' },
+        { title: 'Softaculous Hosting', description: 'One-click installs for over 400 applications using Softaculous.', href: '/softaculous-hosting' },
         { title: 'استضافات الأعمال', description: 'Professional-grade hosting for growing businesses with high performance.', href: '/business-hosting' },
         { title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: '/programmers' },
         { title: 'استضافات البريد', description: 'Reliable email hosting with custom domains for professional communication.', href: '/mail-hosting' },
@@ -117,12 +117,12 @@ export function NavigationMenuDemo() {
   return (
     <div className="bg-[#092346]">
       {/* Navigation Bar */}
-      <nav className="bg-gray-900 bg-opacity-90 backdrop-blur-sm border-b border-gray-700 sticky top-0 z-50">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+      <nav className="bg-transparent bg-opacity-0  sticky top-0 z-50">
+        <div className="container w-full mx-auto px-4">
+          <div className="flex items-center justify-between h-16 w-full">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="text-white font-bold text-xl md:text-2xl">
+              <div className="text-white font-bold text-4xl md:text-2xl">
                 <span className="text-blue-400">▼</span> VULTR
               </div>
             </div>
@@ -138,7 +138,7 @@ export function NavigationMenuDemo() {
                 >
                   <button
                     onClick={() => toggleMenu(menuItem.id)}
-                    className="flex items-center space-x-1 px-3 py-2 text-white hover:text-grey-300 transition-all duration-300 bg-transparent border-none cursor-pointer text-sm font-medium rounded-lg hover:bg-blue-900 hover:bg-opacity-20 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                    className="flex items-center space-x-1 px-3 py-2 text-white hover:text-grey-300 transition-all duration-300 bg-transparent border-none cursor-pointer text-sm font-medium rounded-lg"
                   >
                     <span>{menuItem.label}</span>
                     <div className="transition-transform duration-300">
@@ -153,29 +153,29 @@ export function NavigationMenuDemo() {
                   {/* Dropdown Menu */}
                   {openMenu === menuItem.id && (
                     <div
-                      className="absolute top-full left-0 mt-2 w-80 md:w-96 lg:w-[500px] bg-gray-800 bg-opacity-95 backdrop-blur-sm rounded-xl shadow-2xl border border-gray-700 z-50 overflow-hidden animate-fadeIn"
+                      className="absolute top-full left-0 mt-2 w-80 md:w-96 lg:w-[680px] bg-gray-50 bg-opacity-100 backdrop-blur-sm rounded-xl shadow-2xl text-gray-900 z-50 overflow-hidden animate-fadeIn overflow-x-hidden"
                       onMouseEnter={() => clearTimeout(timeoutRef.current)}
                       onMouseLeave={handleMouseLeave}
                     >
-                      <div className="p-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      <div className="dropdown-navbar cursor-auto">
+                        <div className="bg-white w-fit grid grid-cols-3 gap-4 mx-auto mt-10 p-2 rounded-lg shadow-2xl">
                           {menuItem.items.map((item, index) => (
                             <div
                               key={index}
-                              className={`p-3 rounded-lg transition-all duration-300 hover:bg-blue-600 hover:bg-opacity-20 cursor-pointer ${
+                              className={`p-3 rounded-lg transition-all duration-300 hover:bg-opacity-20 cursor-pointer ${
                                 item.href ? 'hover:scale-105' : ''
                               }`}
                             >
                               {item.href ? (
                                 <a
                                   href={item.href}
-                                  className="block text-white hover:text-blue-300 transition-colors duration-300"
+                                  className="block text-gray-600 transition-colors duration-300"
                                   onClick={closeAllMenus}
                                 >
                                   <h4 className="font-semibold text-sm md:text-base leading-tight mb-1">
                                     {item.title}
                                   </h4>
-                                  <p className="text-xs md:text-sm text-gray-300 leading-relaxed">
+                                  <p className="text-xs md:text-sm text-gray-400 leading-relaxed">
                                     {item.description}
                                   </p>
                                 </a>

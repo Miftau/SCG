@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { NavigationMenuDemo } from "../Header/MainNavbar";
+import  {NavigationMenuDemo}  from "../Header/MainNavbar";
 
 const HeroSectionHome = () => {
   return (
