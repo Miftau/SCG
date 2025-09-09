@@ -41,7 +41,7 @@ const WindowsKeyAdSection = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-4">
       {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-12">
+      <div className="max-w-5xl mx-auto text-center mb-12">
         <h2 className="text-2xl font-semi-bold text-gray-900 leading-tight">
         مزايا رئيسية
         </h2>
@@ -51,7 +51,7 @@ const WindowsKeyAdSection = () => {
       </div>
 
       {/* Cards Grid */}
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {Beast.map((item, index) => (
             <motion.div
@@ -63,9 +63,9 @@ const WindowsKeyAdSection = () => {
                 transition: { duration: 0.5, ease: "easeOut", delay: index * 0.1 }
               }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300"
+              className="bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg transition hover:scale-105 duration-300"
             >
-              <div className="p-6 flex flex-col items-center text-center">
+              <div className="px-12 py-3 flex flex-col items-center text-center">
                 {/* Icon */}
                 <div className="w-28 h-28 mb-4 flex items-center justify-center">
                   <img 

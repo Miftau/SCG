@@ -1,10 +1,13 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection/HeroSection'
 import WhyChooseUs from '../components/Programmers/WhyChooseUs'
-import PricingSection from '../components/Programmers/PricingSection'
-import WhiosSection from '../components/Programmers/WhiosSection'
+import PricingCard from '../components/SharedHosting/PricingCard'
+import FeatureSection from '../components/Programmers/FeactureSection'
+import SSLSection from '../components/Programmers/SSLSection'
+import WhoisSection from '../components/Programmers/WhiosSection'
 import Asks from '../components/DataCenter/Asks/Asks'
 import BenefitsSection from '../components/Programmers/BenefitsSection'
+import ImageSection from '../components/Security/ImageSection'
 
 const Programmers = () => {
     return (
@@ -13,12 +16,15 @@ const Programmers = () => {
                 title="Hosting programmers"
                 description="خوادم سحابية عالية الأداء والثبات تصل إلى 100% مع مواقع جغرافية متعددة"
                 primaryButtonText="سجل الان"
-                imagesrc="/images/Group4027.png"
+                imageBottom="/images/dev-host-hero.svg"
                 imageAlt="Hero Background"
             />
             <WhyChooseUs />
-            <PricingSection />
-            <WhiosSection />
+            <ImageSection/>
+            <PricingCard />
+            <FeatureSection />
+            <SSLSection/>
+            <WhoisSection/>
             <BenefitsSection />
             <Asks />
         </div>

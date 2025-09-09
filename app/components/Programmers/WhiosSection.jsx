@@ -1,37 +1,28 @@
-import React from 'react'
+"use client";
 
-const WhiosSection = () => {
+export default function WhoisSection() {
   return (
+    <div className="container mt-32" dir="rtl">
+      <div className="grid lg:grid-cols-2 grid-cols-1 items-center justify-between gap-8">
+        {/* الصورة */}
+        <img
+          className="w-5/6 ms-auto"
+          alt="أداة WHOIS"
+          src="/images/Group1-fAQ2yaqz.svg"
+        />
 
-    <section className=" py-16 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Arabic Text Content */}
-          <div className="text-right" dir="rtl">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">ما هي أداة WHOIS؟</h2>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              أداة WHOIS هي خدمة توفر معلومات حول أسماء النطاقات، بما في ذلك مالك النطاق وتفاصيل التسجيل وتاريخ الإنشاء
-              ومعلومات الاتصال المرتبطة به. تساعد المستخدمين على التحقق من ملكية النطاق، وفحص توفر النطاق، والتحقق من
-              شرعية المواقع الإلكترونية. يستخدم العديد من مسجلي النطاقات والمتخصصين في الأمن السيبرالي أداة WHOIS لأغراض
-              البحث والأمن السيبرالي والامتثال.
-            </p>
-          </div>
-
-          {/* 3D Illustration */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <img
-                src="/images/Group1-fAQ2yaqz.svg"
-                alt="WHOIS Tool Illustration"
-                width={400}
-                height={300}
-                className="w-full max-w-md h-auto"
-              />
-            </div>
-          </div>
+        {/* النص */}
+        <div>
+          <h1 className="text-3xl font-semibold">ما هي أداة WHOIS؟</h1>
+          <p className="mt-8 lg:ml-16 sm:mx-auto font-normal text-sm text-indigo-950">
+            أداة WHOIS هي خدمة توفر معلومات حول أسماء النطاقات، بما في ذلك مالك
+            النطاق، تفاصيل التسجيل، تاريخ الانتهاء، ومعلومات الاتصال المرتبطة به.
+            تساعد المستخدمين على التحقق من ملكية النطاق، وفحص توفر النطاقات،
+            والتحقق من موثوقية المواقع. يستخدم العديد من مسجلي النطاقات وخبراء
+            الأمن السيبراني أداة WHOIS لأغراض البحث، والأمن السيبراني، والامتثال.
+          </p>
         </div>
       </div>
-    </section>  )
+    </div>
+  );
 }
-
-export default WhiosSection

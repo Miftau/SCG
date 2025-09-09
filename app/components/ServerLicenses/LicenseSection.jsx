@@ -75,7 +75,7 @@ const LicenseSection = () => {
   ];
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 lg:ml-12 sm:mx-auto md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2
             className="text-3xl font-semibold tracking-tighter sm:text-4xl text-gray-800"
@@ -101,10 +101,10 @@ const LicenseSection = () => {
               key={item.id}
             >
               <Card
-                className="flex flex-col items-center justify-between p-4 rounded-xl shadow-sm border"
+                className="flex flex-col items-center justify-between p-4 rounded-md shadow-sm border"
               >
                 <CardContent className="flex flex-col items-center justify-center p-0 w-full">
-                  <div className="flex items-center justify-center h-24 w-full">
+                  <div className="flex items-center justify-center h-24 w-full mb-8">
                     <img
                       src={item.logo || "/placeholder.svg"}
                       alt={`${item.name} logo`}
@@ -129,7 +129,7 @@ const LicenseSection = () => {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="rounded-full bg-primary text-primary-foreground hover:bg-primary/80"
+                      className="rounded-full bg-[#2B1F51] text-primary-foreground w-6 h-6 p-1 cursor-pointer hover:bg-[#2B1F51]/40"
                     >
                       <Plus className="h-4 w-4" />
                       <span className="sr-only">Add {item.name}</span>

@@ -26,10 +26,10 @@ export function NavigationMenuDemo() {
       items: [
         { title: 'عنا', description: 'تعرف على المزيد عن شركتنا وقيمنا وموقعنا.', href: '/about' },
         { title: 'اتصل بنا', description: 'تواصل مع فريقنا لأي استفسارات أو دعم.', href: '/contact' },
-        //{ title: 'الوظائف', description: 'انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.', href: '/careers' },
-        //{ title: 'مركز الإعلام والأخبار', description: 'ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.', href: '/news' },
+        { title: 'الوظائف', description: 'انضم إلى فريقنا وساعدنا في تشكيل مستقبل الاستضافة.', href: '/careers' },
+        { title: 'مركز الإعلام والأخبار', description: 'ابق محدثاً بأحدث أخبار الشركة والإصدارات الإعلامية.', href: '/blog' },
         { title: 'برنامج الموزعين', description: 'كن موزعاً وابدأ عملك معنا.', href: '/distributors-program' },
-        //{ title: 'شركائنا', description: 'Lorem ipsum dolor sit', href: 'our-partners' },
+        { title: 'شركائنا', description: 'Lorem ipsum dolor sit', href: '/our-partners' },
         { title: 'طرق الدفع', description: 'استكشف جميع خيارات الدفع المتاحة لخدماتنا.', href: '/payment-methods' }
       ]
     },
@@ -51,8 +51,8 @@ export function NavigationMenuDemo() {
       items: [
         { title: 'خوادم VPS', description: 'خوادم افتراضية خاصة مع موارد مخصصة لمشاريعك.', href: '/vps' },
         { title: 'الخوادم السحابية', description: 'خوادم سحابية مرنة وقابلة للتوسع لأي نوع من الأعمال.', href: '/cloud-servers' },
-        //{ title: 'الخوادم الكاملة', description: 'خوادم مخصصة مع تحكم كامل في بيئتك.', href: '/server-management' },
-        //{ title: 'تراخيص الخوادم', description: 'احصل على التراخيص اللازمة لبرنامج الخادم الخاص بك.', href: '/server-licenses' },
+        { title: 'الخوادم الكاملة', description: 'خوادم مخصصة مع تحكم كامل في بيئتك.', href: '/full-servers' },
+        { title: 'تراخيص الخوادم', description: 'احصل على التراخيص اللازمة لبرنامج الخادم الخاص بك.', href: '/server-licenses' },
         { title: 'الدعم الفني للخوادم', description: 'احصل على دعم الخبراء لصيانة وإدارة الخوادم.', href: '/server-management' },
         { title: 'النسخ الاحتياطي', description: 'قم بتأمين بياناتك مع خدمات النسخ الاحتياطي المنتظمة.', href: '/backups' }
       ]
@@ -76,7 +76,7 @@ export function NavigationMenuDemo() {
         { title: 'استضافات الووردبريس', description: 'Optimized hosting environment tailored for WordPress websites.', href: '/wordpress-hosting' },
         //{ title: 'Softaculous Hosting', description: 'One-click installs for over 400 applications using Softaculous.', href: '/softaculous-hosting' },
         { title: 'استضافات الأعمال', description: 'Professional-grade hosting for growing businesses with high performance.', href: '/business-hosting' },
-        //{ title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: '/programmers' },
+        { title: 'استضافات المبرمجين', description: 'Advanced hosting solutions with tools and features for developers.', href: '/programmers' },
         { title: 'استضافات البريد', description: 'Reliable email hosting with custom domains for professional communication.', href: '/mail-hosting' },
         { title: 'استضافات ويندوز', description: 'Windows-based hosting with support for .NET and other Microsoft technologies.', href: '/windows-hosting' },
         { title: 'سحابة نمور', description: 'Secure and high-performance cloud hosting for enterprise applications.', href: '/cloud-tiger' }

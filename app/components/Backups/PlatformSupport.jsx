@@ -1,73 +1,51 @@
 "use client";
-import { motion } from "framer-motion";
 
-const platforms = [
-    {
-    name: "WordPress",
-    image: "/images/wp_logo.png",
-  },
-    {
-    name: "Magento",
-    image: "/images/226dc0bdd5ea31390b4f41d5a46ef46b115af19d.png",
-  },
-  {
-    name: "Drupal",
-    image: "/images/a8f099c22358fde6d6f58dac6c01b07fbd2c9625.png",
-  },
-    {
-    name: "Joomla",
-    image: "/images/c1279760d98df16893193f8d684cf90b5022b958.png",
-  },
-    {
-    name: "Phpbb",
-    image: "/images/2b081e2af564ba23048250b2346aa2d1006ca7d8.png",
-  },
-
-];
-
-const PlatformSupport = () => {
+export default function Platforms() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div>
-        <p className="text-[#2B1F51] text-center text-4xl font-semibold">
-          تُقدّم Sucuri دعم لمختلف المنصات
-        </p>
-        <p className="text-[#2B1F51] text-center text-lg font-medium pt-6">
-          تُقدّم Sucuri دعم لمختلف المنصات يعمل جدار حماية موقع الويب Sucuri عبر
-          جميع المنصات، بما في ذلك العلامات التجارية الأكثر شهرة اليوم.
-        </p>
-      </div>
+    <div className="mt-32 container">
+      {/* العنوان */}
+      <h1 className="lg:text-4xl text-xl mb-6 text-center font-semibold">
+        سُكوري تقدم الدعم لمختلف المنصات
+      </h1>
 
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.4, ease: "easeOut" },
-        }}
-        className="mt-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center"
-      >
-        {platforms.map((platform, index) => (
-          <div
-            key={index}
-            className="w-[200px] h-[200px] flex flex-col-reverse items-center justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-          >
-            <p className="text-[#2B1F51] text-center text-sm">
-              {platform.name}
-            </p>
-            <div className="w-[100px] h-[100px] relative">
-              <img
-                src={platform.image}
-                alt={platform.name}
-                
-                className="object-contain"
-              />
-            </div>
-          </div>
-        ))}
-      </motion.div>
+      <p className="mt-8 text-center mb-8 lg:w-1/2 mx-auto">
+        تقدم سُكوري دعمًا متعدد المنصات. يعمل جدار الحماية لمواقع سُكوري عبر جميع
+        المنصات، بما في ذلك أشهر العلامات التجارية اليوم.
+      </p>
+
+      {/* الشبكة */}
+      <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-8">
+        {/* البطاقة 1 */}
+        <div className="bg-white rounded-lg p-4 flex lg:ml-12 sm:mx-auto items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105">
+          <img src="/images/image%2012-C7EY_c_m.svg" alt="Phpbb" />
+          <h1 className="text-center text-xs">بي إتش بي بي بي (Phpbb)</h1>
+        </div>
+
+        {/* البطاقة 2 */}
+        <div className="bg-white rounded-lg p-4 flex items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105">
+          <img src="/images/image%2013-DCbFCuIO.svg" alt="Joomla" />
+          <h1 className="text-center text-xs">جوملا</h1>
+        </div>
+
+        {/* البطاقة 3 */}
+        <div className="bg-white rounded-lg p-4 flex items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105">
+          <img src="/images/image%2014-CKO8UUoo.svg" alt="Drupal" />
+          <h1 className="text-center text-xs">دروبال</h1>
+        </div>
+
+        {/* البطاقة 4 */}
+        <div className="bg-white rounded-lg p-4 flex items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105">
+          <img src="/images/image%2015-BQJrFVsY.svg" alt="Magento" />
+          <h1 className="text-center text-xs">ماجنتو</h1>
+        </div>
+
+        {/* البطاقة 5 */}
+        <div className="bg-white rounded-lg p-4 flex items-center justify-center gap-4 flex-col shadow-lg transition hover:scale-105">
+          <img src="/images/image%2016-DTnU3MLs.svg" alt="WordPress" />
+          <h1 className="text-center text-xs">ووردبريس</h1>
+        </div>
+      </div>
     </div>
   );
-};
+}
 
-export default PlatformSupport;

@@ -10,7 +10,7 @@ const ImageSection = () => {
       </p>
 
       {/* الشعارات */}
-      <div className="grid lg:grid-cols-5 grid-cols-2 ml-12 gap-4 mt-12 items-center justify-center">
+      <div className="grid lg:grid-cols-5 grid-cols-2 lg:ml-16 sm:mx-auto gap-4 mt-12 items-center justify-center">
         <img alt="مايكروسوفت" src="/images/microsoft-GkOjRO04.svg" />
         <img alt="شعار شريك" src="/images/Group%202306-DCwOO3nP.svg" />
         <img alt="شعار شريك" src="/images/Group 2307-nyjIzQtj.svg" />

@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
-import PricingCard from "../components/SharedHosting/PricingCard";
+import PricingCard from "../components/FullServers/PricingCard";
 import BackupsGrowSection from "../components/Backups/BackupsGrowSection";
 import Asks from "../components/DataCenter/Asks/Asks";
 import PlatformSupport from "../components/Backups/PlatformSupport";
