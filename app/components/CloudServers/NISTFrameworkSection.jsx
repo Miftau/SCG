@@ -43,7 +43,7 @@ const NISTFrameworkSection = () => {
     },
     {
       icon: (
-        <img class="undefined relative before:absolute before:w-16 before:h-2 before:bg-black before:bottom-0 before:left-0 " src="/images/Recover-icon-C_tsKqUV.svg"></img>
+        <img className="undefined relative before:absolute before:w-16 before:h-2 before:bg-black before:bottom-0 before:left-0 " src="/images/Recover-icon-C_tsKqUV.svg"></img>
       ),
       title: "الاستعادة",
       description:

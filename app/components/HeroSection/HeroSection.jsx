@@ -17,7 +17,7 @@ const HeroSection = ({
       {/* Background */}
       {imageBottom && (
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-center"
           aria-label={imageAltBottom || "Background bottom"}
           style={{ backgroundImage: `url(${imageBottom})` }}
         />
