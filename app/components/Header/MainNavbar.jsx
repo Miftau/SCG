@@ -153,7 +153,7 @@ export function NavigationMenuDemo() {
                   {/* Dropdown Menu */}
                   {openMenu === menuItem.id && (
                     <div
-                      className="absolute top-full left-0 mt-2 w-80 md:w-96 lg:w-[680px] bg-gray-50 bg-opacity-100 backdrop-blur-sm rounded-xl shadow-2xl text-gray-900 z-50 overflow-hidden animate-fadeIn overflow-x-hidden"
+                      className="absolute top-full right-0 mt-2 w-80 md:w-96 lg:w-[680px] bg-gray-50 bg-opacity-100 backdrop-blur-sm rounded-xl shadow-2xl text-gray-900 z-50 overflow-hidden animate-fadeIn overflow-x-hidden"
                       onMouseEnter={() => clearTimeout(timeoutRef.current)}
                       onMouseLeave={handleMouseLeave}
                     >
