@@ -15,7 +15,6 @@ const Backups = () => {
         primaryButtonText="انشاء حساب"
         secondaryButtonText="سجل الآن!"
         imageBottom="/images/backups.svg"
-        imageMobile="/images/backups-m.svg"
         imageAltBottom="Hero Background"
       />
       <PricingCard />
