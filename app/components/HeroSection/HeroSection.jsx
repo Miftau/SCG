@@ -7,17 +7,26 @@ const HeroSection = ({
   title,
   description,
   secondaryButtonText,
-  imageBottom="/images/speed.svg",
-  imageAltBottom="Hero Background"
+  imageBottom,
+  imageMobile,
+  imageAltBottom
 }) => {
   return (
     <div
       className="relative w-full h-screen md:min-h-[600px] lg:min-h-[900px] sm:min-h-[400px] flex flex-col items-center overflow-hidden"
     >
-      {/* Background */}
+      {/* Background Mobile */}
+      {imageMobile && (
+        <div
+          className="absolute inset-0 bg-center bg-cover block md:hidden"
+          aria-label={imageAltBottom || "Background bottom"}
+          style={{ backgroundImage: `url(${imageMobile})` }}
+        />
+      )}
+
       {imageBottom && (
         <div
-          className="absolute inset-0 bg-center bg-cover"
+          className="absolute inset-0 bg-center bg-cover hidden md:block"
           aria-label={imageAltBottom || "Background bottom"}
           style={{ backgroundImage: `url(${imageBottom})` }}
         />

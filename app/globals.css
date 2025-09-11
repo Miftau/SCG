@@ -531,3 +531,60 @@ svg .svg-elem-36 {
 svg.active .svg-elem-36 {
   fill: url("#pattern0_900_4639");
 }
+
+
+
+
+    .svg-elem-4, .svg-elem-5, .svg-elem-6, .svg-elem-7, .svg-elem-8, .svg-elem-9, .svg-elem-10, .svg-elem-11, .svg-elem-12, .svg-elem-13 {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: draw 3s linear forwards; /* Changed from 'infinite' to 'forwards' */
+    }
+
+    .svg-elem-5 {
+        animation-delay: 0.2s;
+    }
+
+    .svg-elem-6 {
+        animation-delay: 0.4s;
+    }
+
+    .svg-elem-7 {
+        animation-delay: 0.6s;
+    }
+
+    .svg-elem-8 {
+        animation-delay: 0.8s;
+    }
+
+    .svg-elem-9 {
+        animation-delay: 1s;
+    }
+
+    .svg-elem-10 {
+        animation-delay: 1.2s;
+    }
+
+    .svg-elem-11 {
+        animation-delay: 1.4s;
+    }
+
+    .svg-elem-12 {
+        animation-delay: 1.6s;
+    }
+
+    .svg-elem-13 {
+        animation-delay: 1.8s;
+    }
+    
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+/* 
+       @media (max-width: 800px){
+    .svg-elem-4, .svg-elem-5, .svg-elem-6, .svg-elem-7, .svg-elem-8, .svg-elem-9, .svg-elem-10, .svg-elem-11, .svg-elem-12, .svg-elem-13, .svg-elem-14, .svg-elem-15, .svg-elem-16 {
+        display: none !important;
+    }
+      } */
